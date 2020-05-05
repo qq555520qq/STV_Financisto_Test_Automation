@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<keywordspec format="ROBOT" generated="20200501 19:00:13" name="AppiumLibrary" type="library">
-<version>1.5.0.3</version>
+<keywordspec name="AppiumLibrary" type="library" format="ROBOT" generated="20200505 11:54:30">
+<version>1.5.0.4</version>
 <scope>global</scope>
 <namedargs>yes</namedargs>
 <doc>AppiumLibrary is a Mobile App testing library for Robot Framework.
@@ -43,6 +43,7 @@ prefix. Supported strategies are:
 | class             | Click Element `|` class=UIAPickerWheel                         | Matches by class                  |                             |
 | android           | Click Element `|` android=UiSelector().description('Apps')     | Matches by Android UI Automator   |                             |
 | ios               | Click Element `|` ios=.buttons().withName('Apps')              | Matches by iOS UI Automation      |                             |
+| nsp               | Click Element `|` nsp=name=="login"                            | Matches by iOSNsPredicate         | Check PR: #196              |
 | css               | Click Element `|` css=.green_button                            | Matches by css in webview         |                             |
 | name              | Click Element `|` name=my_element                              | Matches by @name attribute        | *Only valid* for Selendroid |
 
@@ -248,7 +249,7 @@ Some attributes can be evaluated in two different ways e.g. these evaluate the s
 <arg>locator</arg>
 <arg>expected</arg>
 </arguments>
-<doc />
+<doc></doc>
 <tags>
 </tags>
 </kw>
@@ -342,7 +343,7 @@ New in AppiumLibrary 1.4.</doc>
 <arg>locator</arg>
 <arg>expected</arg>
 </arguments>
-<doc />
+<doc></doc>
 <tags>
 </tags>
 </kw>
@@ -1081,14 +1082,6 @@ Usage:
 
 _*NOTE: *_
 Android 'Swipe' is not working properly, use ``offset_x`` and ``offset_y`` as if these are destination points.</doc>
-<tags>
-</tags>
-</kw>
-<kw name="Swipe By Direction">
-<arguments>
-<arg>direction</arg>
-</arguments>
-<doc>swipe by given direction: left, right, down, up.</doc>
 <tags>
 </tags>
 </kw>

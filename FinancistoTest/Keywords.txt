@@ -1,0 +1,27 @@
+*** Settings ***
+Library    AppiumLibrary
+
+*** Keywords ***
+Open Financisto Application
+    Open Application    http://localhost:4723/wd/hub    platformName=Android    platformVersion=5.1.1    deviceName=emulator-5554    appPackage=ru.orangesoftware.financisto    appActivity=.activity.MainActivity
+
+Get Text After It Is Visible
+    [Arguments]    ${locator}
+    Wait Until Element Is Visible On Page    ${locator}
+    ${textResult} =    Get Text    ${locator}
+    [Return]    ${textResult}
+
+Input Text After It Is Visible
+    [Arguments]    ${locator}    ${text}
+    Wait Until Element Is Visible On Page    ${locator}
+    Input Text    ${locator}    ${text}
+
+Wait Until Element Is Visible On Page
+    [Arguments]    ${locator}
+    Wait Until Page Contains Element    ${locator}    timeout=3s    error=Element should be visible.
+    Wait Until Element Is Visible    ${locator}    timeout=3s    error=Element should be visible.
+
+Click Element After It Is Visible
+    [Arguments]    ${locator}
+    Wait Until Element Is Visible On Page    ${locator}
+    Click Element    ${locator}

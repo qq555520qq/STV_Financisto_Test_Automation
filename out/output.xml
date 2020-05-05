@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.5 on win32)" generated="20200505 21:06:10.152">
+<suite id="s1" name="STV Financisto Test Automation" source="C:\Users\DCTRACK\Desktop\Gene\STV_Financisto_Test_Automation">
+<suite id="s1-s1" name="FinancistoTest" source="C:\Users\DCTRACK\Desktop\Gene\STV_Financisto_Test_Automation\FinancistoTest">
+<suite id="s1-s1-s1" name="Account" source="C:\Users\DCTRACK\Desktop\Gene\STV_Financisto_Test_Automation\FinancistoTest\Account">
+<suite id="s1-s1-s1-s1" name="FT-03 Add an account without neccessary account data" source="C:\Users\DCTRACK\Desktop\Gene\STV_Financisto_Test_Automation\FinancistoTest\Account\FT-03 Add an account without neccessary account data.robot">
+<test id="s1-s1-s1-s1-t1" name="FT-03 Add an account without neccessary account data">
+<kw name="Open Financisto Application" library="Keywords" type="setup">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>platformVersion=5.1.1</arg>
+<arg>deviceName=emulator-5554</arg>
+<arg>appPackage=ru.orangesoftware.financisto</arg>
+<arg>appActivity=.activity.MainActivity</arg>
+</arguments>
+<status status="PASS" starttime="20200505 21:06:10.316" endtime="20200505 21:06:17.649"></status>
+</kw>
+<status status="PASS" starttime="20200505 21:06:10.315" endtime="20200505 21:06:17.649"></status>
+</kw>
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>android:id/button1</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200505 21:06:17.651" endtime="20200505 21:06:19.197"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200505 21:06:19.197" endtime="20200505 21:06:19.450"></status>
+</kw>
+<status status="PASS" starttime="20200505 21:06:17.650" endtime="20200505 21:06:19.451"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200505 21:06:19.451" level="INFO">Clicking element 'android:id/button1'.</msg>
+<status status="PASS" starttime="20200505 21:06:19.451" endtime="20200505 21:06:22.618"></status>
+</kw>
+<status status="PASS" starttime="20200505 21:06:17.650" endtime="20200505 21:06:22.619"></status>
+</kw>
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/bAdd"]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200505 21:06:22.619" endtime="20200505 21:06:22.681"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200505 21:06:22.681" endtime="20200505 21:06:22.759"></status>
+</kw>
+<status status="PASS" starttime="20200505 21:06:22.619" endtime="20200505 21:06:22.760"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200505 21:06:22.760" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/bAdd"]'.</msg>
+<status status="PASS" starttime="20200505 21:06:22.760" endtime="20200505 21:06:23.345"></status>
+</kw>
+<status status="PASS" starttime="20200505 21:06:22.619" endtime="20200505 21:06:23.346"></status>
+</kw>
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/bOK"]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200505 21:06:23.348" endtime="20200505 21:06:24.187"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200505 21:06:24.187" endtime="20200505 21:06:24.314"></status>
+</kw>
+<status status="PASS" starttime="20200505 21:06:23.348" endtime="20200505 21:06:24.314"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200505 21:06:24.315" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/bOK"]'.</msg>
+<status status="PASS" starttime="20200505 21:06:24.315" endtime="20200505 21:06:27.640"></status>
+</kw>
+<status status="PASS" starttime="20200505 21:06:23.347" endtime="20200505 21:06:27.640"></status>
+</kw>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>//*[contains(@text,請選擇貨幣)]</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200505 21:06:27.642" endtime="20200505 21:06:28.066"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200505 21:06:28.067" endtime="20200505 21:06:28.511"></status>
+</kw>
+<status status="PASS" starttime="20200505 21:06:27.641" endtime="20200505 21:06:28.511"></status>
+</kw>
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/currency_add"]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200505 21:06:28.513" endtime="20200505 21:06:28.561"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200505 21:06:28.561" endtime="20200505 21:06:28.603"></status>
+</kw>
+<status status="PASS" starttime="20200505 21:06:28.512" endtime="20200505 21:06:28.604"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200505 21:06:28.604" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/currency_add"]'.</msg>
+<status status="PASS" starttime="20200505 21:06:28.604" endtime="20200505 21:06:28.917"></status>
+</kw>
+<status status="PASS" starttime="20200505 21:06:28.512" endtime="20200505 21:06:28.918"></status>
+</kw>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="android:id/select_dialog_listview"]</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200505 21:06:28.919" endtime="20200505 21:06:29.533"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200505 21:06:29.534" endtime="20200505 21:06:29.693"></status>
+</kw>
+<status status="PASS" starttime="20200505 21:06:28.919" endtime="20200505 21:06:29.693"></status>
+</kw>
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@text="AED (United Arab Emirates dirham)"]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200505 21:06:29.695" endtime="20200505 21:06:29.737"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200505 21:06:29.738" endtime="20200505 21:06:29.768"></status>
+</kw>
+<status status="PASS" starttime="20200505 21:06:29.694" endtime="20200505 21:06:29.768"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200505 21:06:29.769" level="INFO">Clicking element '//*[@text="AED (United Arab Emirates dirham)"]'.</msg>
+<status status="PASS" starttime="20200505 21:06:29.768" endtime="20200505 21:06:29.912"></status>
+</kw>
+<status status="PASS" starttime="20200505 21:06:29.694" endtime="20200505 21:06:29.912"></status>
+</kw>
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="android:id/button1"]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200505 21:06:29.915" endtime="20200505 21:06:30.408"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200505 21:06:30.408" endtime="20200505 21:06:30.544"></status>
+</kw>
+<status status="PASS" starttime="20200505 21:06:29.914" endtime="20200505 21:06:30.544"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200505 21:06:30.545" level="INFO">Clicking element '//*[@resource-id="android:id/button1"]'.</msg>
+<status status="PASS" starttime="20200505 21:06:30.544" endtime="20200505 21:06:33.680"></status>
+</kw>
+<status status="PASS" starttime="20200505 21:06:29.913" endtime="20200505 21:06:33.681"></status>
+</kw>
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/bOK"]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200505 21:06:33.682" endtime="20200505 21:06:33.771"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200505 21:06:33.772" endtime="20200505 21:06:33.851"></status>
+</kw>
+<status status="PASS" starttime="20200505 21:06:33.682" endtime="20200505 21:06:33.851"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200505 21:06:33.852" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/bOK"]'.</msg>
+<status status="PASS" starttime="20200505 21:06:33.851" endtime="20200505 21:06:34.039"></status>
+</kw>
+<status status="PASS" starttime="20200505 21:06:33.681" endtime="20200505 21:06:34.039"></status>
+</kw>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>//android.widget.TextView[@text="名稱"]</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200505 21:06:34.040" endtime="20200505 21:06:34.527"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200505 21:06:34.528" endtime="20200505 21:06:34.843"></status>
+</kw>
+<status status="PASS" starttime="20200505 21:06:34.040" endtime="20200505 21:06:34.843"></status>
+</kw>
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/bCancel"]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200505 21:06:34.844" endtime="20200505 21:06:34.899"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200505 21:06:34.899" endtime="20200505 21:06:34.964"></status>
+</kw>
+<status status="PASS" starttime="20200505 21:06:34.844" endtime="20200505 21:06:34.964"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200505 21:06:34.965" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/bCancel"]'.</msg>
+<status status="PASS" starttime="20200505 21:06:34.964" endtime="20200505 21:06:38.120"></status>
+</kw>
+<status status="PASS" starttime="20200505 21:06:34.843" endtime="20200505 21:06:38.121"></status>
+</kw>
+<kw name="Close Application" library="AppiumLibrary" type="teardown">
+<doc>Closes the current application.</doc>
+<status status="PASS" starttime="20200505 21:06:38.123" endtime="20200505 21:06:39.533"></status>
+</kw>
+<status status="PASS" starttime="20200505 21:06:10.315" endtime="20200505 21:06:39.534" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200505 21:06:10.205" endtime="20200505 21:06:39.535"></status>
+</suite>
+<status status="PASS" starttime="20200505 21:06:10.203" endtime="20200505 21:06:39.538"></status>
+</suite>
+<status status="PASS" starttime="20200505 21:06:10.200" endtime="20200505 21:06:39.541"></status>
+</suite>
+<status status="PASS" starttime="20200505 21:06:10.183" endtime="20200505 21:06:39.543"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="STV Financisto Test Automation">STV Financisto Test Automation</stat>
+<stat pass="1" fail="0" id="s1-s1" name="FinancistoTest">STV Financisto Test Automation.FinancistoTest</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="Account">STV Financisto Test Automation.FinancistoTest.Account</stat>
+<stat pass="1" fail="0" id="s1-s1-s1-s1" name="FT-03 Add an account without neccessary account data">STV Financisto Test Automation.FinancistoTest.Account.FT-03 Add an account without neccessary account data</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
