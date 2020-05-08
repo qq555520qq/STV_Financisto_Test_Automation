@@ -20,11 +20,3 @@ FT-02 Add an account with neccessary account data
     Should Be Equal    ${actualAccountName}    AccountForTest
     ${actualAccountMoney} =    Get Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/right_center"]
     Should Be Equal    ${actualAccountMoney}    0.00 Dhs.
-
-*** Keywords ***
-Delete Account
-    [Arguments]    ${accountName}
-    Click Element After It Is Visible    //*[@resource-id="android:id/list"]//*[@text="${accountName}"]
-    Click Element After It Is Visible    //*[@text="Delete account"]
-    Click Element After It Is Visible    //*[@resource-id="android:id/button1"]
-    Wait Until Page Does Not Contain Element    //*[@resource-id="android:id/list"]//*[@text="${accountName}"]

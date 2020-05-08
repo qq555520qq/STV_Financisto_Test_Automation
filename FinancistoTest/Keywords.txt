@@ -25,3 +25,15 @@ Click Element After It Is Visible
     [Arguments]    ${locator}
     Wait Until Element Is Visible On Page    ${locator}
     Click Element    ${locator}
+
+Delete Account
+    [Arguments]    ${accountName}
+    Click Element After It Is Visible    //*[@resource-id="android:id/list"]//*[@text="${accountName}"]
+    Click Element After It Is Visible    //*[@text="Delete account"]
+    Click Element After It Is Visible    //*[@resource-id="android:id/button1"]
+    Wait Until Page Does Not Contain Element    //*[@resource-id="android:id/list"]//*[@text="${accountName}"]
+
+Clear Text After It Is Visible
+    [Arguments]    ${locator}
+    Wait Until Element Is Visible On Page    ${locator}
+    Clear Text    ${locator}
