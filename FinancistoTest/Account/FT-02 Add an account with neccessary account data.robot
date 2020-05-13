@@ -7,7 +7,6 @@ Test Teardown    Run Keywords    Delete Account    AccountForTest
 
 *** Test Cases ***
 FT-02 Add an account with neccessary account data
-    Click Element After It Is Visible    android:id/button1
     Click Element After It Is Visible   //*[@resource-id="ru.orangesoftware.financisto:id/bAdd"]
     Input Text After It Is Visible   //android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.EditText[1]    AccountForTest
     Wait Until Element Is Visible On Page    //android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.EditText[1]
