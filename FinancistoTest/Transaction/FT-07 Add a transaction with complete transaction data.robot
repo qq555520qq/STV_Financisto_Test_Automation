@@ -28,32 +28,6 @@ FT-07 Add a transaction with complete transaction data
     Should Be Equal    ${actualAccountMoney}    -3,000.00 Dhs.
 
 *** Keywords ***
-Delete Transaction
-    [Arguments]    ${transactionInfo}
-    Click Element After It Is Visible    //*[@resource-id="android:id/list"]/android.widget.RelativeLayout[1]//*[contains(@text,"${transactionInfo}")]
-    Click Element After It Is Visible    //*[@text="刪除"]
-    Click Element After It Is Visible    //*[@resource-id="android:id/button1"]
-    Wait Until Page Does Not Contain Element    //*[@resource-id="android:id/list"]//*[@text="${transactionInfo}"]
-
-Go To Detail Page
-    Click Element After It Is Visible    //*[@resource-id="android:id/tabs"]/android.widget.RelativeLayout[2]//*[@text="明細"]
-
-Detail::Click Add Button
-    Click Element After It Is Visible   //*[@resource-id="ru.orangesoftware.financisto:id/bAdd"]
-
-Transaction::Select Account
-    [Arguments]    ${account}
-    Click Element After It Is Visible    //*[@text="帳戶"]
-    Click Element After It Is Visible    //*[@resource-id="android:id/select_dialog_listview"]//*[@text="${account}"]
-    Wait Until Element Is Visible On Page    //*[@resource-id="ru.orangesoftware.financisto:id/account"]/android.widget.RelativeLayout[1]//*[@text="${account}"]
-
-Transaction::Add Payee
-    [Arguments]    ${payee}
-    Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/payee_add"]
-    Input Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/title"]    ${payee}
-    Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/bOK"]
-    Wait Until Element Is Visible On Page    //*[@resource-id="ru.orangesoftware.financisto:id/payee"]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]//*[@text="${payee}"]
-
 Transaction::Add Category
     [Arguments]    ${category}
     Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/category_add"]
@@ -74,13 +48,6 @@ Transaction::Add Project
     Input Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/title"]    ${project}
     Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/bOK"]
     Wait Until Element Is Visible On Page    //*[@resource-id="ru.orangesoftware.financisto:id/project"]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]//*[@text="${project}"]
-
-Common::Click Save Button
-    Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/bSave"]
-
-Transaction::Input Money
-    [Arguments]    ${amount}
-    Input Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/primary"]    ${amount}
 
 Transaction::Input Remark
     [Arguments]    ${text}

@@ -52,3 +52,41 @@ Create A New Account
     Input Text After It Is Visible    //android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[5]/android.widget.RelativeLayout[1]/android.widget.EditText[1]    This is a test
     Input Text After It Is Visible    //android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[6]/android.widget.RelativeLayout[1]/android.widget.EditText[1]    1
     Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/bOK"]
+
+Delete Transaction
+    [Arguments]    ${transactionInfo}
+    Click Element After It Is Visible    //*[@resource-id="android:id/list"]/android.widget.RelativeLayout[1]//*[contains(@text,"${transactionInfo}")]
+    Click Element After It Is Visible    //*[@text="刪除"]
+    Click Element After It Is Visible    //*[@resource-id="android:id/button1"]
+    Wait Until Page Does Not Contain Element    //*[@resource-id="android:id/list"]//*[@text="${transactionInfo}"]
+
+Go To Detail Page
+    Click Element After It Is Visible    //*[@resource-id="android:id/tabs"]/android.widget.RelativeLayout[2]//*[@text="明細"]
+
+Detail::Click Add Button
+    Click Element After It Is Visible   //*[@resource-id="ru.orangesoftware.financisto:id/bAdd"]
+
+Transaction::Select Account
+    [Arguments]    ${account}
+    Click Element After It Is Visible    //*[@text="帳戶"]
+    Click Element After It Is Visible    //*[@resource-id="android:id/select_dialog_listview"]//*[@text="${account}"]
+    Wait Until Element Is Visible On Page    //*[@resource-id="ru.orangesoftware.financisto:id/account"]/android.widget.RelativeLayout[1]//*[@text="${account}"]
+
+Transaction::Add Payee
+    [Arguments]    ${payee}
+    Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/payee_add"]
+    Input Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/title"]    ${payee}
+    Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/bOK"]
+    Wait Until Element Is Visible On Page    //*[@resource-id="ru.orangesoftware.financisto:id/payee"]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]//*[@text="${payee}"]
+
+Common::Click Save Button
+    Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/bSave"]
+
+Transaction::Input Money
+    [Arguments]    ${amount}
+    Input Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/primary"]    ${amount}
+
+
+
+
+
