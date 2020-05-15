@@ -3,13 +3,10 @@ Library    AppiumLibrary
 Resource    ../Keywords.txt
 Test Setup    Run Keywords    Open Financisto Application
 ...                    AND    Create A New Account    accountName=AccountForTest
-Test Teardown    Run Keywords    Delete Transaction    ${expectedTransactionInfo}
+Test Teardown    Run Keywords    Delete Transaction    expenditure
 ...                       AND    Click Element After It Is Visible    //*[@resource-id="android:id/tabs"]/android.widget.RelativeLayout[1]//*[@text="帳戶"]
 ...                       AND    Delete Account    AccountForTest
 ...                       AND    Close Application
-
-*** Variables ***
-${expectedTransactionInfo} =    expenditure (acceptor: Taipei: This is a test)
 
 *** Test Cases ***
 FT-07 Add a transaction with complete transaction data
@@ -26,15 +23,14 @@ FT-07 Add a transaction with complete transaction data
     ${actualAccountName} =    Get Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/top"]
     Should Be Equal    ${actualAccountName}    AccountForTest
     ${actualTransactionInfo} =    Get Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/center"]
-    Log    ${expectedTransactionInfo}
-    # Should Be Equal    ${actualTransactionInfo}    ${expectedTransactionInfo}
+    Should Contain Any     ${actualTransactionInfo}    expenditure    acceptor    Taipei    This is a test
     ${actualAccountMoney} =    Get Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/right_center"]
     Should Be Equal    ${actualAccountMoney}    -3,000.00 Dhs.
 
 *** Keywords ***
 Delete Transaction
     [Arguments]    ${transactionInfo}
-    Click Element After It Is Visible    //*[@resource-id="android:id/list"]//*[contains(@text, "${transactionInfo}")]
+    Click Element After It Is Visible    //*[@resource-id="android:id/list"]/android.widget.RelativeLayout[1]//*[contains(@text,"${transactionInfo}")]
     Click Element After It Is Visible    //*[@text="刪除"]
     Click Element After It Is Visible    //*[@resource-id="android:id/button1"]
     Wait Until Page Does Not Contain Element    //*[@resource-id="android:id/list"]//*[@text="${transactionInfo}"]
