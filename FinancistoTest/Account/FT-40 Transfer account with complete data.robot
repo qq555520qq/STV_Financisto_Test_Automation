@@ -5,7 +5,7 @@ Test Setup    Run Keywords    Open Financisto Application
 ...                    AND    Create A New Account    AccountForTest
 ...                    AND    Create A New Account    AccountForTransfer
 Test Teardown    Close Application
-# 未寫完
+
 *** Test Cases ***
 FT-40 Transfer account with complete data
     Click Element After It Is Visible    //*[@resource-id="android:id/list"]/android.widget.RelativeLayout[1]//*[@text="AccountForTest"]
