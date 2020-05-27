@@ -86,6 +86,8 @@ Transaction::Input Money
     [Arguments]    ${amount}
     Input Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/primary"]    ${amount}
 
+Common::Click Ok Button
+    Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/bOK"]
 
 
 

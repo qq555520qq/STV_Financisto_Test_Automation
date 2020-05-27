@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<keywordspec name="AppiumLibrary" type="library" format="ROBOT" generated="20200505 11:54:30">
-<version>1.5.0.4</version>
+<keywordspec name="AppiumLibrary" type="library" format="ROBOT" generated="20200515 17:20:48">
+<version>1.4.5</version>
 <scope>global</scope>
 <namedargs>yes</namedargs>
 <doc>AppiumLibrary is a Mobile App testing library for Robot Framework.
@@ -43,7 +43,6 @@ prefix. Supported strategies are:
 | class             | Click Element `|` class=UIAPickerWheel                         | Matches by class                  |                             |
 | android           | Click Element `|` android=UiSelector().description('Apps')     | Matches by Android UI Automator   |                             |
 | ios               | Click Element `|` ios=.buttons().withName('Apps')              | Matches by iOS UI Automation      |                             |
-| nsp               | Click Element `|` nsp=name=="login"                            | Matches by iOSNsPredicate         | Check PR: #196              |
 | css               | Click Element `|` css=.green_button                            | Matches by css in webview         |                             |
 | name              | Click Element `|` name=my_element                              | Matches by @name attribute        | *Only valid* for Selendroid |
 
@@ -188,7 +187,7 @@ are reset and start from `1`.</doc>
 <kw name="Close Application">
 <arguments>
 </arguments>
-<doc>Closes the current application and also close webdriver session.</doc>
+<doc>Closes the current application.</doc>
 <tags>
 </tags>
 </kw>
@@ -344,38 +343,6 @@ New in AppiumLibrary 1.4.</doc>
 <arg>expected</arg>
 </arguments>
 <doc></doc>
-<tags>
-</tags>
-</kw>
-<kw name="Execute Async Script">
-<arguments>
-<arg>script</arg>
-</arguments>
-<doc>Inject a snippet of Async-JavaScript into the page for execution in the
-context of the currently selected frame (Web context only).
-
-The executed script is assumed to be asynchronous and must signal that is done by
-invoking the provided callback, which is always provided as the final argument to the
-function.
-
-The value to this callback will be returned to the client.
-
-
-New in AppiumLibrary 1.5</doc>
-<tags>
-</tags>
-</kw>
-<kw name="Execute Script">
-<arguments>
-<arg>script</arg>
-</arguments>
-<doc>Inject a snippet of JavaScript into the page for execution in the
-context of the currently selected frame (Web context only).
-
-The executed script is assumed to be synchronous and the result
-of evaluating the script is returned to the client.
-
-New in AppiumLibrary 1.5</doc>
 <tags>
 </tags>
 </kw>
@@ -555,7 +522,7 @@ Example:
 | ${width}       | Get Window Height |
 | ${height}      | Get Window Height |
 | Click A Point  | ${width           | ${height} |
-
+       
 New in AppiumLibrary 1.4.5</doc>
 <tags>
 </tags>
@@ -658,33 +625,6 @@ Android only.
 <tags>
 </tags>
 </kw>
-<kw name="Launch Application">
-<arguments>
-</arguments>
-<doc>Launch application. Application can be launched while Appium session running.
-This keyword can be used to launch application during test case or between test cases.
-
-This keyword works while `Open Application` has a test running. This is good practice to `Launch Application`
-and `Quit Application` between test cases. As Suite Setup is `Open Application`, `Test Setup` can be used to `Launch Application`
-
-Example (syntax is just a representation, refer to RF Guide for usage of Setup/Teardown):
-| [Setup Suite] |
-|  | Open Application | http://localhost:4723/wd/hub | platformName=Android | deviceName=192.168.56.101:5555 | app=${CURDIR}/demoapp/OrangeDemoApp.apk |
-| [Test Setup] |
-|  | Launch Application |
-|  |  | &lt;&lt;&lt;test execution&gt;&gt;&gt; |
-|  |  | &lt;&lt;&lt;test execution&gt;&gt;&gt; |
-| [Test Teardown] |
-|  | Quit Application |
-| [Suite Teardown] |
-|  | Close Application |
-
-See `Quit Application` for quiting application but keeping Appium sesion running.
-
-New in AppiumLibrary 1.4.6</doc>
-<tags>
-</tags>
-</kw>
 <kw name="Lock">
 <arguments>
 <arg>seconds=5</arg>
@@ -707,9 +647,8 @@ The `loglevel` argument defines the used log level. Valid log levels are
 <kw name="Long Press">
 <arguments>
 <arg>locator</arg>
-<arg>duration=1000</arg>
 </arguments>
-<doc>Long press the element with optional duration</doc>
+<doc>Long press the element</doc>
 <tags>
 </tags>
 </kw>
@@ -734,7 +673,7 @@ See `press keycode` for more details.</doc>
 </arguments>
 <doc>Opens a new application to given Appium server.
 Capabilities of appium server, Android and iOS,
-Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+Please check http://appium.io/slate/en/master/?python#appium-server-capabilities
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
@@ -887,18 +826,6 @@ Android only.
 <tags>
 </tags>
 </kw>
-<kw name="Quit Application">
-<arguments>
-</arguments>
-<doc>Quit application. Application can be quit while Appium session is kept alive.
-This keyword can be used to close application during test case or between test cases.
-
-See `Launch Application` for an explanation.
-
-New in AppiumLibrary 1.4.6</doc>
-<tags>
-</tags>
-</kw>
 <kw name="Register Keyword To Run On Failure">
 <arguments>
 <arg>keyword</arg>
@@ -943,7 +870,7 @@ Example:
 <kw name="Reset Application">
 <arguments>
 </arguments>
-<doc>Reset application. Open Application can be reset while Appium session is kept alive.</doc>
+<doc>Reset application</doc>
 <tags>
 </tags>
 </kw>
@@ -992,23 +919,6 @@ Example:
 | ${orig timeout} = | Set Appium Timeout | 15 seconds |
 | Open page that loads slowly |
 | Set Appium Timeout | ${orig timeout} |</doc>
-<tags>
-</tags>
-</kw>
-<kw name="Set Location">
-<arguments>
-<arg>latitude</arg>
-<arg>longitude</arg>
-<arg>altitude=10</arg>
-</arguments>
-<doc>Set location
-
-- _latitute_
-- _longitude_
-- _altitude_ = 10 [optional]
-
-Android only.
-New in AppiumLibrary 1.5</doc>
 <tags>
 </tags>
 </kw>
@@ -1080,7 +990,7 @@ Args:
 Usage:
 | Swipe | 500 | 100 | 100 | 0 | 1000 |
 
-_*NOTE: *_
+_*NOTE: *_ 
 Android 'Swipe' is not working properly, use ``offset_x`` and ``offset_y`` as if these are destination points.</doc>
 <tags>
 </tags>
@@ -1093,7 +1003,7 @@ Android 'Swipe' is not working properly, use ``offset_x`` and ``offset_y`` as if
 <arg>end_y</arg>
 <arg>duration=1000</arg>
 </arguments>
-<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+<doc>Swipe from one percent of the screen to another percent, for an optional duration. 
 Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.
 
 Args:
@@ -1102,7 +1012,7 @@ Args:
  - end_x - x-percent distance from start_x at which to stop
  - end_y - y-percent distance from start_y at which to stop
  - duration - (optional) time to take the swipe, in ms.
-
+ 
 Usage:
 | Swipe By Percent | 90 | 50 | 10 | 50 | # Swipes screen from right to left. |
 
@@ -1169,27 +1079,6 @@ Args:
 <doc>Verifies that element identified with text is visible.
 
 New in AppiumLibrary 1.4.5</doc>
-<tags>
-</tags>
-</kw>
-<kw name="Toggle Touch Id Enrollment">
-<arguments>
-</arguments>
-<doc>Toggle Touch ID enrolled state on iOS Simulator
-
-New in AppiumLibrary 1.5</doc>
-<tags>
-</tags>
-</kw>
-<kw name="Touch Id">
-<arguments>
-<arg>match=True</arg>
-</arguments>
-<doc>Simulate Touch ID on iOS Simulator
-
-`match` (boolean) whether the simulated fingerprint is valid (default true)
-
-New in AppiumLibrary 1.5</doc>
 <tags>
 </tags>
 </kw>

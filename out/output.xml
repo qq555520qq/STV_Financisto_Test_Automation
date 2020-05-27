@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.6.5 on win32)" generated="20200513 21:14:58.480">
+<robot generator="Robot 3.0.4 (Python 3.6.5 on win32)" generated="20200527 14:57:00.691">
 <suite id="s1" name="STV Financisto Test Automation" source="C:\Users\DCTRACK\Desktop\Gene\STV_Financisto_Test_Automation">
 <suite id="s1-s1" name="FinancistoTest" source="C:\Users\DCTRACK\Desktop\Gene\STV_Financisto_Test_Automation\FinancistoTest">
 <suite id="s1-s1-s1" name="Account" source="C:\Users\DCTRACK\Desktop\Gene\STV_Financisto_Test_Automation\FinancistoTest\Account">
 <suite id="s1-s1-s1-s1" name="FT-40 Transfer account with complete data" source="C:\Users\DCTRACK\Desktop\Gene\STV_Financisto_Test_Automation\FinancistoTest\Account\FT-40 Transfer account with complete data.robot">
 <test id="s1-s1-s1-s1-t1" name="FT-40 Transfer account with complete data">
-<kw name="Open Financisto Application" library="Keywords" type="setup">
+<kw name="Run Keywords" library="BuiltIn" type="setup">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Open Financisto Application</arg>
+<arg>AND</arg>
+<arg>Create A New Account</arg>
+<arg>AccountForTest</arg>
+<arg>AND</arg>
+<arg>Create A New Account</arg>
+<arg>AccountForTransfer</arg>
+</arguments>
+<kw name="Open Financisto Application" library="Keywords">
 <kw name="Open Application" library="AppiumLibrary">
 <doc>Opens a new application to given Appium server.</doc>
 <arguments>
@@ -16,12 +27,7 @@
 <arg>appPackage=ru.orangesoftware.financisto</arg>
 <arg>appActivity=.activity.MainActivity</arg>
 </arguments>
-<msg timestamp="20200513 21:15:00.688" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{"platformName": "Android", "appium:platformVersion": "5.1.1", "appium:deviceName": "emulator-5554", "appium:appPackage": "ru.orangesoftware.financisto", "appium:appActivity": ".activity.MainActivity"}]}, "desiredCapabilities": {"platformName": "Android", "platformVersion": "5.1.1", "deviceName": "emulator-5554", "appPackage": "ru.orangesoftware.financisto", "appActivity": ".activity.MainActivity"}}</msg>
-<msg timestamp="20200513 21:15:00.689" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1</msg>
-<msg timestamp="20200513 21:15:06.971" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 727</msg>
-<msg timestamp="20200513 21:15:06.972" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:06.972" level="DEBUG">Opened application with session id faa4e8c4-ea03-4670-acdc-ad259ead4ad5</msg>
-<status status="PASS" starttime="20200513 21:14:58.661" endtime="20200513 21:15:06.973"></status>
+<status status="PASS" starttime="20200527 14:57:00.880" endtime="20200527 14:57:09.712"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -38,10 +44,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:06.976" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "id", "value": "android:id/button1", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:08.212" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 55</msg>
-<msg timestamp="20200513 21:15:08.213" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:06.975" endtime="20200513 21:15:08.213"></status>
+<status status="PASS" starttime="20200527 14:57:09.714" endtime="20200527 14:57:10.650"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -50,37 +53,25 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:08.214" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "id", "value": "android:id/button1", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:08.852" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 55</msg>
-<msg timestamp="20200513 21:15:08.852" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:08.853" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/2/displayed {"id": "2", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:09.063" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/2/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:09.063" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:08.214" endtime="20200513 21:15:09.064"></status>
+<status status="PASS" starttime="20200527 14:57:10.650" endtime="20200527 14:57:10.728"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:06.974" endtime="20200513 21:15:09.064"></status>
+<status status="PASS" starttime="20200527 14:57:09.713" endtime="20200527 14:57:10.729"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200513 21:15:09.065" level="INFO">Clicking element 'android:id/button1'.</msg>
-<msg timestamp="20200513 21:15:09.066" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "id", "value": "android:id/button1", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:09.138" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 55</msg>
-<msg timestamp="20200513 21:15:09.139" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:09.139" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/3/click {"id": "3", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:12.476" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/3/click HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:12.477" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:09.065" endtime="20200513 21:15:12.477"></status>
+<msg timestamp="20200527 14:57:10.729" level="INFO">Clicking element 'android:id/button1'.</msg>
+<status status="PASS" starttime="20200527 14:57:10.729" endtime="20200527 14:57:14.230"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:06.973" endtime="20200513 21:15:12.478"></status>
+<status status="PASS" starttime="20200527 14:57:09.712" endtime="20200527 14:57:14.230"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:14:58.660" endtime="20200513 21:15:12.478"></status>
+<status status="PASS" starttime="20200527 14:57:00.880" endtime="20200527 14:57:14.231"></status>
 </kw>
 <kw name="Create A New Account" library="Keywords">
 <arguments>
-<arg>accountForTest</arg>
+<arg>AccountForTest</arg>
 </arguments>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -97,10 +88,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:12.481" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/bAdd\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:12.545" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 55</msg>
-<msg timestamp="20200513 21:15:12.546" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:12.480" endtime="20200513 21:15:12.546"></status>
+<status status="PASS" starttime="20200527 14:57:14.235" endtime="20200527 14:57:14.370"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -109,31 +97,19 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:12.547" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/bAdd\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:12.575" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 55</msg>
-<msg timestamp="20200513 21:15:12.576" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:12.576" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/5/displayed {"id": "5", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:12.613" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/5/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:12.614" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:12.547" endtime="20200513 21:15:12.614"></status>
+<status status="PASS" starttime="20200527 14:57:14.371" endtime="20200527 14:57:14.574"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:12.480" endtime="20200513 21:15:12.614"></status>
+<status status="PASS" starttime="20200527 14:57:14.233" endtime="20200527 14:57:14.574"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200513 21:15:12.615" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/bAdd"]'.</msg>
-<msg timestamp="20200513 21:15:12.615" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/bAdd\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:12.647" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 55</msg>
-<msg timestamp="20200513 21:15:12.647" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:12.647" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/6/click {"id": "6", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:13.523" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/6/click HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:13.524" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:12.614" endtime="20200513 21:15:13.524"></status>
+<msg timestamp="20200527 14:57:14.576" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/bAdd"]'.</msg>
+<status status="PASS" starttime="20200527 14:57:14.575" endtime="20200527 14:57:16.008"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:12.479" endtime="20200513 21:15:13.524"></status>
+<status status="PASS" starttime="20200527 14:57:14.233" endtime="20200527 14:57:16.009"></status>
 </kw>
 <kw name="Input Text After It Is Visible" library="Keywords">
 <arguments>
@@ -151,10 +127,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:13.527" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.EditText[1]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:14.374" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 55</msg>
-<msg timestamp="20200513 21:15:14.375" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:13.526" endtime="20200513 21:15:14.376"></status>
+<status status="PASS" starttime="20200527 14:57:16.013" endtime="20200527 14:57:16.687"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -163,15 +136,9 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:14.378" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.EditText[1]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:14.677" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 55</msg>
-<msg timestamp="20200513 21:15:14.678" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:14.678" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/8/displayed {"id": "8", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:14.707" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/8/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:14.707" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:14.377" endtime="20200513 21:15:14.708"></status>
+<status status="PASS" starttime="20200527 14:57:16.687" endtime="20200527 14:57:16.809"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:13.525" endtime="20200513 21:15:14.708"></status>
+<status status="PASS" starttime="20200527 14:57:16.012" endtime="20200527 14:57:16.810"></status>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -179,16 +146,10 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 </arguments>
-<msg timestamp="20200513 21:15:14.709" level="INFO">Typing text 'accountForTest' into text field '//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.EditText[1]'</msg>
-<msg timestamp="20200513 21:15:14.710" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.EditText[1]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:14.746" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 55</msg>
-<msg timestamp="20200513 21:15:14.747" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:14.748" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/9/value {"text": "accountForTest", "value": ["a", "c", "c", "o", "u", "n", "t", "F", "o", "r", "T", "e", "s", "t"], "id": "9", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:19.589" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/9/value HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:19.590" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:14.709" endtime="20200513 21:15:19.590"></status>
+<msg timestamp="20200527 14:57:16.811" level="INFO">Typing text 'AccountForTest' into text field '//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.EditText[1]'</msg>
+<status status="PASS" starttime="20200527 14:57:16.810" endtime="20200527 14:57:22.167"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:13.525" endtime="20200513 21:15:19.591"></status>
+<status status="PASS" starttime="20200527 14:57:16.011" endtime="20200527 14:57:22.167"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -201,10 +162,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:19.595" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.EditText[1]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:20.099" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:20.100" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:19.593" endtime="20200513 21:15:20.101"></status>
+<status status="PASS" starttime="20200527 14:57:22.168" endtime="20200527 14:57:22.678"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -213,15 +171,9 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:20.103" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.EditText[1]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:20.439" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:20.439" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:20.440" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/11/displayed {"id": "11", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:20.451" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/11/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:20.451" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:20.102" endtime="20200513 21:15:20.452"></status>
+<status status="PASS" starttime="20200527 14:57:22.679" endtime="20200527 14:57:22.802"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:19.591" endtime="20200513 21:15:20.452"></status>
+<status status="PASS" starttime="20200527 14:57:22.168" endtime="20200527 14:57:22.803"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -238,10 +190,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:20.454" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/currency_add\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:20.514" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:20.514" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:20.453" endtime="20200513 21:15:20.514"></status>
+<status status="PASS" starttime="20200527 14:57:22.805" endtime="20200527 14:57:23.041"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -250,31 +199,19 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:20.515" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/currency_add\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:20.548" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:20.549" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:20.549" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/13/displayed {"id": "13", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:20.561" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/13/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:20.561" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:20.515" endtime="20200513 21:15:20.561"></status>
+<status status="PASS" starttime="20200527 14:57:23.041" endtime="20200527 14:57:23.086"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:20.453" endtime="20200513 21:15:20.562"></status>
+<status status="PASS" starttime="20200527 14:57:22.804" endtime="20200527 14:57:23.086"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200513 21:15:20.562" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/currency_add"]'.</msg>
-<msg timestamp="20200513 21:15:20.563" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/currency_add\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:20.621" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:20.621" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:20.621" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/14/click {"id": "14", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:20.990" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/14/click HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:20.991" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:20.562" endtime="20200513 21:15:20.992"></status>
+<msg timestamp="20200527 14:57:23.087" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/currency_add"]'.</msg>
+<status status="PASS" starttime="20200527 14:57:23.087" endtime="20200527 14:57:23.394"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:20.452" endtime="20200513 21:15:20.993"></status>
+<status status="PASS" starttime="20200527 14:57:22.803" endtime="20200527 14:57:23.394"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -287,10 +224,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:20.994" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"android:id/select_dialog_listview\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:21.685" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:21.686" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:20.994" endtime="20200513 21:15:21.687"></status>
+<status status="PASS" starttime="20200527 14:57:23.395" endtime="20200527 14:57:24.055"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -299,15 +233,9 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:21.689" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"android:id/select_dialog_listview\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:21.791" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:21.791" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:21.792" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/16/displayed {"id": "16", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:21.803" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/16/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:21.803" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:21.688" endtime="20200513 21:15:21.804"></status>
+<status status="PASS" starttime="20200527 14:57:24.056" endtime="20200527 14:57:24.119"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:20.993" endtime="20200513 21:15:21.804"></status>
+<status status="PASS" starttime="20200527 14:57:23.395" endtime="20200527 14:57:24.120"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -324,10 +252,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:21.806" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@text=\"AED (United Arab Emirates dirham)\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:21.890" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:21.890" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:21.806" endtime="20200513 21:15:21.891"></status>
+<status status="PASS" starttime="20200527 14:57:24.121" endtime="20200527 14:57:24.167"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -336,31 +261,19 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:21.891" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@text=\"AED (United Arab Emirates dirham)\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:21.932" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:21.933" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:21.933" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/18/displayed {"id": "18", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:21.942" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/18/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:21.943" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:21.891" endtime="20200513 21:15:21.943"></status>
+<status status="PASS" starttime="20200527 14:57:24.167" endtime="20200527 14:57:24.235"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:21.805" endtime="20200513 21:15:21.944"></status>
+<status status="PASS" starttime="20200527 14:57:24.121" endtime="20200527 14:57:24.235"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200513 21:15:21.945" level="INFO">Clicking element '//*[@text="AED (United Arab Emirates dirham)"]'.</msg>
-<msg timestamp="20200513 21:15:21.945" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@text=\"AED (United Arab Emirates dirham)\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:21.969" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:21.970" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:21.970" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/19/click {"id": "19", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:22.199" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/19/click HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:22.200" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:21.944" endtime="20200513 21:15:22.200"></status>
+<msg timestamp="20200527 14:57:24.236" level="INFO">Clicking element '//*[@text="AED (United Arab Emirates dirham)"]'.</msg>
+<status status="PASS" starttime="20200527 14:57:24.236" endtime="20200527 14:57:24.378"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:21.804" endtime="20200513 21:15:22.200"></status>
+<status status="PASS" starttime="20200527 14:57:24.120" endtime="20200527 14:57:24.379"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -377,10 +290,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:22.202" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"android:id/button1\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:22.777" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:22.778" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:22.201" endtime="20200513 21:15:22.778"></status>
+<status status="PASS" starttime="20200527 14:57:24.380" endtime="20200527 14:57:24.956"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -389,31 +299,19 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:22.780" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"android:id/button1\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:22.850" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:22.851" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:22.851" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/21/displayed {"id": "21", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:22.897" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/21/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:22.897" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:22.779" endtime="20200513 21:15:22.898"></status>
+<status status="PASS" starttime="20200527 14:57:24.956" endtime="20200527 14:57:25.037"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:22.201" endtime="20200513 21:15:22.898"></status>
+<status status="PASS" starttime="20200527 14:57:24.380" endtime="20200527 14:57:25.037"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200513 21:15:22.899" level="INFO">Clicking element '//*[@resource-id="android:id/button1"]'.</msg>
-<msg timestamp="20200513 21:15:22.899" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"android:id/button1\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:22.922" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:22.923" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:22.923" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/22/click {"id": "22", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:26.044" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/22/click HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:26.045" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:22.898" endtime="20200513 21:15:26.046"></status>
+<msg timestamp="20200527 14:57:25.038" level="INFO">Clicking element '//*[@resource-id="android:id/button1"]'.</msg>
+<status status="PASS" starttime="20200527 14:57:25.037" endtime="20200527 14:57:28.188"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:22.201" endtime="20200513 21:15:26.047"></status>
+<status status="PASS" starttime="20200527 14:57:24.379" endtime="20200527 14:57:28.188"></status>
 </kw>
 <kw name="Input Text After It Is Visible" library="Keywords">
 <arguments>
@@ -431,10 +329,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:26.052" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/primary\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:26.141" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:26.141" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:26.051" endtime="20200513 21:15:26.141"></status>
+<status status="PASS" starttime="20200527 14:57:28.190" endtime="20200527 14:57:28.267"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -443,15 +338,9 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:26.142" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/primary\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:26.175" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:26.176" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:26.176" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/24/displayed {"id": "24", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:26.222" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/24/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:26.223" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:26.142" endtime="20200513 21:15:26.223"></status>
+<status status="PASS" starttime="20200527 14:57:28.267" endtime="20200527 14:57:28.341"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:26.050" endtime="20200513 21:15:26.223"></status>
+<status status="PASS" starttime="20200527 14:57:28.189" endtime="20200527 14:57:28.341"></status>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -459,16 +348,10 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 </arguments>
-<msg timestamp="20200513 21:15:26.224" level="INFO">Typing text '3000' into text field '//*[@resource-id="ru.orangesoftware.financisto:id/primary"]'</msg>
-<msg timestamp="20200513 21:15:26.225" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/primary\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:26.261" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:26.261" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:26.261" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/25/value {"text": "3000", "value": ["3", "0", "0", "0"], "id": "25", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:31.661" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/25/value HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:31.662" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:26.224" endtime="20200513 21:15:31.663"></status>
+<msg timestamp="20200527 14:57:28.342" level="INFO">Typing text '3000' into text field '//*[@resource-id="ru.orangesoftware.financisto:id/primary"]'</msg>
+<status status="PASS" starttime="20200527 14:57:28.342" endtime="20200527 14:57:33.524"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:26.048" endtime="20200513 21:15:31.663"></status>
+<status status="PASS" starttime="20200527 14:57:28.189" endtime="20200527 14:57:33.525"></status>
 </kw>
 <kw name="Input Text After It Is Visible" library="Keywords">
 <arguments>
@@ -486,10 +369,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:31.667" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[5]/android.widget.RelativeLayout[1]/android.widget.EditText[1]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:32.166" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:32.167" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:31.666" endtime="20200513 21:15:32.167"></status>
+<status status="PASS" starttime="20200527 14:57:33.527" endtime="20200527 14:57:34.078"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -498,15 +378,9 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:32.168" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[5]/android.widget.RelativeLayout[1]/android.widget.EditText[1]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:32.268" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:32.268" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:32.269" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/27/displayed {"id": "27", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:32.297" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/27/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:32.298" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:32.167" endtime="20200513 21:15:32.298"></status>
+<status status="PASS" starttime="20200527 14:57:34.078" endtime="20200527 14:57:34.261"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:31.665" endtime="20200513 21:15:32.298"></status>
+<status status="PASS" starttime="20200527 14:57:33.526" endtime="20200527 14:57:34.261"></status>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -514,16 +388,10 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 </arguments>
-<msg timestamp="20200513 21:15:32.299" level="INFO">Typing text 'This is a test' into text field '//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[5]/android.widget.RelativeLayout[1]/android.widget.EditText[1]'</msg>
-<msg timestamp="20200513 21:15:32.299" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[5]/android.widget.RelativeLayout[1]/android.widget.EditText[1]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:32.444" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:32.445" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:32.445" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/28/value {"text": "This is a test", "value": ["T", "h", "i", "s", " ", "i", "s", " ", "a", " ", "t", "e", "s", "t"], "id": "28", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:37.305" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/28/value HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:37.305" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:32.299" endtime="20200513 21:15:37.306"></status>
+<msg timestamp="20200527 14:57:34.262" level="INFO">Typing text 'This is a test' into text field '//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[5]/android.widget.RelativeLayout[1]/android.widget.EditText[1]'</msg>
+<status status="PASS" starttime="20200527 14:57:34.262" endtime="20200527 14:57:39.006"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:31.664" endtime="20200513 21:15:37.306"></status>
+<status status="PASS" starttime="20200527 14:57:33.525" endtime="20200527 14:57:39.007"></status>
 </kw>
 <kw name="Input Text After It Is Visible" library="Keywords">
 <arguments>
@@ -541,10 +409,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:37.310" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[6]/android.widget.RelativeLayout[1]/android.widget.EditText[1]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:37.883" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:37.884" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:37.309" endtime="20200513 21:15:37.885"></status>
+<status status="PASS" starttime="20200527 14:57:39.009" endtime="20200527 14:57:39.571"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -553,15 +418,9 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:37.886" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[6]/android.widget.RelativeLayout[1]/android.widget.EditText[1]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:38.010" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:38.011" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:38.011" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/30/displayed {"id": "30", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:38.142" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/30/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:38.142" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:37.885" endtime="20200513 21:15:38.143"></status>
+<status status="PASS" starttime="20200527 14:57:39.571" endtime="20200527 14:57:39.670"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:37.308" endtime="20200513 21:15:38.143"></status>
+<status status="PASS" starttime="20200527 14:57:39.009" endtime="20200527 14:57:39.671"></status>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -569,16 +428,10 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 </arguments>
-<msg timestamp="20200513 21:15:38.144" level="INFO">Typing text '1' into text field '//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[6]/android.widget.RelativeLayout[1]/android.widget.EditText[1]'</msg>
-<msg timestamp="20200513 21:15:38.144" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[6]/android.widget.RelativeLayout[1]/android.widget.EditText[1]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:38.226" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:38.227" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:38.227" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/31/value {"text": "1", "value": ["1"], "id": "31", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:43.005" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/31/value HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:43.006" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:38.144" endtime="20200513 21:15:43.007"></status>
+<msg timestamp="20200527 14:57:39.672" level="INFO">Typing text '1' into text field '//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[6]/android.widget.RelativeLayout[1]/android.widget.EditText[1]'</msg>
+<status status="PASS" starttime="20200527 14:57:39.671" endtime="20200527 14:57:44.510"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:37.307" endtime="20200513 21:15:43.007"></status>
+<status status="PASS" starttime="20200527 14:57:39.007" endtime="20200527 14:57:44.511"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -595,10 +448,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:43.011" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/bOK\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:43.510" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:43.512" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:43.010" endtime="20200513 21:15:43.514"></status>
+<status status="PASS" starttime="20200527 14:57:44.512" endtime="20200527 14:57:45.032"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -607,37 +457,25 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:43.517" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/bOK\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:43.707" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:43.707" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:43.708" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/33/displayed {"id": "33", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:43.720" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/33/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:43.721" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:43.515" endtime="20200513 21:15:43.721"></status>
+<status status="PASS" starttime="20200527 14:57:45.032" endtime="20200527 14:57:45.303"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:43.009" endtime="20200513 21:15:43.721"></status>
+<status status="PASS" starttime="20200527 14:57:44.512" endtime="20200527 14:57:45.304"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200513 21:15:43.722" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/bOK"]'.</msg>
-<msg timestamp="20200513 21:15:43.722" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/bOK\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:43.811" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:43.812" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:43.812" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/34/click {"id": "34", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:44.363" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/34/click HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:44.364" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:43.722" endtime="20200513 21:15:44.364"></status>
+<msg timestamp="20200527 14:57:45.305" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/bOK"]'.</msg>
+<status status="PASS" starttime="20200527 14:57:45.304" endtime="20200527 14:57:45.745"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:43.008" endtime="20200513 21:15:44.365"></status>
+<status status="PASS" starttime="20200527 14:57:44.511" endtime="20200527 14:57:45.745"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:12.478" endtime="20200513 21:15:44.365"></status>
+<status status="PASS" starttime="20200527 14:57:14.232" endtime="20200527 14:57:45.746"></status>
 </kw>
 <kw name="Create A New Account" library="Keywords">
 <arguments>
-<arg>accountForTransfer</arg>
+<arg>AccountForTransfer</arg>
 </arguments>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -654,10 +492,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:44.367" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/bAdd\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:44.986" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:44.987" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:44.367" endtime="20200513 21:15:44.987"></status>
+<status status="PASS" starttime="20200527 14:57:45.747" endtime="20200527 14:57:46.357"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -666,31 +501,19 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:44.989" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/bAdd\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:45.115" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:45.115" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:45.116" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/36/displayed {"id": "36", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:45.166" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/36/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:45.166" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:44.988" endtime="20200513 21:15:45.167"></status>
+<status status="PASS" starttime="20200527 14:57:46.357" endtime="20200527 14:57:46.480"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:44.366" endtime="20200513 21:15:45.167"></status>
+<status status="PASS" starttime="20200527 14:57:45.747" endtime="20200527 14:57:46.480"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200513 21:15:45.168" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/bAdd"]'.</msg>
-<msg timestamp="20200513 21:15:45.168" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/bAdd\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:45.248" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:45.249" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:45.249" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/37/click {"id": "37", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:46.184" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/37/click HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:46.185" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:45.167" endtime="20200513 21:15:46.185"></status>
+<msg timestamp="20200527 14:57:46.481" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/bAdd"]'.</msg>
+<status status="PASS" starttime="20200527 14:57:46.481" endtime="20200527 14:57:47.045"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:44.366" endtime="20200513 21:15:46.185"></status>
+<status status="PASS" starttime="20200527 14:57:45.746" endtime="20200527 14:57:47.046"></status>
 </kw>
 <kw name="Input Text After It Is Visible" library="Keywords">
 <arguments>
@@ -708,10 +531,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:46.187" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.EditText[1]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:46.638" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:46.638" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:46.187" endtime="20200513 21:15:46.639"></status>
+<status status="PASS" starttime="20200527 14:57:47.048" endtime="20200527 14:57:47.846"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -720,15 +540,9 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:46.640" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.EditText[1]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:46.698" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:46.699" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:46.699" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/39/displayed {"id": "39", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:46.816" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/39/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:46.817" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:46.639" endtime="20200513 21:15:46.817"></status>
+<status status="PASS" starttime="20200527 14:57:47.846" endtime="20200527 14:57:48.164"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:46.186" endtime="20200513 21:15:46.818"></status>
+<status status="PASS" starttime="20200527 14:57:47.047" endtime="20200527 14:57:48.164"></status>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -736,16 +550,10 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 </arguments>
-<msg timestamp="20200513 21:15:46.818" level="INFO">Typing text 'accountForTransfer' into text field '//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.EditText[1]'</msg>
-<msg timestamp="20200513 21:15:46.818" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.EditText[1]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:47.035" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:47.036" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:47.037" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/40/value {"text": "accountForTransfer", "value": ["a", "c", "c", "o", "u", "n", "t", "F", "o", "r", "T", "r", "a", "n", "s", "f", "e", "r"], "id": "40", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:51.840" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/40/value HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:51.841" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:46.818" endtime="20200513 21:15:51.841"></status>
+<msg timestamp="20200527 14:57:48.165" level="INFO">Typing text 'AccountForTransfer' into text field '//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.EditText[1]'</msg>
+<status status="PASS" starttime="20200527 14:57:48.165" endtime="20200527 14:57:53.007"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:46.186" endtime="20200513 21:15:51.842"></status>
+<status status="PASS" starttime="20200527 14:57:47.047" endtime="20200527 14:57:53.008"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -758,10 +566,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:51.845" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.EditText[1]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:52.405" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:52.406" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:51.844" endtime="20200513 21:15:52.407"></status>
+<status status="PASS" starttime="20200527 14:57:53.010" endtime="20200527 14:57:53.603"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -770,15 +575,9 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:52.410" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.EditText[1]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:52.564" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:52.564" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:52.565" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/42/displayed {"id": "42", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:52.577" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/42/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:52.577" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:52.408" endtime="20200513 21:15:52.577"></status>
+<status status="PASS" starttime="20200527 14:57:53.604" endtime="20200527 14:57:53.728"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:51.843" endtime="20200513 21:15:52.578"></status>
+<status status="PASS" starttime="20200527 14:57:53.009" endtime="20200527 14:57:53.728"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -795,10 +594,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:52.580" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/currency_add\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:52.664" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:52.664" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:52.579" endtime="20200513 21:15:52.665"></status>
+<status status="PASS" starttime="20200527 14:57:53.730" endtime="20200527 14:57:53.798"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -807,31 +603,19 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:52.666" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/currency_add\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:52.749" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:52.749" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:52.750" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/44/displayed {"id": "44", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:52.777" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/44/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:52.778" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:52.665" endtime="20200513 21:15:52.778"></status>
+<status status="PASS" starttime="20200527 14:57:53.799" endtime="20200527 14:57:53.913"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:52.579" endtime="20200513 21:15:52.778"></status>
+<status status="PASS" starttime="20200527 14:57:53.729" endtime="20200527 14:57:53.913"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200513 21:15:52.779" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/currency_add"]'.</msg>
-<msg timestamp="20200513 21:15:52.780" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/currency_add\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:52.854" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:52.854" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:52.854" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/45/click {"id": "45", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:53.203" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/45/click HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:53.204" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:52.779" endtime="20200513 21:15:53.204"></status>
+<msg timestamp="20200527 14:57:53.914" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/currency_add"]'.</msg>
+<status status="PASS" starttime="20200527 14:57:53.914" endtime="20200527 14:57:54.230"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:52.578" endtime="20200513 21:15:53.205"></status>
+<status status="PASS" starttime="20200527 14:57:53.729" endtime="20200527 14:57:54.230"></status>
 </kw>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -844,10 +628,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:53.207" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"android:id/select_dialog_listview\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:53.873" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:53.875" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:53.206" endtime="20200513 21:15:53.876"></status>
+<status status="PASS" starttime="20200527 14:57:54.232" endtime="20200527 14:57:54.849"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -856,15 +637,9 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:53.882" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"android:id/select_dialog_listview\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:53.986" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:53.987" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:53.987" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/47/displayed {"id": "47", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:53.996" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/47/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:53.997" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:53.879" endtime="20200513 21:15:53.997"></status>
+<status status="PASS" starttime="20200527 14:57:54.850" endtime="20200527 14:57:54.967"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:53.206" endtime="20200513 21:15:53.998"></status>
+<status status="PASS" starttime="20200527 14:57:54.231" endtime="20200527 14:57:54.967"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -881,10 +656,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:54.000" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@text=\"AED (United Arab Emirates dirham)\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:54.047" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:54.047" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:53.999" endtime="20200513 21:15:54.048"></status>
+<status status="PASS" starttime="20200527 14:57:54.968" endtime="20200527 14:57:55.011"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -893,31 +665,19 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:54.049" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@text=\"AED (United Arab Emirates dirham)\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:54.101" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:54.102" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:54.102" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/49/displayed {"id": "49", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:54.136" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/49/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:54.136" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:54.048" endtime="20200513 21:15:54.137"></status>
+<status status="PASS" starttime="20200527 14:57:55.011" endtime="20200527 14:57:55.076"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:53.998" endtime="20200513 21:15:54.137"></status>
+<status status="PASS" starttime="20200527 14:57:54.968" endtime="20200527 14:57:55.077"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200513 21:15:54.137" level="INFO">Clicking element '//*[@text="AED (United Arab Emirates dirham)"]'.</msg>
-<msg timestamp="20200513 21:15:54.138" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@text=\"AED (United Arab Emirates dirham)\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:54.166" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:54.167" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:54.167" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/50/click {"id": "50", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:54.379" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/50/click HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:54.380" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:54.137" endtime="20200513 21:15:54.380"></status>
+<msg timestamp="20200527 14:57:55.078" level="INFO">Clicking element '//*[@text="AED (United Arab Emirates dirham)"]'.</msg>
+<status status="PASS" starttime="20200527 14:57:55.077" endtime="20200527 14:57:55.244"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:53.998" endtime="20200513 21:15:54.381"></status>
+<status status="PASS" starttime="20200527 14:57:54.967" endtime="20200527 14:57:55.244"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -934,10 +694,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:54.383" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"android:id/button1\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:54.885" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:54.887" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:54.382" endtime="20200513 21:15:54.889"></status>
+<status status="PASS" starttime="20200527 14:57:55.245" endtime="20200527 14:57:55.747"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -946,31 +703,19 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:54.893" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"android:id/button1\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:54.995" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:54.995" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:54.996" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/52/displayed {"id": "52", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:55.051" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/52/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:55.052" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:54.891" endtime="20200513 21:15:55.052"></status>
+<status status="PASS" starttime="20200527 14:57:55.747" endtime="20200527 14:57:55.809"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:54.382" endtime="20200513 21:15:55.053"></status>
+<status status="PASS" starttime="20200527 14:57:55.245" endtime="20200527 14:57:55.810"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200513 21:15:55.053" level="INFO">Clicking element '//*[@resource-id="android:id/button1"]'.</msg>
-<msg timestamp="20200513 21:15:55.054" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"android:id/button1\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:55.101" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:55.101" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:55.101" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/53/click {"id": "53", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:58.212" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/53/click HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:58.213" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:55.053" endtime="20200513 21:15:58.213"></status>
+<msg timestamp="20200527 14:57:55.810" level="INFO">Clicking element '//*[@resource-id="android:id/button1"]'.</msg>
+<status status="PASS" starttime="20200527 14:57:55.810" endtime="20200527 14:57:58.968"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:54.381" endtime="20200513 21:15:58.213"></status>
+<status status="PASS" starttime="20200527 14:57:55.245" endtime="20200527 14:57:58.969"></status>
 </kw>
 <kw name="Input Text After It Is Visible" library="Keywords">
 <arguments>
@@ -988,10 +733,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:58.216" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/primary\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:58.262" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:58.262" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:58.215" endtime="20200513 21:15:58.263"></status>
+<status status="PASS" starttime="20200527 14:57:58.970" endtime="20200527 14:57:59.047"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1000,15 +742,9 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:15:58.263" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/primary\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:58.327" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:58.328" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:58.328" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/55/displayed {"id": "55", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:58.338" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/55/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:15:58.339" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:58.263" endtime="20200513 21:15:58.339"></status>
+<status status="PASS" starttime="20200527 14:57:59.047" endtime="20200527 14:57:59.094"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:58.215" endtime="20200513 21:15:58.339"></status>
+<status status="PASS" starttime="20200527 14:57:58.970" endtime="20200527 14:57:59.094"></status>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -1016,16 +752,10 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 </arguments>
-<msg timestamp="20200513 21:15:58.340" level="INFO">Typing text '3000' into text field '//*[@resource-id="ru.orangesoftware.financisto:id/primary"]'</msg>
-<msg timestamp="20200513 21:15:58.340" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/primary\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:15:58.373" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:15:58.373" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:15:58.374" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/56/value {"text": "3000", "value": ["3", "0", "0", "0"], "id": "56", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:03.314" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/56/value HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:16:03.315" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:15:58.339" endtime="20200513 21:16:03.316"></status>
+<msg timestamp="20200527 14:57:59.095" level="INFO">Typing text '3000' into text field '//*[@resource-id="ru.orangesoftware.financisto:id/primary"]'</msg>
+<status status="PASS" starttime="20200527 14:57:59.095" endtime="20200527 14:58:03.835"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:58.214" endtime="20200513 21:16:03.316"></status>
+<status status="PASS" starttime="20200527 14:57:58.969" endtime="20200527 14:58:03.835"></status>
 </kw>
 <kw name="Input Text After It Is Visible" library="Keywords">
 <arguments>
@@ -1043,10 +773,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:16:03.321" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[5]/android.widget.RelativeLayout[1]/android.widget.EditText[1]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:03.853" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:16:03.854" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:16:03.320" endtime="20200513 21:16:03.855"></status>
+<status status="PASS" starttime="20200527 14:58:03.837" endtime="20200527 14:58:04.337"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1055,15 +782,9 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:16:03.857" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[5]/android.widget.RelativeLayout[1]/android.widget.EditText[1]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:04.194" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:16:04.195" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:04.195" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/58/displayed {"id": "58", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:04.225" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/58/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:16:04.226" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:16:03.855" endtime="20200513 21:16:04.226"></status>
+<status status="PASS" starttime="20200527 14:58:04.338" endtime="20200527 14:58:04.612"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:16:03.319" endtime="20200513 21:16:04.226"></status>
+<status status="PASS" starttime="20200527 14:58:03.836" endtime="20200527 14:58:04.613"></status>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -1071,16 +792,10 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 </arguments>
-<msg timestamp="20200513 21:16:04.227" level="INFO">Typing text 'This is a test' into text field '//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[5]/android.widget.RelativeLayout[1]/android.widget.EditText[1]'</msg>
-<msg timestamp="20200513 21:16:04.227" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[5]/android.widget.RelativeLayout[1]/android.widget.EditText[1]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:04.297" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:16:04.298" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:04.298" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/59/value {"text": "This is a test", "value": ["T", "h", "i", "s", " ", "i", "s", " ", "a", " ", "t", "e", "s", "t"], "id": "59", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:09.860" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/59/value HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:16:09.862" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:16:04.226" endtime="20200513 21:16:09.863"></status>
+<msg timestamp="20200527 14:58:04.614" level="INFO">Typing text 'This is a test' into text field '//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[5]/android.widget.RelativeLayout[1]/android.widget.EditText[1]'</msg>
+<status status="PASS" starttime="20200527 14:58:04.613" endtime="20200527 14:58:09.340"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:16:03.317" endtime="20200513 21:16:09.864"></status>
+<status status="PASS" starttime="20200527 14:58:03.836" endtime="20200527 14:58:09.341"></status>
 </kw>
 <kw name="Input Text After It Is Visible" library="Keywords">
 <arguments>
@@ -1098,10 +813,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:16:09.869" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[6]/android.widget.RelativeLayout[1]/android.widget.EditText[1]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:10.521" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:16:10.522" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:16:09.868" endtime="20200513 21:16:10.523"></status>
+<status status="PASS" starttime="20200527 14:58:09.344" endtime="20200527 14:58:09.871"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1110,15 +822,9 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:16:10.525" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[6]/android.widget.RelativeLayout[1]/android.widget.EditText[1]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:10.652" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:16:10.653" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:10.653" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/61/displayed {"id": "61", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:10.664" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/61/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:16:10.664" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:16:10.523" endtime="20200513 21:16:10.665"></status>
+<status status="PASS" starttime="20200527 14:58:09.872" endtime="20200527 14:58:10.175"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:16:09.866" endtime="20200513 21:16:10.665"></status>
+<status status="PASS" starttime="20200527 14:58:09.343" endtime="20200527 14:58:10.176"></status>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -1126,16 +832,10 @@
 <arg>${locator}</arg>
 <arg>${text}</arg>
 </arguments>
-<msg timestamp="20200513 21:16:10.666" level="INFO">Typing text '1' into text field '//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[6]/android.widget.RelativeLayout[1]/android.widget.EditText[1]'</msg>
-<msg timestamp="20200513 21:16:10.666" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[6]/android.widget.RelativeLayout[1]/android.widget.EditText[1]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:10.762" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:16:10.762" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:10.763" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/62/value {"text": "1", "value": ["1"], "id": "62", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:15.480" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/62/value HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:16:15.481" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:16:10.666" endtime="20200513 21:16:15.481"></status>
+<msg timestamp="20200527 14:58:10.176" level="INFO">Typing text '1' into text field '//android.widget.ScrollView/android.widget.LinearLayout[1]/android.widget.LinearLayout[6]/android.widget.RelativeLayout[1]/android.widget.EditText[1]'</msg>
+<status status="PASS" starttime="20200527 14:58:10.176" endtime="20200527 14:58:14.844"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:16:09.864" endtime="20200513 21:16:15.482"></status>
+<status status="PASS" starttime="20200527 14:58:09.342" endtime="20200527 14:58:14.844"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -1152,10 +852,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:16:15.487" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/bOK\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:16.075" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:16:16.076" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:16:15.486" endtime="20200513 21:16:16.076"></status>
+<status status="PASS" starttime="20200527 14:58:14.846" endtime="20200527 14:58:15.424"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1164,37 +861,27 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:16:16.077" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/bOK\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:16.231" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:16:16.231" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:16.231" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/64/displayed {"id": "64", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:16.242" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/64/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:16:16.243" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:16:16.076" endtime="20200513 21:16:16.243"></status>
+<status status="PASS" starttime="20200527 14:58:15.425" endtime="20200527 14:58:15.574"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:16:15.485" endtime="20200513 21:16:16.243"></status>
+<status status="PASS" starttime="20200527 14:58:14.845" endtime="20200527 14:58:15.575"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200513 21:16:16.244" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/bOK"]'.</msg>
-<msg timestamp="20200513 21:16:16.244" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/bOK\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:16.278" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:16:16.279" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:16.279" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/65/click {"id": "65", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:16.800" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/65/click HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:16:16.801" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:16:16.244" endtime="20200513 21:16:16.802"></status>
+<msg timestamp="20200527 14:58:15.576" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/bOK"]'.</msg>
+<status status="PASS" starttime="20200527 14:58:15.575" endtime="20200527 14:58:16.714"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:16:15.483" endtime="20200513 21:16:16.802"></status>
+<status status="PASS" starttime="20200527 14:58:14.845" endtime="20200527 14:58:16.715"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:15:44.365" endtime="20200513 21:16:16.803"></status>
+<status status="PASS" starttime="20200527 14:57:45.746" endtime="20200527 14:58:16.715"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:57:00.879" endtime="20200527 14:58:16.715"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
-<arg>//*[@resource-id="android:id/list"]/android.widget.RelativeLayout[1]//*[@text="accountForTest"]</arg>
+<arg>//*[@resource-id="android:id/list"]/android.widget.RelativeLayout[1]//*[@text="AccountForTest"]</arg>
 </arguments>
 <kw name="Wait Until Element Is Visible On Page" library="Keywords">
 <arguments>
@@ -1207,10 +894,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:16:16.806" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"android:id/list\"]/android.widget.RelativeLayout[1]//*[@text=\"accountForTest\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:17.698" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:16:17.698" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:16:16.805" endtime="20200513 21:16:17.698"></status>
+<status status="PASS" starttime="20200527 14:58:16.716" endtime="20200527 14:58:17.335"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1219,31 +903,19 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:16:17.700" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"android:id/list\"]/android.widget.RelativeLayout[1]//*[@text=\"accountForTest\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:17.865" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:16:17.866" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:17.866" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/67/displayed {"id": "67", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:17.898" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/67/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:16:17.899" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:16:17.699" endtime="20200513 21:16:17.899"></status>
+<status status="PASS" starttime="20200527 14:58:17.335" endtime="20200527 14:58:17.874"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:16:16.804" endtime="20200513 21:16:17.899"></status>
+<status status="PASS" starttime="20200527 14:58:16.716" endtime="20200527 14:58:17.874"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200513 21:16:17.900" level="INFO">Clicking element '//*[@resource-id="android:id/list"]/android.widget.RelativeLayout[1]//*[@text="accountForTest"]'.</msg>
-<msg timestamp="20200513 21:16:17.901" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"android:id/list\"]/android.widget.RelativeLayout[1]//*[@text=\"accountForTest\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:18.028" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:16:18.029" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:18.029" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/68/click {"id": "68", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:18.339" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/68/click HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:16:18.340" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:16:17.900" endtime="20200513 21:16:18.341"></status>
+<msg timestamp="20200527 14:58:17.875" level="INFO">Clicking element '//*[@resource-id="android:id/list"]/android.widget.RelativeLayout[1]//*[@text="AccountForTest"]'.</msg>
+<status status="PASS" starttime="20200527 14:58:17.875" endtime="20200527 14:58:18.240"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:16:16.803" endtime="20200513 21:16:18.341"></status>
+<status status="PASS" starttime="20200527 14:58:16.715" endtime="20200527 14:58:18.241"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -1260,10 +932,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:16:18.344" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@text=\"\u79fb\u8f49\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:18.908" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:16:18.909" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:16:18.343" endtime="20200513 21:16:18.909"></status>
+<status status="PASS" starttime="20200527 14:58:18.243" endtime="20200527 14:58:18.877"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1272,31 +941,19 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:16:18.911" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@text=\"\u79fb\u8f49\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:18.995" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:16:18.995" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:18.995" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/70/displayed {"id": "70", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:19.006" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/70/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:16:19.007" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:16:18.910" endtime="20200513 21:16:19.007"></status>
+<status status="PASS" starttime="20200527 14:58:18.878" endtime="20200527 14:58:18.905"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:16:18.342" endtime="20200513 21:16:19.008"></status>
+<status status="PASS" starttime="20200527 14:58:18.242" endtime="20200527 14:58:18.905"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200513 21:16:19.008" level="INFO">Clicking element '//*[@text="移轉"]'.</msg>
-<msg timestamp="20200513 21:16:19.009" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@text=\"\u79fb\u8f49\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:19.069" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:16:19.070" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:19.070" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/71/click {"id": "71", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:20.255" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/71/click HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:16:20.256" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:16:19.008" endtime="20200513 21:16:20.256"></status>
+<msg timestamp="20200527 14:58:18.906" level="INFO">Clicking element '//*[@text="移轉"]'.</msg>
+<status status="PASS" starttime="20200527 14:58:18.906" endtime="20200527 14:58:19.837"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:16:18.341" endtime="20200513 21:16:20.257"></status>
+<status status="PASS" starttime="20200527 14:58:18.242" endtime="20200527 14:58:19.838"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -1313,10 +970,7 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:16:20.261" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/account_to\"]/android.widget.RelativeLayout[1]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:20.412" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:16:20.413" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:16:20.260" endtime="20200513 21:16:20.413"></status>
+<status status="PASS" starttime="20200527 14:58:19.840" endtime="20200527 14:58:20.339"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <doc>Waits until element specified with `locator` is visible.</doc>
@@ -1325,31 +979,19 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:16:20.414" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/account_to\"]/android.widget.RelativeLayout[1]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:20.548" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:16:20.548" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:20.548" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/73/displayed {"id": "73", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:20.598" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/73/displayed HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:16:20.598" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:16:20.413" endtime="20200513 21:16:20.598"></status>
+<status status="PASS" starttime="20200527 14:58:20.340" endtime="20200527 14:58:20.581"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:16:20.259" endtime="20200513 21:16:20.599"></status>
+<status status="PASS" starttime="20200527 14:58:19.839" endtime="20200527 14:58:20.581"></status>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${locator}</arg>
 </arguments>
-<msg timestamp="20200513 21:16:20.599" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/account_to"]/android.widget.RelativeLayout[1]'.</msg>
-<msg timestamp="20200513 21:16:20.599" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@resource-id=\"ru.orangesoftware.financisto:id/account_to\"]/android.widget.RelativeLayout[1]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:20.680" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 56</msg>
-<msg timestamp="20200513 21:16:20.681" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:20.681" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/74/click {"id": "74", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:20.949" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/element/74/click HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:16:20.950" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:16:20.599" endtime="20200513 21:16:20.950"></status>
+<msg timestamp="20200527 14:58:20.582" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/account_to"]/android.widget.RelativeLayout[1]'.</msg>
+<status status="PASS" starttime="20200527 14:58:20.582" endtime="20200527 14:58:21.129"></status>
 </kw>
-<status status="PASS" starttime="20200513 21:16:20.258" endtime="20200513 21:16:20.951"></status>
+<status status="PASS" starttime="20200527 14:58:19.838" endtime="20200527 14:58:21.130"></status>
 </kw>
 <kw name="Click Element After It Is Visible" library="Keywords">
 <arguments>
@@ -1366,111 +1008,1045 @@
 <arg>timeout=3s</arg>
 <arg>error=Element should be visible.</arg>
 </arguments>
-<msg timestamp="20200513 21:16:20.954" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@text=\"AccountForTransfer\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:21.009" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20200513 21:16:21.010" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:21.211" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@text=\"AccountForTransfer\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:21.243" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20200513 21:16:21.243" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:21.443" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@text=\"AccountForTransfer\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:21.474" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20200513 21:16:21.474" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:21.675" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@text=\"AccountForTransfer\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:21.739" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20200513 21:16:21.739" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:21.940" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@text=\"AccountForTransfer\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:21.973" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20200513 21:16:21.974" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:22.175" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@text=\"AccountForTransfer\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:22.222" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20200513 21:16:22.222" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:22.423" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@text=\"AccountForTransfer\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:22.455" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20200513 21:16:22.456" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:22.657" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@text=\"AccountForTransfer\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:22.692" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20200513 21:16:22.692" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:22.893" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@text=\"AccountForTransfer\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:22.929" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20200513 21:16:22.930" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:23.130" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@text=\"AccountForTransfer\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:23.164" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20200513 21:16:23.164" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:23.365" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@text=\"AccountForTransfer\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:23.400" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20200513 21:16:23.400" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:23.601" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@text=\"AccountForTransfer\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:23.630" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20200513 21:16:23.630" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:23.830" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@text=\"AccountForTransfer\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:23.866" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20200513 21:16:23.866" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:24.067" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements {"using": "xpath", "value": "//*[@text=\"AccountForTransfer\"]", "sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:24.107" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20200513 21:16:24.108" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:24.171" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/source {"sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:24.220" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5/source HTTP/1.1" 200 5453</msg>
-<msg timestamp="20200513 21:16:24.221" level="DEBUG">Finished Request</msg>
-<msg timestamp="20200513 21:16:24.221" level="INFO">&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;hierarchy rotation="0"&gt;&lt;android.widget.FrameLayout index="0" text="" class="android.widget.FrameLayout" package="ru.orangesoftware.financisto" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[60,671][1020,1323]" resource-id="" instance="0"&gt;&lt;android.widget.FrameLayout index="0" text="" class="android.widget.FrameLayout" package="ru.orangesoftware.financisto" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[60,671][1020,1323]" resource-id="" instance="1"&gt;&lt;android.widget.FrameLayout index="0" text="" class="android.widget.FrameLayout" package="ru.orangesoftware.financisto" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[60,671][1020,1323]" resource-id="android:id/content" instance="2"&gt;&lt;android.widget.LinearLayout index="0" text="" class="android.widget.LinearLayout" package="ru.orangesoftware.financisto" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[60,671][1020,1323]" resource-id="android:id/parentPanel" instance="0"&gt;&lt;android.widget.LinearLayout index="0" text="" class="android.widget.LinearLayout" package="ru.orangesoftware.financisto" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[69,698][1017,882]" resource-id="android:id/topPanel" instance="1"&gt;&lt;android.widget.LinearLayout index="0" text="" class="android.widget.LinearLayout" package="ru.orangesoftware.financisto" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[137,746][949,852]" resource-id="android:id/title_template" instance="2"&gt;&lt;android.widget.TextView index="0" text="帳戶" class="android.widget.TextView" package="ru.orangesoftware.financisto" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[137,746][949,852]" resource-id="android:id/alertTitle" instance="0"/&gt;&lt;/android.widget.LinearLayout&gt;&lt;android.widget.ImageView index="1" text="" class="android.widget.ImageView" package="ru.orangesoftware.financisto" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[107,879][979,882]" resource-id="android:id/titleDivider" instance="0"/&gt;&lt;/android.widget.LinearLayout&gt;&lt;android.widget.LinearLayout index="1" text="" class="android.widget.LinearLayout" package="ru.orangesoftware.financisto" content-desc="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[69,882][1017,1314]" resource-id="android:id/contentPanel" instance="3"&gt;&lt;android.widget.ListView index="0" text="" class="android.widget.ListView" package="ru.orangesoftware.financisto" content-desc="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="true" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[107,882][979,1268]" resource-id="android:id/select_dialog_listview" instance="0"&gt;&lt;android.widget.CheckedTextView index="0" text="accountForTest" class="android.widget.CheckedTextView" package="ru.orangesoftware.financisto" content-desc="" checkable="true" checked="false" clickable="true" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[107,882][979,1074]" resource-id="android:id/text1" instance="0"/&gt;&lt;android.widget.CheckedTextView index="1" text="accountForTransfer" class="android.widget.CheckedTextView" package="ru.orangesoftware.financisto" content-desc="" checkable="true" checked="false" clickable="true" enabled="true" focusable="false" focused="false" scrollable="false" long-clickable="false" password="false" selected="false" bounds="[107,1076][979,1268]" resource-id="android:id/text1" instance="1"/&gt;&lt;/android.widget.ListView&gt;&lt;/android.widget.LinearLayout&gt;&lt;/android.widget.LinearLayout&gt;&lt;/android.widget.FrameLayout&gt;&lt;/android.widget.FrameLayout&gt;&lt;/android.widget.FrameLayout&gt;&lt;/hierarchy&gt;</msg>
-<msg timestamp="20200513 21:16:24.222" level="FAIL">Element should be visible.</msg>
-<msg timestamp="20200513 21:16:24.222" level="DEBUG">Traceback (most recent call last):
-  File "C:\Users\DCTRACK\AppData\Local\Programs\Python\Python36\lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 88, in wait_until_page_contains_element
-    self._wait_until(timeout, error, self._is_element_present, locator)
-  File "C:\Users\DCTRACK\AppData\Local\Programs\Python\Python36\lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 122, in _wait_until
-    self._wait_until_no_error(timeout, wait_func)
-  File "C:\Users\DCTRACK\AppData\Local\Programs\Python\Python36\lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 133, in _wait_until_no_error
-    raise AssertionError(timeout_error)</msg>
-<status status="FAIL" starttime="20200513 21:16:20.953" endtime="20200513 21:16:24.222"></status>
+<status status="PASS" starttime="20200527 14:58:21.131" endtime="20200527 14:58:21.740"></status>
 </kw>
-<status status="FAIL" starttime="20200513 21:16:20.952" endtime="20200513 21:16:24.223"></status>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:58:21.741" endtime="20200527 14:58:21.838"></status>
 </kw>
-<status status="FAIL" starttime="20200513 21:16:20.951" endtime="20200513 21:16:24.223"></status>
+<status status="PASS" starttime="20200527 14:58:21.130" endtime="20200527 14:58:21.839"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200527 14:58:21.839" level="INFO">Clicking element '//*[@text="AccountForTransfer"]'.</msg>
+<status status="PASS" starttime="20200527 14:58:21.839" endtime="20200527 14:58:21.981"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:58:21.130" endtime="20200527 14:58:21.981"></status>
+</kw>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>//*[@text="AccountForTransfer"]</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:58:21.982" endtime="20200527 14:58:22.695"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:58:22.696" endtime="20200527 14:58:22.826"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:58:21.981" endtime="20200527 14:58:22.826"></status>
+</kw>
+<kw name="Input Text After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/primary"]</arg>
+<arg>500</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:58:22.828" endtime="20200527 14:58:22.928"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:58:22.929" endtime="20200527 14:58:23.118"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:58:22.827" endtime="20200527 14:58:23.119"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200527 14:58:23.120" level="INFO">Typing text '500' into text field '//*[@resource-id="ru.orangesoftware.financisto:id/primary"]'</msg>
+<status status="PASS" starttime="20200527 14:58:23.119" endtime="20200527 14:58:28.322"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:58:22.827" endtime="20200527 14:58:28.323"></status>
+</kw>
+<kw name="Input Text After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/rate"]</arg>
+<arg>1</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:58:28.325" endtime="20200527 14:58:29.047"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:58:29.048" endtime="20200527 14:58:29.286"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:58:28.324" endtime="20200527 14:58:29.286"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200527 14:58:29.287" level="INFO">Typing text '1' into text field '//*[@resource-id="ru.orangesoftware.financisto:id/rate"]'</msg>
+<status status="PASS" starttime="20200527 14:58:29.287" endtime="20200527 14:58:33.983"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:58:28.323" endtime="20200527 14:58:33.983"></status>
+</kw>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/primary" and @text="500"]</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:58:33.985" endtime="20200527 14:58:34.525"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:58:34.526" endtime="20200527 14:58:34.802"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:58:33.984" endtime="20200527 14:58:34.802"></status>
+</kw>
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/category_add"]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:58:34.804" endtime="20200527 14:58:34.857"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:58:34.858" endtime="20200527 14:58:34.911"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:58:34.803" endtime="20200527 14:58:34.911"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200527 14:58:34.912" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/category_add"]'.</msg>
+<status status="PASS" starttime="20200527 14:58:34.912" endtime="20200527 14:58:35.888"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:58:34.803" endtime="20200527 14:58:35.888"></status>
+</kw>
+<kw name="Input Text After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/primary"]</arg>
+<arg>Test</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:58:35.891" endtime="20200527 14:58:36.398"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:58:36.399" endtime="20200527 14:58:36.706"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:58:35.890" endtime="20200527 14:58:36.707"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200527 14:58:36.708" level="INFO">Typing text 'Test' into text field '//*[@resource-id="ru.orangesoftware.financisto:id/primary"]'</msg>
+<status status="PASS" starttime="20200527 14:58:36.707" endtime="20200527 14:58:41.626"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:58:35.889" endtime="20200527 14:58:41.627"></status>
+</kw>
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/scroll"]/android.widget.LinearLayout[1]/android.widget.LinearLayout[3]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.ImageView[2]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:58:41.628" endtime="20200527 14:58:42.129"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:58:42.129" endtime="20200527 14:58:42.214"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:58:41.627" endtime="20200527 14:58:42.214"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200527 14:58:42.215" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/scroll"]/android.widget.LinearLayout[1]/android.widget.LinearLayout[3]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.ImageView[2]'.</msg>
+<status status="PASS" starttime="20200527 14:58:42.215" endtime="20200527 14:58:42.688"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:58:41.627" endtime="20200527 14:58:42.688"></status>
+</kw>
+<kw name="Input Text After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/sms_number"]</arg>
+<arg>1</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:58:42.690" endtime="20200527 14:58:43.298"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:58:43.298" endtime="20200527 14:58:43.509"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:58:42.690" endtime="20200527 14:58:43.509"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200527 14:58:43.510" level="INFO">Typing text '1' into text field '//*[@resource-id="ru.orangesoftware.financisto:id/sms_number"]'</msg>
+<status status="PASS" starttime="20200527 14:58:43.510" endtime="20200527 14:58:48.168"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:58:42.689" endtime="20200527 14:58:48.169"></status>
+</kw>
+<kw name="Input Text After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/sms_template"]</arg>
+<arg>2</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:58:48.171" endtime="20200527 14:58:48.858"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:58:48.859" endtime="20200527 14:58:48.892"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:58:48.170" endtime="20200527 14:58:48.892"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200527 14:58:48.893" level="INFO">Typing text '2' into text field '//*[@resource-id="ru.orangesoftware.financisto:id/sms_template"]'</msg>
+<status status="PASS" starttime="20200527 14:58:48.892" endtime="20200527 14:58:53.528"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:58:48.169" endtime="20200527 14:58:53.529"></status>
+</kw>
+<kw name="Common::Click Ok Button" library="Keywords">
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/bOK"]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:58:53.530" endtime="20200527 14:58:54.030"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:58:54.031" endtime="20200527 14:58:54.191"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:58:53.530" endtime="20200527 14:58:54.191"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200527 14:58:54.192" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/bOK"]'.</msg>
+<status status="PASS" starttime="20200527 14:58:54.192" endtime="20200527 14:58:54.461"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:58:53.530" endtime="20200527 14:58:54.462"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:58:53.529" endtime="20200527 14:58:54.462"></status>
+</kw>
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/add_attribute"]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:58:54.465" endtime="20200527 14:58:54.997"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:58:54.997" endtime="20200527 14:58:55.322"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:58:54.463" endtime="20200527 14:58:55.323"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200527 14:58:55.323" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/add_attribute"]'.</msg>
+<status status="PASS" starttime="20200527 14:58:55.323" endtime="20200527 14:58:55.894"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:58:54.463" endtime="20200527 14:58:55.895"></status>
+</kw>
+<kw name="Input Text After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/name"]</arg>
+<arg>test</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:58:55.896" endtime="20200527 14:58:56.879"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:58:56.880" endtime="20200527 14:58:57.032"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:58:55.896" endtime="20200527 14:58:57.032"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200527 14:58:57.033" level="INFO">Typing text 'test' into text field '//*[@resource-id="ru.orangesoftware.financisto:id/name"]'</msg>
+<status status="PASS" starttime="20200527 14:58:57.033" endtime="20200527 14:59:01.623"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:58:55.895" endtime="20200527 14:59:01.623"></status>
+</kw>
+<kw name="Common::Click Ok Button" library="Keywords">
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/bOK"]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:01.626" endtime="20200527 14:59:02.123"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:02.124" endtime="20200527 14:59:02.258"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:01.626" endtime="20200527 14:59:02.258"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200527 14:59:02.259" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/bOK"]'.</msg>
+<status status="PASS" starttime="20200527 14:59:02.259" endtime="20200527 14:59:02.515"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:01.625" endtime="20200527 14:59:02.515"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:01.623" endtime="20200527 14:59:02.515"></status>
+</kw>
+<kw name="Common::Click Ok Button" library="Keywords">
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/bOK"]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:02.517" endtime="20200527 14:59:03.152"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:03.152" endtime="20200527 14:59:03.526"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:02.516" endtime="20200527 14:59:03.526"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200527 14:59:03.527" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/bOK"]'.</msg>
+<status status="PASS" starttime="20200527 14:59:03.526" endtime="20200527 14:59:04.295"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:02.516" endtime="20200527 14:59:04.296"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:02.516" endtime="20200527 14:59:04.296"></status>
+</kw>
+<kw name="Swipe" library="AppiumLibrary">
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<arguments>
+<arg>24</arg>
+<arg>1145</arg>
+<arg>144</arg>
+<arg>400</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:04.296" endtime="20200527 14:59:04.783"></status>
+</kw>
+<kw name="Input Text After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/list"]/android.widget.LinearLayout[4]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]</arg>
+<arg>test</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:04.785" endtime="20200527 14:59:05.885"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:05.885" endtime="20200527 14:59:06.214"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:04.784" endtime="20200527 14:59:06.214"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200527 14:59:06.215" level="INFO">Typing text 'test' into text field '//*[@resource-id="ru.orangesoftware.financisto:id/list"]/android.widget.LinearLayout[4]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]/android.widget.EditText[1]'</msg>
+<status status="PASS" starttime="20200527 14:59:06.214" endtime="20200527 14:59:11.287"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:04.784" endtime="20200527 14:59:11.288"></status>
+</kw>
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/location_add"]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:11.290" endtime="20200527 14:59:11.796"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:11.797" endtime="20200527 14:59:12.086"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:11.289" endtime="20200527 14:59:12.086"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200527 14:59:12.087" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/location_add"]'.</msg>
+<status status="PASS" starttime="20200527 14:59:12.086" endtime="20200527 14:59:12.406"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:11.288" endtime="20200527 14:59:12.407"></status>
+</kw>
+<kw name="Input Text After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/title"]</arg>
+<arg>Taipei</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:12.409" endtime="20200527 14:59:13.061"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:13.061" endtime="20200527 14:59:13.088"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:12.409" endtime="20200527 14:59:13.088"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200527 14:59:13.089" level="INFO">Typing text 'Taipei' into text field '//*[@resource-id="ru.orangesoftware.financisto:id/title"]'</msg>
+<status status="PASS" starttime="20200527 14:59:13.088" endtime="20200527 14:59:17.751"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:12.408" endtime="20200527 14:59:17.751"></status>
+</kw>
+<kw name="Common::Click Ok Button" library="Keywords">
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/bOK"]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:17.754" endtime="20200527 14:59:18.256"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:18.257" endtime="20200527 14:59:18.333"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:17.753" endtime="20200527 14:59:18.333"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200527 14:59:18.334" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/bOK"]'.</msg>
+<status status="PASS" starttime="20200527 14:59:18.333" endtime="20200527 14:59:18.596"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:17.753" endtime="20200527 14:59:18.597"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:17.752" endtime="20200527 14:59:18.597"></status>
+</kw>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/location"]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]//*[@text="Taipei"]</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:18.598" endtime="20200527 14:59:19.103"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:19.103" endtime="20200527 14:59:19.205"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:18.597" endtime="20200527 14:59:19.205"></status>
+</kw>
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/project_add"]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:19.206" endtime="20200527 14:59:19.272"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:19.273" endtime="20200527 14:59:19.367"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:19.206" endtime="20200527 14:59:19.368"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200527 14:59:19.368" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/project_add"]'.</msg>
+<status status="PASS" starttime="20200527 14:59:19.368" endtime="20200527 14:59:19.675"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:19.205" endtime="20200527 14:59:19.675"></status>
+</kw>
+<kw name="Input Text After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/title"]</arg>
+<arg>project</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:19.677" endtime="20200527 14:59:20.344"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:20.344" endtime="20200527 14:59:20.376"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:19.676" endtime="20200527 14:59:20.376"></status>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+</arguments>
+<msg timestamp="20200527 14:59:20.377" level="INFO">Typing text 'project' into text field '//*[@resource-id="ru.orangesoftware.financisto:id/title"]'</msg>
+<status status="PASS" starttime="20200527 14:59:20.377" endtime="20200527 14:59:24.971"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:19.676" endtime="20200527 14:59:24.972"></status>
+</kw>
+<kw name="Common::Click Ok Button" library="Keywords">
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/bOK"]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:24.976" endtime="20200527 14:59:25.570"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:25.570" endtime="20200527 14:59:25.600"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:24.975" endtime="20200527 14:59:25.600"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200527 14:59:25.601" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/bOK"]'.</msg>
+<status status="PASS" starttime="20200527 14:59:25.600" endtime="20200527 14:59:25.862"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:24.974" endtime="20200527 14:59:25.862"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:24.972" endtime="20200527 14:59:25.863"></status>
+</kw>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/project"]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]//*[@text="project"]</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:25.863" endtime="20200527 14:59:26.483"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:26.484" endtime="20200527 14:59:26.680"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:25.863" endtime="20200527 14:59:26.680"></status>
+</kw>
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/checkbox"]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:26.682" endtime="20200527 14:59:26.764"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:26.764" endtime="20200527 14:59:26.855"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:26.681" endtime="20200527 14:59:26.856"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200527 14:59:26.856" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/checkbox"]'.</msg>
+<status status="PASS" starttime="20200527 14:59:26.856" endtime="20200527 14:59:27.077"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:26.681" endtime="20200527 14:59:27.078"></status>
+</kw>
+<kw name="Common::Click Save Button" library="Keywords">
+<kw name="Click Element After It Is Visible" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="ru.orangesoftware.financisto:id/bSave"]</arg>
+</arguments>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:27.080" endtime="20200527 14:59:27.569"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:27.569" endtime="20200527 14:59:27.850"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:27.079" endtime="20200527 14:59:27.850"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${locator}</arg>
+</arguments>
+<msg timestamp="20200527 14:59:27.851" level="INFO">Clicking element '//*[@resource-id="ru.orangesoftware.financisto:id/bSave"]'.</msg>
+<status status="PASS" starttime="20200527 14:59:27.850" endtime="20200527 14:59:28.595"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:27.079" endtime="20200527 14:59:28.596"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:27.078" endtime="20200527 14:59:28.596"></status>
+</kw>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="android:id/list"]/android.widget.RelativeLayout[1]//*[@text="2,500.00 Dhs."]</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:28.596" endtime="20200527 14:59:29.145"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:29.145" endtime="20200527 14:59:29.261"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:28.596" endtime="20200527 14:59:29.261"></status>
+</kw>
+<kw name="Wait Until Element Is Visible On Page" library="Keywords">
+<arguments>
+<arg>//*[@resource-id="android:id/list"]/android.widget.RelativeLayout[2]//*[@text="3,500.00 Dhs."]</arg>
+</arguments>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:29.262" endtime="20200527 14:59:29.447"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${locator}</arg>
+<arg>timeout=3s</arg>
+<arg>error=Element should be visible.</arg>
+</arguments>
+<status status="PASS" starttime="20200527 14:59:29.447" endtime="20200527 14:59:29.669"></status>
+</kw>
+<status status="PASS" starttime="20200527 14:59:29.262" endtime="20200527 14:59:29.669"></status>
 </kw>
 <kw name="Close Application" library="AppiumLibrary" type="teardown">
 <doc>Closes the current application.</doc>
-<msg timestamp="20200513 21:16:24.224" level="DEBUG">Closing application with session id faa4e8c4-ea03-4670-acdc-ad259ead4ad5</msg>
-<msg timestamp="20200513 21:16:24.224" level="DEBUG">DELETE http://127.0.0.1:4723/wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5 {"sessionId": "faa4e8c4-ea03-4670-acdc-ad259ead4ad5"}</msg>
-<msg timestamp="20200513 21:16:25.861" level="DEBUG">http://127.0.0.1:4723 "DELETE /wd/hub/session/faa4e8c4-ea03-4670-acdc-ad259ead4ad5 HTTP/1.1" 200 14</msg>
-<msg timestamp="20200513 21:16:25.863" level="DEBUG">Finished Request</msg>
-<status status="PASS" starttime="20200513 21:16:24.223" endtime="20200513 21:16:25.863"></status>
+<status status="PASS" starttime="20200527 14:59:29.670" endtime="20200527 14:59:31.252"></status>
 </kw>
-<status status="FAIL" starttime="20200513 21:14:58.659" endtime="20200513 21:16:25.864" critical="yes">Element should be visible.</status>
+<status status="PASS" starttime="20200527 14:57:00.877" endtime="20200527 14:59:31.253" critical="yes"></status>
 </test>
-<status status="FAIL" starttime="20200513 21:14:58.535" endtime="20200513 21:16:25.864"></status>
+<status status="PASS" starttime="20200527 14:57:00.748" endtime="20200527 14:59:31.253"></status>
 </suite>
-<status status="FAIL" starttime="20200513 21:14:58.533" endtime="20200513 21:16:25.866"></status>
+<status status="PASS" starttime="20200527 14:57:00.746" endtime="20200527 14:59:31.255"></status>
 </suite>
-<status status="FAIL" starttime="20200513 21:14:58.531" endtime="20200513 21:16:25.868"></status>
+<status status="PASS" starttime="20200527 14:57:00.745" endtime="20200527 14:59:31.257"></status>
 </suite>
-<status status="FAIL" starttime="20200513 21:14:58.515" endtime="20200513 21:16:25.869"></status>
+<status status="PASS" starttime="20200527 14:57:00.727" endtime="20200527 14:59:31.259"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="STV Financisto Test Automation">STV Financisto Test Automation</stat>
-<stat pass="0" fail="1" id="s1-s1" name="FinancistoTest">STV Financisto Test Automation.FinancistoTest</stat>
-<stat pass="0" fail="1" id="s1-s1-s1" name="Account">STV Financisto Test Automation.FinancistoTest.Account</stat>
-<stat pass="0" fail="1" id="s1-s1-s1-s1" name="FT-40 Transfer account with complete data">STV Financisto Test Automation.FinancistoTest.Account.FT-40 Transfer account with complete data</stat>
+<stat pass="1" fail="0" id="s1" name="STV Financisto Test Automation">STV Financisto Test Automation</stat>
+<stat pass="1" fail="0" id="s1-s1" name="FinancistoTest">STV Financisto Test Automation.FinancistoTest</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="Account">STV Financisto Test Automation.FinancistoTest.Account</stat>
+<stat pass="1" fail="0" id="s1-s1-s1-s1" name="FT-40 Transfer account with complete data">STV Financisto Test Automation.FinancistoTest.Account.FT-40 Transfer account with complete data</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20200513 21:14:58.512" level="ERROR">Taking listener './dctlib/listeners/no_rush.py' into use failed: Importing listener 'dctlib\listeners\no_rush.py' failed: ModuleNotFoundError: No module named 'dctlib\\listeners\\no_rush'
-Traceback (most recent call last):
-  None
-PYTHONPATH:
-  C:\Users\DCTRACK\AppData\Local\Programs\Python\Python36\python36.zip
-  C:\Users\DCTRACK\AppData\Local\Programs\Python\Python36\DLLs
-  C:\Users\DCTRACK\AppData\Local\Programs\Python\Python36\lib
-  C:\Users\DCTRACK\AppData\Local\Programs\Python\Python36
-  C:\Users\DCTRACK\AppData\Roaming\Python\Python36\site-packages
-  C:\Users\DCTRACK\AppData\Local\Programs\Python\Python36\lib\site-packages
-  C:\Users\DCTRACK\AppData\Local\Programs\Python\Python36\lib\site-packages\win32
-  C:\Users\DCTRACK\AppData\Local\Programs\Python\Python36\lib\site-packages\win32\lib
-  C:\Users\DCTRACK\AppData\Local\Programs\Python\Python36\lib\site-packages\Pythonwin</msg>
 </errors>
 </robot>
