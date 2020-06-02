@@ -86,7 +86,30 @@ Transaction::Input Money
     [Arguments]    ${amount}
     Input Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/primary"]    ${amount}
 
+Transaction::Add Category
+    [Arguments]    ${category}
+    Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/category_add"]
+    Input Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/primary"]    ${category}
+    Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/bOK"]
+    Wait Until Element Is Visible On Page    //*[@resource-id="ru.orangesoftware.financisto:id/category"]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]//*[@text="${category}"]
 
+Transaction::Add Location
+    [Arguments]    ${location}
+    Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/location_add"]
+    Input Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/title"]    ${location}
+    Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/bOK"]
+    Wait Until Element Is Visible On Page    //*[@resource-id="ru.orangesoftware.financisto:id/location"]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]//*[@text="${location}"]
+
+Transaction::Add Project
+    [Arguments]    ${project}
+    Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/project_add"]
+    Input Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/title"]    ${project}
+    Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/bOK"]
+    Wait Until Element Is Visible On Page    //*[@resource-id="ru.orangesoftware.financisto:id/project"]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]//*[@text="${project}"]
+
+Transaction::Input Remark
+    [Arguments]    ${text}
+    Input Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/list"]/android.widget.LinearLayout[8]/android.widget.RelativeLayout[1]/android.widget.EditText[1]    ${text}
 
 
 

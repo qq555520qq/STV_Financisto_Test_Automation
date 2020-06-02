@@ -18,12 +18,12 @@
 		<link>
 			<name>libspecs/AppiumLibrary.py</name>
 			<type>1</type>
-			<location>C:/Program Files/Python36/Lib/site-packages/AppiumLibrary/keywords/_element.py</location>
+			<location>C:/Users/Lab1321/AppData/Local/Programs/Python/Python36/Lib/site-packages/AppiumLibrary/keywords/_applicationmanagement.py</location>
 		</link>
 		<link>
-			<name>libspecs/BuiltIn.py</name>
+			<name>libspecs/SeleniumLibrary.py</name>
 			<type>1</type>
-			<location>C:/Users/Lab1321/AppData/Local/Programs/Python/Python36/lib/site-packages/robot/libraries/BuiltIn.py</location>
+			<location>C:/Users/Lab1321/AppData/Local/Programs/Python/Python36/Lib/site-packages/SeleniumLibrary/__init__.py</location>
 		</link>
 	</linkedResources>
 </projectDescription>
