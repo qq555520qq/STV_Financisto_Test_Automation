@@ -14,4 +14,16 @@
 	<natures>
 		<nature>org.robotframework.ide.eclipse.main.plugin.robotNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>libspecs/AppiumLibrary.py</name>
+			<type>1</type>
+			<location>C:/Users/Lab1321/AppData/Local/Programs/Python/Python36/Lib/site-packages/AppiumLibrary/keywords/_applicationmanagement.py</location>
+		</link>
+		<link>
+			<name>libspecs/SeleniumLibrary.py</name>
+			<type>1</type>
+			<location>C:/Users/Lab1321/AppData/Local/Programs/Python/Python36/Lib/site-packages/SeleniumLibrary/__init__.py</location>
+		</link>
+	</linkedResources>
 </projectDescription>
