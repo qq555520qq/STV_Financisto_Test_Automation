@@ -89,6 +89,7 @@ Transaction::Input Money
 Common::Click Ok Button
     Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/bOK"]
 
-
+Go To Account Page
+    Click Element After It Is Visible    //*[@resource-id="android:id/tabs"]/android.widget.RelativeLayout[1]//*[@text="帳戶"]
 
 
