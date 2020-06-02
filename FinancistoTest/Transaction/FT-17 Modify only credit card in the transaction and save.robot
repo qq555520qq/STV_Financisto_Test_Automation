@@ -11,14 +11,19 @@ Test Teardown    Run Keywords    Delete Transaction    expenditure
 ...                       AND    Close Application
 
 *** Test Cases ***
-FT-10 Modify only payee in the transaction and save
+FT-17 Modify only credit card in the transaction and save
     Click Element After It Is Visible    //*[@resource-id="android:id/list"]/android.widget.RelativeLayout[2]
     Click Element After It Is Visible    //*[@text="編輯"]
-    Transaction::Add Payee    payee
+    Transaction::Click Credit Card Option
     Common::Click Save Button
     ${actualAccountName} =    Get Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/top"]
     Should Be Equal    ${actualAccountName}    AccountForTest
     ${actualTransactionInfo} =    Get Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/center"]
-    Should Contain Any     ${actualTransactionInfo}    expenditure    payee    Taipei    This is a test
+    Should Contain Any     ${actualTransactionInfo}    expenditure    Taipei    This is a test
     ${actualAccountMoney} =    Get Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/right_center"]
     Should Be Equal    ${actualAccountMoney}    -3,000.00 Dhs.
+
+*** Keywords ***
+Transaction::Click Credit Card Option
+    Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/checkbox"]
+
