@@ -92,4 +92,42 @@ Common::Click Ok Button
 Go To Account Page
     Click Element After It Is Visible    //*[@resource-id="android:id/tabs"]/android.widget.RelativeLayout[1]//*[@text="帳戶"]
 
+Transaction::Add Category
+    [Arguments]    ${category}
+    Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/category_add"]
+    Input Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/primary"]    ${category}
+    Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/bOK"]
+    Wait Until Element Is Visible On Page    //*[@resource-id="ru.orangesoftware.financisto:id/category"]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]//*[@text="${category}"]
 
+Transaction::Add Location
+    [Arguments]    ${location}
+    Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/location_add"]
+    Input Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/title"]    ${location}
+    Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/bOK"]
+    Wait Until Element Is Visible On Page    //*[@resource-id="ru.orangesoftware.financisto:id/location"]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]//*[@text="${location}"]
+
+Transaction::Add Project
+    [Arguments]    ${project}
+    Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/project_add"]
+    Input Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/title"]    ${project}
+    Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/bOK"]
+    Wait Until Element Is Visible On Page    //*[@resource-id="ru.orangesoftware.financisto:id/project"]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]//*[@text="${project}"]
+
+Transaction::Input Remark
+    [Arguments]    ${text}
+    Input Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/list"]/android.widget.LinearLayout[8]/android.widget.RelativeLayout[1]/android.widget.EditText[1]    ${text}
+
+Create A New Transaction
+    [Arguments]    ${account}    ${payee}    ${category}    ${money}    ${location}    ${remark}    ${project}
+    Detail::Click Add Button
+    Transaction::Select Account    ${account}
+    Transaction::Add Payee    ${payee}
+    Transaction::Add Category    ${category}
+    Transaction::Input Money    ${money}
+    Transaction::Add Location    ${location}
+    Transaction::Input Remark    ${remark}
+    Transaction::Add Project    ${project}
+    Common::Click Save Button
+
+Transaction::Filter::Click Ok Button
+    Click Element After It Is Visible    android:id/button1
