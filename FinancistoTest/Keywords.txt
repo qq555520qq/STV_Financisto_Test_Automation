@@ -132,3 +132,6 @@ Create A New Transaction
 
 Transaction::Filter::Click Ok Button
     Click Element After It Is Visible    android:id/button1
+
+Go To Report Page
+    Click Element After It Is Visible    //*[@resource-id="android:id/tabs"]/android.widget.RelativeLayout[4]//*[@text="報告"]

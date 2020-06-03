@@ -19,5 +19,4 @@ FT-51 Filter transaction with payee
     Transaction::Filter::Click Ok Button
     Wait Until Element Is Visible On Page    //*[@text="accpetor"]
     Common::Click Ok Button
-    Wait Until Element Is Visible On Page    //*[@resource-id="android:id/list"]/android.widget.RelativeLayout[1]//*[@text="-1,000.00 Dhs."]
-    Wait Until Element Is Visible On Page    //*[@resource-id="android:id/list"]/android.widget.RelativeLayout[2]//*[@text="-2,000.00 Dhs."]
+    Wait Until Element Is Visible On Page    //*[@resource-id="android:id/list"]/android.widget.RelativeLayout[1]//*[@text="-2,000.00 Dhs."]

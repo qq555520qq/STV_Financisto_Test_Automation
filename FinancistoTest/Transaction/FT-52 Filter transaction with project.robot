@@ -12,12 +12,11 @@ Test Teardown    Run Keywords    Delete Transaction    expenditure
 ...                       AND    Close Application
 
 *** Test Cases ***
-FT-53 Filter transaction with project
+FT-52 Filter transaction with project
     Click Element After It Is Visible    ru.orangesoftware.financisto:id/bFilter
-    Click Element After It Is Visible    //*[@text="地點"]
-    Click Element After It Is Visible    //*[@text="Taipei"]
+    Click Element After It Is Visible    //*[@text="專案"]
+    Click Element After It Is Visible    //*[@text="stvProject"]
     Transaction::Filter::Click Ok Button
-    Wait Until Element Is Visible On Page    //*[@text="Taipei"]
+    Wait Until Element Is Visible On Page    //*[@text="stvProject"]
     Common::Click Ok Button
-    Wait Until Element Is Visible On Page    //*[@resource-id="android:id/list"]/android.widget.RelativeLayout[1]//*[@text="-1,000.00 Dhs."]
-    Wait Until Element Is Visible On Page    //*[@resource-id="android:id/list"]/android.widget.RelativeLayout[2]//*[@text="-2,000.00 Dhs."]
+    Wait Until Element Is Visible On Page    //*[@resource-id="android:id/list"]/android.widget.RelativeLayout[1]//*[@text="-2,000.00 Dhs."]
