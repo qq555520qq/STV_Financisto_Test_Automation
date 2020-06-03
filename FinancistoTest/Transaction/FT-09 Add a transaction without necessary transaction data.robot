@@ -1,6 +1,6 @@
 *** Settings ***
 Library    AppiumLibrary
-Library    ../../financialAppiumLibrary.py
+# Library    ../../financialAppiumLibrary.py
 Resource    ../Keywords.txt
 Test Setup    Run Keywords    Open Financisto Application
 ...                    AND    Create A New Account    accountName=AccountForTest
