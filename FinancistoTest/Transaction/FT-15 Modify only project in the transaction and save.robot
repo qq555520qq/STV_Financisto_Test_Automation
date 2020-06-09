@@ -4,7 +4,7 @@ Resource    ../Keywords.txt
 Test Setup    Run Keywords    Open Financisto Application
 ...                    AND    Create A New Account    accountName=AccountForTest
 ...                    AND    Go To Detail Page
-...                    AND    Create A New Transaction    account=AccountForTest    payee=acceptor    category=expenditure    money=3000    location=Taipei    remark=This is a test    project=stvProject
+...                    AND    Create A New Transaction    account=AccountForTest    payee=accepter    category=expenditure    money=3000    location=Taipei    remark=This is a test    project=stvProject
 Test Teardown    Run Keywords    Delete Transaction    expenditure
 ...                       AND    Click Element After It Is Visible    //*[@resource-id="android:id/tabs"]/android.widget.RelativeLayout[1]//*[@text="帳戶"]
 ...                       AND    Delete Account    AccountForTest

@@ -4,12 +4,13 @@ Resource    ../Keywords.txt
 Test Setup    Run Keywords    Open Financisto Application
 ...                    AND    Create A New Account    accountName=AccountForTest
 ...                    AND    Go To Detail Page
-...                    AND    Create A New Transaction    AccountForTest    accpetor    expenditure    2000    Taipei    Test    stvProject
-...                    AND    Create A New Transaction    AccountForTest    accpetor    expenditure    1000    Taipei    Test    stvProject
+...                    AND    Create A New Transaction    AccountForTest    accepter    expenditure    2000    Taipei    Test    stvProject
+...                    AND    Create A New Transaction    AccountForTest    james    play    1000    Taiwan    suite    saProject
 Test Teardown    Run Keywords    Go Back
 ...                       AND    Go Back
 ...                       AND    Go To Detail Page
 ...                       AND    Delete Transaction    expenditure
+...                       AND    Delete Transaction    play
 ...                       AND    Go To Account Page
 ...                       AND    Delete Account    AccountForTest
 ...                       AND    Close Application

@@ -4,7 +4,7 @@ Resource    ../Keywords.txt
 Test Setup    Run Keywords    Open Financisto Application
 ...                    AND    Create A New Account    accountName=AccountForTest
 ...                    AND    Go To Detail Page
-...                    AND    Create A New Transaction    account=AccountForTest    payee=acceptor    category=expenditure    money=3000    location=Taipei    remark=This is a test    project=stvProject
+...                    AND    Create A New Transaction    account=AccountForTest    payee=accepter    category=expenditure    money=3000    location=Taipei    remark=This is a test    project=stvProject
 Test Teardown    Run Keywords    Delete Transaction    expenditure
 ...                       AND    Click Element After It Is Visible    //*[@resource-id="android:id/tabs"]/android.widget.RelativeLayout[1]//*[@text="帳戶"]
 ...                       AND    Delete Account    AccountForTest
@@ -19,6 +19,6 @@ FT-12 Modify only money in the transaction and save
     ${actualAccountName} =    Get Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/top"]
     Should Be Equal    ${actualAccountName}    AccountForTest
     ${actualTransactionInfo} =    Get Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/center"]
-    Should Contain Any     ${actualTransactionInfo}    expenditure    acceptor    Taipei    This is a test
+    Should Contain Any     ${actualTransactionInfo}    expenditure    accepter    Taipei    This is a test
     ${actualAccountMoney} =    Get Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/right_center"]
     Should Be Equal    ${actualAccountMoney}    -2,000.00 Dhs.

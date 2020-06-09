@@ -13,7 +13,7 @@ FT-07 Add a transaction with complete transaction data
     Go To Detail Page
     Detail::Click Add Button
     Transaction::Select Account    AccountForTest
-    Transaction::Add Payee    acceptor
+    Transaction::Add Payee    accepter
     Transaction::Add Category    expenditure
     Transaction::Input Money    3000
     Transaction::Add Location    Taipei
@@ -23,6 +23,6 @@ FT-07 Add a transaction with complete transaction data
     ${actualAccountName} =    Get Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/top"]
     Should Be Equal    ${actualAccountName}    AccountForTest
     ${actualTransactionInfo} =    Get Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/center"]
-    Should Contain Any     ${actualTransactionInfo}    expenditure    acceptor    Taipei    This is a test
+    Should Contain Any     ${actualTransactionInfo}    expenditure    accepter    Taipei    This is a test
     ${actualAccountMoney} =    Get Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/right_center"]
     Should Be Equal    ${actualAccountMoney}    -3,000.00 Dhs.
