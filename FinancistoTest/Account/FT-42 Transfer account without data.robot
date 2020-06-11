@@ -4,7 +4,8 @@ Resource    ../Keywords.txt
 Test Setup    Run Keywords    Open Financisto Application
 ...                    AND    Create A New Account    AccountForTest
 ...                    AND    Create A New Account    AccountForTransfer
-Test Teardown    Run Keywords    Delete Account    AccountForTest
+Test Teardown    Run Keywords    Go Back
+...                       AND    Delete Account    AccountForTest
 ...                       AND    Delete Account    AccountForTransfer
 ...                       AND    Close Application
 

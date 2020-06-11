@@ -56,7 +56,7 @@ Create A New Account
 
 Delete Transaction
     [Arguments]    ${transactionInfo}=${EMPTY}
-    Click Element After It Is Visible    //*[@resource-id="android:id/list"]/android.widget.RelativeLayout[1]//*[contains(@text,"${transactionInfo}")]
+    Click Element After It Is Visible    //*[@resource-id="android:id/list"]//*[contains(@text,"${transactionInfo}")]
     Click Element After It Is Visible    //*[@text="刪除"]
     Click Element After It Is Visible    //*[@resource-id="android:id/button1"]
     Wait Until Page Does Not Contain Element    //*[@resource-id="android:id/list"]//*[@text="${transactionInfo}"]
@@ -135,3 +135,7 @@ Transaction::Filter::Click Ok Button
 
 Go To Report Page
     Click Element After It Is Visible    //*[@resource-id="android:id/tabs"]/android.widget.RelativeLayout[4]//*[@text="報告"]
+
+Transaction::Filter::Remove Filter
+    Click Element After It Is Visible    ru.orangesoftware.financisto:id/bFilter
+    Click Element After It Is Visible    ru.orangesoftware.financisto:id/bNoFilter
