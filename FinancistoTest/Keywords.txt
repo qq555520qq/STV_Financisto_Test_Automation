@@ -193,3 +193,20 @@ Create A New Budget
     Budget::Select Project    stvProject
     Budget::Input Money    2000
     Common::Click Ok Button
+
+Create A Currency 
+    [Arguments]    ${currencyName}
+    Click Element After It Is Visible    //*[@resource-id="android:id/tabs"]/android.widget.RelativeLayout[5]
+    Click Element After It Is Visible    //*[@resource-id="android:id/list"]/android.widget.RelativeLayout[2]
+    Click Element After It Is Visible    //*[@resource-id="android:id/select_dialog_listview"]/android.widget.RelativeLayout[1]
+    Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/bAdd"]
+    # Scroll    //*[@text="新幣值..."]    //*[@text="${currencyName}"]
+    # Swipe By Percent    50    50    50    70    1000
+    Click Element After It Is Visible    //*[@text="${currencyName}"]
+    Click Element After It Is Visible    //*[@resource-id="android:id/button1"]
+
+Delete currency
+    [Arguments]    ${currencyName}
+    Long Press    //*[@resource-id="android:id/list"]//*[@text='${currencyName}']
+    Click Element After It Is Visible    //android.widget.ListView/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]
+    Wait Until Page Does Not Contain Element    //*[@resource-id="android:id/list"]/android.widget.RelativeLayout[1]//*[@text()='${currencyName}']    timeout=3s    error=AED currency should not be visible.
