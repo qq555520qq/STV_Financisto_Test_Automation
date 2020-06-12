@@ -57,12 +57,12 @@ Create A New Account
 Delete Transaction
     [Arguments]    ${transactionInfo}=${EMPTY}
     Click Element After It Is Visible    //*[@resource-id="android:id/list"]//*[contains(@text,"${transactionInfo}")]
-    Click Element After It Is Visible    //*[@text="?™Èô§"]
+    Click Element After It Is Visible    //*[@text="Âà™Èô§"]
     Click Element After It Is Visible    //*[@resource-id="android:id/button1"]
     Wait Until Page Does Not Contain Element    //*[@resource-id="android:id/list"]//*[@text="${transactionInfo}"]
 
 Go To Detail Page
-    Click Element After It Is Visible    //*[@resource-id="android:id/tabs"]/android.widget.RelativeLayout[2]//*[@text="?éÁ¥∞"]
+    Click Element After It Is Visible    //*[@resource-id="android:id/tabs"]/android.widget.RelativeLayout[2]//*[@text="ÊòéÁ¥∞"]
 
 Detail::Click Add Button
     Click Element After It Is Visible   //*[@resource-id="ru.orangesoftware.financisto:id/bAdd"]
@@ -82,6 +82,9 @@ Transaction::Add Payee
 
 Common::Click Save Button
     Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/bSave"]
+
+Common::Click Cancel Button
+    Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/bCancel"]
 
 Transaction::Input Money
     [Arguments]    ${amount}
@@ -134,14 +137,14 @@ Transaction::Filter::Click Ok Button
     Click Element After It Is Visible    android:id/button1
 
 Go To Report Page
-    Click Element After It Is Visible    //*[@resource-id="android:id/tabs"]/android.widget.RelativeLayout[4]//*[@text="?±Â?"]
+    Click Element After It Is Visible    //*[@resource-id="android:id/tabs"]/android.widget.RelativeLayout[4]//*[@text="Â†±Âëä"]
 
 Transaction::Filter::Remove Filter
     Click Element After It Is Visible    ru.orangesoftware.financisto:id/bFilter
     Click Element After It Is Visible    ru.orangesoftware.financisto:id/bNoFilter
 
 Go To Budget Page
-    Click Element After It Is Visible    //*[@resource-id="android:id/tabs"]/android.widget.RelativeLayout[3]//*[@text="?êÁ?"]
+    Click Element After It Is Visible    //*[@resource-id="android:id/tabs"]/android.widget.RelativeLayout[3]//*[@text="È†êÁÆó"]
 
 Budget::Click Add Button
     Click Element After It Is Visible   //*[@resource-id="ru.orangesoftware.financisto:id/bAdd"]
@@ -158,14 +161,14 @@ Budget::Select Account
 
 Budget::Select Category
     [Arguments]    ${category}
-    Click Element After It Is Visible    //*[@text="?ÜÈ?"]
+    Click Element After It Is Visible    //*[@text="ÂàÜÈ°û"]
     Click Element After It Is Visible    //*[@resource-id="android:id/select_dialog_listview"]//*[@text="${category}"]
     Click Element After It Is Visible    //*[@resource-id="android:id/button1"]
     Wait Until Element Is Visible On Page    //*[@resource-id="ru.orangesoftware.financisto:id/category"]//*[@text="${category}"]
 
 Budget::Select Project
     [Arguments]    ${project}
-    Click Element After It Is Visible    //*[@text="Â∞àÊ?"]
+    Click Element After It Is Visible    //*[@text="Â∞àÊ°à"]
     Click Element After It Is Visible    //*[@resource-id="android:id/select_dialog_listview"]//*[@text="${project}"]
     Click Element After It Is Visible    //*[@resource-id="android:id/button1"]
     Wait Until Element Is Visible On Page    //*[@resource-id="ru.orangesoftware.financisto:id/project"]//*[@text="${project}"]
@@ -175,8 +178,18 @@ Budget::Input Money
     Input Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/primary"]    ${money}
 
 Delete Budget
-    [Arguments]    ${budgetInfo}
+    [Arguments]    ${budgetInfo}=${EMPTY}
     Long Press    //*[@resource-id="android:id/list"]/android.widget.RelativeLayout[1]
-    Click Element After It Is Visible    //*[@text="?™Èô§"]
+    Click Element After It Is Visible    //*[@text="Âà™Èô§"]
     Click Element After It Is Visible    //*[@resource-id="android:id/button1"]
     Wait Until Page Does Not Contain Element    //*[@resource-id="android:id/list"]//*[@text="${budgetInfo}"]
+
+Create A New Budget
+    [Arguments]    ${name}    ${account}    ${category}    ${project}    ${money}
+    Budget::Click Add Button
+    Budget::Input Name    myBudget
+    Budget::Select Account    AccountForTest
+    Budget::Select Category    expenditure
+    Budget::Select Project    stvProject
+    Budget::Input Money    2000
+    Common::Click Ok Button

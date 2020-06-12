@@ -13,4 +13,4 @@ Test Teardown    Run Keywords    Delete Transaction
 FT-09 Add a transaction without neccessary transaction data
     Go To Detail Page
     Detail::Click Add Button
-    Common::Click Save Button
+    Go Back

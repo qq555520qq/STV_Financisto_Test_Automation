@@ -5,22 +5,17 @@ Test Setup    Run Keywords    Open Financisto Application
 ...                    AND    Create A New Account    accountName=AccountForTest
 ...                    AND    Go To Detail Page
 ...                    AND    Create A New Transaction    account=AccountForTest    payee=accepter    category=expenditure    money=3000    location=Taipei    remark=This is a test    project=stvProject
-Test Teardown    Run Keywords    Delete Budget    AccountForTest
-...                       AND    Click Element After It Is Visible    //*[@resource-id="android:id/tabs"]/android.widget.RelativeLayout[2]//*[@text="明細"]
+...                    AND    Go To Budget Page
+...                    AND    Create A New Budget    name=myBudget    account=AccountForTest    category=expenditure    project=stvProject    money=2000
+Test Teardown    Run Keywords    Click Element After It Is Visible    //*[@resource-id="android:id/tabs"]/android.widget.RelativeLayout[2]//*[@text="明細"]
 ...                       AND    Delete Transaction    expenditure
 ...                       AND    Click Element After It Is Visible    //*[@resource-id="android:id/tabs"]/android.widget.RelativeLayout[1]//*[@text="帳戶"]
 ...                       AND    Delete Account    AccountForTest
 ...                       AND    Close Application
 
 *** Test Cases ***
-FT-19 Add a budget with complete budget data
-    Go to Budget Page
-    Budget::Click Add Button
-    Budget::Input Name    myBudget
-    Budget::Select Account    AccountForTest
-    Budget::Select Category    expenditure
-    Budget::Select Project    stvProject
-    Budget::Input Money    2000
-    Common::Click Ok Button
-    ${actualBudgetName} =    Get Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/center"]
-    Should Be Equal    ${actualBudgetName}    myBudget
+FT-32 Delete budget data
+    Long Press    //*[@resource-id="android:id/list"]/android.widget.RelativeLayout[1]
+    Click Element After It Is Visible    //*[@text="刪除"]
+    Click Element After It Is Visible    //*[@resource-id="android:id/button1"]
+    Wait Until Page Does Not Contain Element    //*[@resource-id="android:id/list"]//*[@text="myBudget"]
