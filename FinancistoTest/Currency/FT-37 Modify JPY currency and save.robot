@@ -2,8 +2,8 @@
 Library    AppiumLibrary
 Resource    ../Keywords.txt
 Test Setup    Run Keywords    Open Financisto Application 
-...                    AND    Create A Currency    currencyName=JPY ()
-Test Teardown    Run Keywords    Delete Currency    currencyName=JPY ()
+...                    AND    Create A Currency    currencyName=JPY (Japanese yen)
+Test Teardown    Run Keywords    Delete Currency    currencyName=JPY (Japanese yen)
 ...                       AND    Close Application
 
 *** Test Cases ***

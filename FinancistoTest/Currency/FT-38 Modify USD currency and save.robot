@@ -2,8 +2,8 @@
 Library    AppiumLibrary
 Resource    ../Keywords.txt
 Test Setup    Run Keywords    Open Financisto Application 
-...                    AND    Create A Currency    currencyName=USD ()
-Test Teardown    Run Keywords    Delete Currency    currencyName=USD ()
+...                    AND    Create A Currency    currencyName=USD (United States dollar)
+Test Teardown    Run Keywords    Delete Currency    currencyName=USD (United States dollar)
 ...                       AND    Close Application
 
 *** Test Cases ***
