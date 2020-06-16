@@ -12,7 +12,7 @@ Test Teardown    Run Keywords    Delete Transaction    category
 
 *** Test Cases ***
 FT-11 Modify only category in the transaction and save
-    Click Element After It Is Visible    //*[@resource-id="android:id/list"]/android.widget.RelativeLayout[2]
+    Click Element After It Is Visible    //*[@resource-id="android:id/list"]/android.widget.RelativeLayout[1]
     Click Element After It Is Visible    //*[@text="編輯"]
     Transaction::Add Category    category
     Common::Click Save Button

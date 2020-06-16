@@ -12,8 +12,9 @@ Test Teardown    Run Keywords    Delete Transaction    expenditure
 
 *** Test Cases ***
 FT-12 Modify only money in the transaction and save
-    Click Element After It Is Visible    //*[@resource-id="android:id/list"]/android.widget.RelativeLayout[2]
+    Click Element After It Is Visible    //*[@resource-id="android:id/list"]/android.widget.RelativeLayout[1]
     Click Element After It Is Visible    //*[@text="編輯"]
+    Clear Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/primary"]
     Transaction::Input Money    2000
     Common::Click Save Button
     ${actualAccountName} =    Get Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/top"]

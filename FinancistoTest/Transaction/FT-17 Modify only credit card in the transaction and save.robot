@@ -12,7 +12,7 @@ Test Teardown    Run Keywords    Delete Transaction    expenditure
 
 *** Test Cases ***
 FT-17 Modify only credit card in the transaction and save
-    Click Element After It Is Visible    //*[@resource-id="android:id/list"]/android.widget.RelativeLayout[2]
+    Click Element After It Is Visible    //*[@resource-id="android:id/list"]/android.widget.RelativeLayout[1]
     Click Element After It Is Visible    //*[@text="編輯"]
     Transaction::Click Credit Card Option
     Common::Click Save Button
