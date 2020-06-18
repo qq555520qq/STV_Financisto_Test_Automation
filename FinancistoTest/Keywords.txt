@@ -208,7 +208,7 @@ Swipe Until Currency Is Visible
     [Arguments]    ${currencyName}
     :FOR    ${i}    IN RANGE    1000
     \    ${isTrue} =    Run Keyword And Return Status    Wait Until Element Is Visible    //*[@text="${currencyName}"]    timeout=0.5s
-    \    Run Keyword If    ${isTrue} == ${False}    Swipe    31    700    31    196    1000
+    \    Run Keyword If    ${isTrue} == ${False}    Swipe    47    1264    47    488    1000
     \    Exit For Loop If    ${isTrue} == ${True}
 
 Delete currency
