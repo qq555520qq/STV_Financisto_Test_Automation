@@ -14,6 +14,7 @@ Test Teardown    Run Keywords    Delete Transaction    expenditure
 FT-17 Modify only credit card in the transaction and save
     Click Element After It Is Visible    //*[@resource-id="android:id/list"]/android.widget.RelativeLayout[1]
     Click Element After It Is Visible    //*[@text="編輯"]
+    Swipe    47    700    47    196    1000
     Transaction::Click Credit Card Option
     Common::Click Save Button
     ${actualAccountName} =    Get Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/top"]
