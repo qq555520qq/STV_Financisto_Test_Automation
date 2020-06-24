@@ -16,7 +16,7 @@ FT-05 Modify the account currency
     Click Element After It Is Visible    //*[@resource-id="android:id/button1"]
     Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/bOK"]
     Click Element After It Is Visible    //*[@resource-id="android:id/list"]//*[@text="AccountForTest"]
-    Click Element After It Is Visible    //*[@text="資�?"]
+    Click Element After It Is Visible    //*[@text="資訊"]
     ${actualAccountCurrency} =    Get Text After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/list"]/android.widget.LinearLayout[1]/android.widget.RelativeLayout[1]//*[@text="Afghan afghani"]
     Should Be Equal    ${actualAccountCurrency}    Afghan afghani
     Click Element After It Is Visible    //*[@resource-id="ru.orangesoftware.financisto:id/bClose"]
