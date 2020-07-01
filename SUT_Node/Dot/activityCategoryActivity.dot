@@ -1,0 +1,28 @@
+digraph activityCategoryActivity{
+imagepath="output/20200616_161901_financisto_NFS";
+state_1514[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1514</td></tr><tr><td>incoming: 5</td></tr><tr><td>outgoing: 6</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1514.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1514.png"];
+state_1517[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1517</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1517.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1517.png"];
+state_1581[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1581</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 0</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1581.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1581.png"];
+activityCategorySelectorActivity [fontcolor = teal,color = teal];
+activityCategorySelectorActivity -> state_1514 [label = "   click(\"選取 index=1\"): 1464   ",fontcolor = teal,color = teal];
+activityCategorySelectorActivity [fontcolor = teal,color = teal];
+activityCategorySelectorActivity -> state_1517 [label = "   click(\"選取 index=1\"): 1467   ",fontcolor = teal,color = teal];
+activityCategoryListActivity2 [fontcolor = teal,color = teal];
+activityCategoryListActivity2 -> state_1514 [label = "   click(\"index=0\"): 1462, 3163   ",fontcolor = teal,color = teal];
+activityCategorySelectorActivity [fontcolor = teal,color = teal];
+state_1514 -> activityCategorySelectorActivity [label = "   click(\"index=0\"): 1463   ",fontcolor = teal,color = teal];
+activitySmsTemplateActivity [fontcolor = teal,color = teal];
+state_1514 -> activitySmsTemplateActivity [label = "   click(\"index=0\"): 1470   ",fontcolor = teal,color = teal];
+activitySmsTemplateActivity [fontcolor = teal,color = teal];
+state_1514 -> activitySmsTemplateActivity [label = "   click(\"index=2\"): 1511   ",fontcolor = teal,color = teal];
+activityAttributeActivity [fontcolor = teal,color = teal];
+state_1514 -> activityAttributeActivity [label = "   click(\"index=2\"): 3164   ",fontcolor = teal,color = teal];
+state_1514 -> state_1514[label = "click(\"index=1\"): 1469
+"];
+activityCategorySelectorActivity [fontcolor = teal,color = teal];
+state_1517 -> activityCategorySelectorActivity [label = "   click(\"index=0\"): 1466   ",fontcolor = teal,color = teal];
+activitySmsTemplateActivity [fontcolor = teal,color = teal];
+activitySmsTemplateActivity -> state_1514 [label = "   click(\"取消 index=1\"): 1510   ",fontcolor = teal,color = teal];
+activitySmsTemplateActivity [fontcolor = teal,color = teal];
+activitySmsTemplateActivity -> state_1514 [label = "   click(\"取消 index=1\"): 1528   ",fontcolor = teal,color = teal];
+}

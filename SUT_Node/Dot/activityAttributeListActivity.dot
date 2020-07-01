@@ -1,0 +1,18 @@
+digraph activityAttributeListActivity{
+imagepath="output/20200616_161901_financisto_NFS";
+state_3254[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3254</td></tr><tr><td>incoming: 6</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3254.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3254.png"];
+activityCategoryListActivity2 [fontcolor = teal,color = teal];
+activityCategoryListActivity2 -> state_3254 [label = "   click(\"index=1\"): 3083   ",fontcolor = teal,color = teal];
+activityAttributeActivity [fontcolor = teal,color = teal];
+state_3254 -> activityAttributeActivity [label = "   click(\"index=0\"): 3084, 3091, 3112, 3119, 3139   ",fontcolor = teal,color = teal];
+activityAttributeActivity [fontcolor = teal,color = teal];
+activityAttributeActivity -> state_3254 [label = "   click(\"取消 index=1\"): 3090   ",fontcolor = teal,color = teal];
+activityAttributeActivity [fontcolor = teal,color = teal];
+activityAttributeActivity -> state_3254 [label = "   click(\"取消 index=1\"): 3111   ",fontcolor = teal,color = teal];
+activityAttributeActivity [fontcolor = teal,color = teal];
+activityAttributeActivity -> state_3254 [label = "   click(\"取消 index=1\"): 3118   ",fontcolor = teal,color = teal];
+activityAttributeActivity [fontcolor = teal,color = teal];
+activityAttributeActivity -> state_3254 [label = "   click(\"取消 index=1\"): 3138   ",fontcolor = teal,color = teal];
+activityAttributeActivity [fontcolor = teal,color = teal];
+activityAttributeActivity -> state_3254 [label = "   click(\"取消 index=1\"): 3154   ",fontcolor = teal,color = teal];
+}

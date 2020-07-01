@@ -1,0 +1,10 @@
+graph temp {
+rankdir=LR;
+imagepath = "output/20200616_161901_financisto_NFS/States";
+pic1[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>Original pic</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="1103.png"/></td></tr></table>>,shape=box,margin=0,URL="1103.png"];
+pic2[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="1263.png"/></td></tr></table>>,shape=box,margin=0,URL="1263.png"];
+pic3[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="1929.png"/></td></tr></table>>,shape=box,margin=0,URL="1929.png"];
+pic4[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="2072.png"/></td></tr></table>>,shape=box,margin=0,URL="2072.png"];
+pic5[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="2768.png"/></td></tr></table>>,shape=box,margin=0,URL="2768.png"];
+pic6[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="3492.png"/></td></tr></table>>,shape=box,margin=0,URL="3492.png"];
+}

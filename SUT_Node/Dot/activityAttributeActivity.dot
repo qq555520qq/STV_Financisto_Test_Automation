@@ -1,0 +1,47 @@
+digraph activityAttributeActivity{
+imagepath="output/20200616_161901_financisto_NFS";
+state_3255[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3255</td></tr><tr><td>incoming: 6</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 3</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3255.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3255.png"];
+state_3257[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3257</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 4</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3257.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3257.png"];
+state_3264[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3264</td></tr><tr><td>incoming: 4</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 3</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3264.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3264.png"];
+state_3266[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3266</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 4</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3266.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3266.png"];
+state_3269[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3269</td></tr><tr><td>incoming: 4</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 4</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3269.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3269.png"];
+state_3271[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3271</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 4</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3271.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3271.png"];
+state_3274[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3274</td></tr><tr><td>incoming: 4</td></tr><tr><td>outgoing: 3</td></tr><tr><td>loop: 3</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3274.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3274.png"];
+state_3276[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3276</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 4</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3276.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3276.png"];
+state_3294[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3294</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 3</td></tr><tr><td>loop: 3</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3294.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3294.png"];
+activityCategoryActivity [fontcolor = teal,color = teal];
+activityCategoryActivity -> state_3255 [label = "   click(\"index=2\"): 3164   ",fontcolor = teal,color = teal];
+activityAttributeListActivity [fontcolor = teal,color = teal];
+activityAttributeListActivity -> state_3255 [label = "   click(\"index=0\"): 3084, 3091, 3112, 3119, 3139   ",fontcolor = teal,color = teal];
+activityAttributeListActivity [fontcolor = teal,color = teal];
+state_3255 -> activityAttributeListActivity [label = "   click(\"取消 index=1\"): 3090   ",fontcolor = teal,color = teal];
+state_3255 -> state_3255[label = "click(\"index=1\"): 3085
+click(\"index=1\"): 3088
+click(\"確定 index=0\"): 3089
+"];
+activityAttributeListActivity [fontcolor = teal,color = teal];
+state_3264 -> activityAttributeListActivity [label = "   click(\"取消 index=1\"): 3111   ",fontcolor = teal,color = teal];
+state_3264 -> state_3264[label = "click(\"index=1\"): 3094
+click(\"index=1\"): 3109
+click(\"確定 index=0\"): 3110
+"];
+activityAttributeListActivity [fontcolor = teal,color = teal];
+state_3269 -> activityAttributeListActivity [label = "   click(\"取消 index=1\"): 3118   ",fontcolor = teal,color = teal];
+state_3269 -> state_3269[label = "click(\"index=1\"): 3099
+click(\"使用 ; 隔開每個值 index=1\"): 3115
+click(\"index=1\"): 3116
+click(\"確定 index=0\"): 3117
+"];
+activityAttributeListActivity [fontcolor = teal,color = teal];
+state_3274 -> activityAttributeListActivity [label = "   click(\"取消 index=1\"): 3138   ",fontcolor = teal,color = teal];
+state_3274 -> state_3274[label = "click(\"index=1\"): 3104
+click(\"是;否 index=1\"): 3122
+click(\"確定 index=0\"): 3137
+"];
+activityAttributeListActivity [fontcolor = teal,color = teal];
+state_3294 -> activityAttributeListActivity [label = "   click(\"取消 index=1\"): 3154   ",fontcolor = teal,color = teal];
+state_3294 -> state_3294[label = "click(\"index=1\"): 3124
+click(\"是;否 index=1\"): 3135
+click(\"確定 index=0\"): 3153
+"];
+}

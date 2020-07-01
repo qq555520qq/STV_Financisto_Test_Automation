@@ -1,0 +1,130 @@
+digraph activityRecurActivity{
+imagepath="output/20200616_161901_financisto_NFS";
+state_1274[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1274</td></tr><tr><td>incoming: 19</td></tr><tr><td>outgoing: 5</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1274.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1274.png"];
+state_1277[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1277</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 3</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1277.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1277.png"];
+state_1280[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1280</td></tr><tr><td>incoming: 3</td></tr><tr><td>outgoing: 4</td></tr><tr><td>loop: 2</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1280.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1280.png"];
+state_1282[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1282</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1282.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1282.png"];
+state_1284[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1284</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1284.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1284.png"];
+state_1285[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1285</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 3</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1285.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1285.png"];
+state_1287[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1287</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1287.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1287.png"];
+state_2360[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2360</td></tr><tr><td>incoming: 4</td></tr><tr><td>outgoing: 6</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2360.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2360.png"];
+state_2363[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2363</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2363.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2363.png"];
+state_2365[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2365</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2365.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2365.png"];
+state_2367[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2367</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2367.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2367.png"];
+state_2368[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2368</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 2</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2368.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2368.png"];
+state_2370[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2370</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2370.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2370.png"];
+state_2374[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2374</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2374.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2374.png"];
+state_2377[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2377</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 3</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2377.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2377.png"];
+state_2382[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2382</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2382.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2382.png"];
+state_2384[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2384</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2384.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2384.png"];
+state_2386[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2386</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2386.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2386.png"];
+state_2387[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2387</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 3</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2387.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2387.png"];
+state_2389[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2389</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2389.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2389.png"];
+state_2394[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2394</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2394.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2394.png"];
+state_2403[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2403</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2403.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2403.png"];
+state_2405[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2405</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2405.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2405.png"];
+state_2407[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2407</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2407.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2407.png"];
+state_2408[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2408</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 3</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2408.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2408.png"];
+state_2410[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2410</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2410.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2410.png"];
+state_2425[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2425</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2425.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2425.png"];
+state_2427[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2427</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2427.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2427.png"];
+state_2429[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2429</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2429.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2429.png"];
+state_2607[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2607</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2607.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2607.png"];
+state_2612[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2612</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2612.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2612.png"];
+state_2614[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2614</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2614.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2614.png"];
+state_2616[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2616</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2616.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2616.png"];
+state_2617[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2617</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 3</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2617.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2617.png"];
+state_2619[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2619</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2619.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2619.png"];
+state_2786[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2786</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2786.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2786.png"];
+state_2793[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2793</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2793.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2793.png"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+activityTransactionActivity -> state_1274 [label = "   click(\"確定 index=1\"): 1242   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+activityTransactionActivity -> state_1274 [label = "   click(\"取消 index=0\"): 2476   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+activityTransactionActivity -> state_2363 [label = "   click(\"2019 index=1\"): 2252   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+activityTransactionActivity -> state_2382 [label = "   click(\"2021 index=3\"): 2271   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+activityTransactionActivity -> state_2403 [label = "   click(\"2022 index=4\"): 2292   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+activityTransactionActivity -> state_1274 [label = "   click(\"取消 index=0\"): 2306   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+activityTransactionActivity -> state_1274 [label = "   click(\"確定 index=1\"): 2309   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+activityTransactionActivity -> state_1274 [label = "   click(\"取消 index=0\"): 2395   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+activityTransactionActivity -> state_2425 [label = "   click(\"2018 index=0\"): 2314   ",fontcolor = teal,color = teal];
+activityBudgetActivity [fontcolor = teal,color = teal];
+activityBudgetActivity -> state_1274 [label = "   click(\"index=18\"): 1240   ",fontcolor = teal,color = teal];
+activityBudgetActivity [fontcolor = teal,color = teal];
+activityBudgetActivity -> state_1274 [label = "   click(\"index=18\"): 2177   ",fontcolor = teal,color = teal];
+activityBudgetActivity [fontcolor = teal,color = teal];
+activityBudgetActivity -> state_1274 [label = "   click(\"index=18\"): 2247   ",fontcolor = teal,color = teal];
+activityBudgetActivity [fontcolor = teal,color = teal];
+activityBudgetActivity -> state_1274 [label = "   click(\"index=18\"): 2390   ",fontcolor = teal,color = teal];
+activityBudgetActivity [fontcolor = teal,color = teal];
+activityBudgetActivity -> state_1274 [label = "   click(\"index=18\"): 2474   ",fontcolor = teal,color = teal];
+activityBudgetActivity [fontcolor = teal,color = teal];
+activityBudgetActivity -> state_1274 [label = "   click(\"index=18\"): 2564   ",fontcolor = teal,color = teal];
+activityBudgetActivity [fontcolor = teal,color = teal];
+activityBudgetActivity -> state_1274 [label = "   click(\"index=18\"): 2639   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_1274 -> activityTransactionActivity [label = "   click(\"2020年6月16日 index=1\"): 1241, 2290, 2304, 2307, 2310, 2391, 2396, 2475   ",fontcolor = teal,color = teal];
+activityBudgetActivity [fontcolor = teal,color = teal];
+state_1274 -> activityBudgetActivity [label = "   click(\"確定 index=0\"): 1258   ",fontcolor = teal,color = teal];
+activityBudgetActivity [fontcolor = teal,color = teal];
+state_1274 -> activityBudgetActivity [label = "   click(\"取消 index=1\"): 2178   ",fontcolor = teal,color = teal];
+state_1274 -> state_1274[label = "click(\"index=6\"): 1245
+"];
+state_1280 -> state_1280[label = "click(\"index=0\"): 1247
+click(\"index=1\"): 2286
+"];
+state_1282 -> state_1282[label = "click(\"2020 index=1\"): 2483
+"];
+state_1285 -> state_1285[label = "click(\"index=0\"): 1252
+click(\"index=0\"): 1255
+click(\"index=1\"): 1256
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+activityTransactionActivity -> state_2786 [label = "   click(\"取消 index=0\"): 2648   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2360 -> activityTransactionActivity [label = "   click(\"2020年6月16日 index=1\"): 2250   ",fontcolor = teal,color = teal];
+activityBudgetActivity [fontcolor = teal,color = teal];
+state_2360 -> activityBudgetActivity [label = "   click(\"確定 index=0\"): 2496   ",fontcolor = teal,color = teal];
+activityBudgetActivity [fontcolor = teal,color = teal];
+state_2360 -> activityBudgetActivity [label = "   click(\"取消 index=1\"): 2567   ",fontcolor = teal,color = teal];
+state_2363 -> state_2363[label = "click(\"index=0\"): 2253
+"];
+state_2368 -> state_2368[label = "click(\"index=0\"): 2258
+click(\"index=0\"): 2261
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2377 -> activityTransactionActivity [label = "   click(\"2020年6月16日 index=1\"): 2267   ",fontcolor = teal,color = teal];
+state_2382 -> state_2382[label = "click(\"index=0\"): 2272
+"];
+state_2387 -> state_2387[label = "click(\"index=0\"): 2277
+click(\"index=0\"): 2280
+click(\"index=1\"): 2281
+"];
+state_2403 -> state_2403[label = "click(\"index=0\"): 2293
+"];
+state_2408 -> state_2408[label = "click(\"index=0\"): 2298
+click(\"index=0\"): 2301
+click(\"index=1\"): 2302
+"];
+state_2425 -> state_2425[label = "click(\"index=0\"): 2315
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2429 -> activityTransactionActivity [label = "   click(\"index=0\"): 2319   ",fontcolor = teal,color = teal];
+state_2612 -> state_2612[label = "click(\"index=0\"): 2485
+"];
+state_2617 -> state_2617[label = "click(\"index=0\"): 2490
+click(\"index=0\"): 2493
+click(\"index=1\"): 2494
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2786 -> activityTransactionActivity [label = "   click(\"2020年6月16日 index=1\"): 2644   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2793 -> activityTransactionActivity [label = "   click(\"2020年6月16日 index=1\"): 2651   ",fontcolor = teal,color = teal];
+}

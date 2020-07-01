@@ -1,0 +1,37 @@
+digraph activityProjectListActivity{
+imagepath="output/20200616_161901_financisto_NFS";
+state_1680[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1680</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1680.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1680.png"];
+state_1687[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1687</td></tr><tr><td>incoming: 3</td></tr><tr><td>outgoing: 3</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1687.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1687.png"];
+state_3382[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3382</td></tr><tr><td>incoming: 3</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3382.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3382.png"];
+state_3395[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3395</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3395.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3395.png"];
+activityMainActivity [fontcolor = teal,color = teal];
+activityMainActivity -> state_1680 [label = "   click(\"index=5\"): 1625, 3207   ",fontcolor = teal,color = teal];
+activityProjectActivity [fontcolor = teal,color = teal];
+state_1680 -> activityProjectActivity [label = "   click(\"index=0\"): 1627, 3213   ",fontcolor = teal,color = teal];
+state_1680 -> state_1680[label = "click(\"Type name... index=0\"): 1626
+"];
+activityProjectActivity [fontcolor = teal,color = teal];
+activityProjectActivity -> state_1687 [label = "   click(\"確定 index=0\"): 1632   ",fontcolor = teal,color = teal];
+activityProjectActivity [fontcolor = teal,color = teal];
+activityProjectActivity -> state_3382 [label = "   click(\"取消 index=1\"): 3211   ",fontcolor = teal,color = teal];
+activityProjectActivity [fontcolor = teal,color = teal];
+activityProjectActivity -> state_3395 [label = "   click(\"確定 index=0\"): 3221   ",fontcolor = teal,color = teal];
+activityProjectActivity [fontcolor = teal,color = teal];
+activityProjectActivity -> state_1687 [label = "   click(\"確定 index=0\"): 3215   ",fontcolor = teal,color = teal];
+activityProjectActivity [fontcolor = teal,color = teal];
+activityProjectActivity -> state_1687 [label = "   click(\"取消 index=1\"): 3218   ",fontcolor = teal,color = teal];
+activityBlotterActivity [fontcolor = teal,color = teal];
+state_1687 -> activityBlotterActivity [label = "   click(\"index=0\"): 1634   ",fontcolor = teal,color = teal];
+activityProjectActivity [fontcolor = teal,color = teal];
+state_1687 -> activityProjectActivity [label = "   click(\"index=0\"): 3216   ",fontcolor = teal,color = teal];
+state_1687 -> state_1687[label = "click(\"Type name... index=0\"): 1633
+"];
+activityProjectActivity [fontcolor = teal,color = teal];
+state_3382 -> activityProjectActivity [label = "   click(\"index=0\"): 3210, 3220   ",fontcolor = teal,color = teal];
+state_3382 -> state_3382[label = "click(\"Type name... index=0\"): 3209
+"];
+activityBlotterActivity [fontcolor = teal,color = teal];
+state_3395 -> activityBlotterActivity [label = "   click(\"index=0\"): 3223   ",fontcolor = teal,color = teal];
+state_3395 -> state_3395[label = "click(\"Type name... index=0\"): 3222
+"];
+}

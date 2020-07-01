@@ -1,0 +1,25 @@
+digraph activityPayeeActivity{
+imagepath="output/20200616_161901_financisto_NFS";
+state_1667[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1667</td></tr><tr><td>incoming: 4</td></tr><tr><td>outgoing: 4</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1667.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1667.png"];
+state_1669[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1669</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 3</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1669.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1669.png"];
+activityPayeeListActivity [fontcolor = teal,color = teal];
+activityPayeeListActivity -> state_1667 [label = "   click(\"index=0\"): 1613, 3174   ",fontcolor = teal,color = teal];
+activityPayeeListActivity [fontcolor = teal,color = teal];
+state_1667 -> activityPayeeListActivity [label = "   click(\"確定 index=0\"): 1618   ",fontcolor = teal,color = teal];
+activityPayeeListActivity [fontcolor = teal,color = teal];
+state_1667 -> activityPayeeListActivity [label = "   click(\"取消 index=1\"): 3172   ",fontcolor = teal,color = teal];
+activityPayeeListActivity [fontcolor = teal,color = teal];
+state_1667 -> activityPayeeListActivity [label = "   click(\"確定 index=0\"): 3182   ",fontcolor = teal,color = teal];
+state_1667 -> state_1667[label = "click(\"index=1\"): 1614
+"];
+activityPayeeListActivity [fontcolor = teal,color = teal];
+state_1669 -> activityPayeeListActivity [label = "   click(\"確定 index=0\"): 3176   ",fontcolor = teal,color = teal];
+activityPayeeListActivity [fontcolor = teal,color = teal];
+state_1669 -> activityPayeeListActivity [label = "   click(\"取消 index=1\"): 3179   ",fontcolor = teal,color = teal];
+state_1669 -> state_1669[label = "click(\"index=1\"): 1616
+"];
+activityPayeeListActivity [fontcolor = teal,color = teal];
+activityPayeeListActivity -> state_1667 [label = "   click(\"index=0\"): 3177   ",fontcolor = teal,color = teal];
+activityPayeeListActivity [fontcolor = teal,color = teal];
+activityPayeeListActivity -> state_1667 [label = "   click(\"index=0\"): 3171, 3181   ",fontcolor = teal,color = teal];
+}

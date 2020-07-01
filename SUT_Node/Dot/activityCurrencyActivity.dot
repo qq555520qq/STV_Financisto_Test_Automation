@@ -1,0 +1,50 @@
+digraph activityCurrencyActivity{
+imagepath="output/20200616_161901_financisto_NFS";
+state_988[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_988</td></tr><tr><td>incoming: 3</td></tr><tr><td>outgoing: 3</td></tr><tr><td>loop: 3</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/988.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/988.png"];
+state_992[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_992</td></tr><tr><td>incoming: 5</td></tr><tr><td>outgoing: 4</td></tr><tr><td>loop: 1</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 1</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/992.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/992Equivalent.svg"];
+state_994[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_994</td></tr><tr><td>incoming: 3</td></tr><tr><td>outgoing: 3</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/994.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/994.png"];
+state_996[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_996</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/996.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/996.png"];
+state_997[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_997</td></tr><tr><td>incoming: 5</td></tr><tr><td>outgoing: 5</td></tr><tr><td>loop: 3</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/997.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/997.png"];
+state_1002[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1002</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 3</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1002.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1002.png"];
+state_1006[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1006</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1006.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1006.png"];
+state_1009[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1009</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 3</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1009.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1009.png"];
+state_1014[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1014</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 3</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1014.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1014.png"];
+state_1018[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1018</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1018.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1018.png"];
+state_1020[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1020</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1020.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1020.png"];
+state_1022[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1022</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1022.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1022.png"];
+state_1024[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1024</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1024.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1024.png"];
+state_1026[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1026</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 3</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1026.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1026.png"];
+state_1033[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1033</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 3</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1033.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1033.png"];
+activityCurrencyListActivity [fontcolor = teal,color = teal];
+activityCurrencyListActivity -> state_988 [label = "   click(\"確定 index=2\"): 971   ",fontcolor = teal,color = teal];
+state_988 -> state_988[label = "click(\"index=1\"): 972
+click(\"ISO 4217 貨幣碼 index=0\"): 973
+click(\"$ £ ¥ π index=1\"): 974
+"];
+state_992 -> state_992[label = "click(\"1 index=1\"): 1021
+",fontcolor = DodgerBlue,color = DodgerBlue];
+state_997 -> state_997[label = "click(\"index=1\"): 981
+click(\"ISO 4217 貨幣碼 index=0\"): 982
+click(\"$ £ ¥ π index=1\"): 983
+"];
+state_1002 -> state_1002[label = "click(\"index=1\"): 986
+click(\"ISO 4217 貨幣碼 index=0\"): 987
+click(\"$ £ ¥ π index=1\"): 988
+"];
+state_1009 -> state_1009[label = "click(\"index=1\"): 993
+click(\"ISO 4217 貨幣碼 index=0\"): 994
+click(\"$ £ ¥ π index=1\"): 995
+"];
+state_1014 -> state_1014[label = "click(\"index=1\"): 998
+click(\"ISO 4217 貨幣碼 index=0\"): 999
+click(\"$ £ ¥ π index=1\"): 1000
+"];
+state_1026 -> state_1026[label = "click(\"index=1\"): 1010
+click(\"ISO 4217 貨幣碼 index=0\"): 1011
+click(\"$ £ ¥ π index=1\"): 1012
+"];
+state_1033 -> state_1033[label = "click(\"index=1\"): 1017
+click(\"ISO 4217 貨幣碼 index=0\"): 1018
+click(\"$ £ ¥ π index=1\"): 1019
+"];
+}

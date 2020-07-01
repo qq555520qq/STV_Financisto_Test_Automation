@@ -1,0 +1,300 @@
+digraph activityBudgetActivity{
+imagepath="output/20200616_161901_financisto_NFS";
+state_139[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_139</td></tr><tr><td>incoming: 11</td></tr><tr><td>outgoing: 13</td></tr><tr><td>loop: 5</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/139.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/139.png"];
+state_1194[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1194</td></tr><tr><td>incoming: 11</td></tr><tr><td>outgoing: 3</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1194.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1194.png"];
+state_1195[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1195</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 10</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1195.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1195.png"];
+state_1198[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1198</td></tr><tr><td>incoming: 3</td></tr><tr><td>outgoing: 12</td></tr><tr><td>loop: 7</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1198.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1198.png"];
+state_1205[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1205</td></tr><tr><td>incoming: 10</td></tr><tr><td>outgoing: 3</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1205.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1205.png"];
+state_1206[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1206</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 8</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1206.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1206.png"];
+state_1209[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1209</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 12</td></tr><tr><td>loop: 7</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1209.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1209.png"];
+state_1216[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1216</td></tr><tr><td>incoming: 3</td></tr><tr><td>outgoing: 10</td></tr><tr><td>loop: 8</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 3</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/1216.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/1216Equivalent.svg"];
+state_1223[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1223</td></tr><tr><td>incoming: 3</td></tr><tr><td>outgoing: 10</td></tr><tr><td>loop: 8</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 3</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/1223.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/1223Equivalent.svg"];
+state_1230[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1230</td></tr><tr><td>incoming: 4</td></tr><tr><td>outgoing: 10</td></tr><tr><td>loop: 8</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 3</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/1230.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/1230Equivalent.svg"];
+state_1237[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1237</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 10</td></tr><tr><td>loop: 8</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 3</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/1237.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/1237Equivalent.svg"];
+state_1250[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1250</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 2</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1250.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1250.png"];
+state_1251[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1251</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 2</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1251.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1251.png"];
+state_1252[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1252</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1252.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1252.png"];
+state_1253[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1253</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1253.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1253.png"];
+state_1254[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1254</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1254.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1254.png"];
+state_1255[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1255</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1255.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1255.png"];
+state_1256[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1256</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1256.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1256.png"];
+state_1257[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1257</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1257.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1257.png"];
+state_1258[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1258</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1258.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1258.png"];
+state_1259[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1259</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1259.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1259.png"];
+state_2217[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2217</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 2</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2217.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2217.png"];
+state_2225[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2225</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 2</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2225.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2225.png"];
+state_2233[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2233</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 2</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2233.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2233.png"];
+state_2241[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2241</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 2</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2241.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2241.png"];
+state_2249[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2249</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 2</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2249.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2249.png"];
+state_2289[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2289</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2289.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2289.png"];
+state_2304[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2304</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2304.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2304.png"];
+state_2312[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2312</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2312.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2312.png"];
+state_2320[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2320</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2320.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2320.png"];
+state_2328[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2328</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2328.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2328.png"];
+state_2449[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2449</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2449.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2449.png"];
+state_2460[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2460</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2460.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2460.png"];
+state_2529[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2529</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2529.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2529.png"];
+state_2542[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2542</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2542.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2542.png"];
+state_2553[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2553</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2553.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2553.png"];
+state_2631[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2631</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2631.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2631.png"];
+state_2644[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2644</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2644.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2644.png"];
+state_2655[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2655</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2655.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2655.png"];
+state_2709[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2709</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2709.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2709.png"];
+state_2722[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2722</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2722.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2722.png"];
+state_2733[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2733</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2733.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2733.png"];
+activityMainActivity [fontcolor = teal,color = teal];
+activityMainActivity -> state_139 [label = "   click(\"index=0\"): 134, 1167, 1177, 1187, 1193, 1199, 1205, 1211, 1234, 1239, 2109, 2125, 2132, 2139, 2146, 2153, 2168, 2175, 2181, 2190, 2204, 2211, 2218, 2225, 2237, 2245, 2323, 2327, 2342, 2352, 2359, 2364, 2369, 2381, 2388, 2401, 2405, 2414, 2426, 2436, 2441, 2448, 2453, 2465, 2472, 2499, 2508, 2520, 2530, 2535, 2540, 2547, 2562, 2570, 2579, 2591, 2601, 2606, 2611, 2616, 2630, 2637, 2657   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_139 -> activityTransactionActivity [label = "   click(\"index=2\"): 136   ",fontcolor = teal,color = teal];
+activityAccountActivity [fontcolor = teal,color = teal];
+state_139 -> activityAccountActivity [label = "   click(\"index=4\"): 1215   ",fontcolor = teal,color = teal];
+activityAccountActivity [fontcolor = teal,color = teal];
+state_139 -> activityAccountActivity [label = "   click(\"index=5\"): 1235   ",fontcolor = teal,color = teal];
+activityRecurActivity [fontcolor = teal,color = teal];
+state_139 -> activityRecurActivity [label = "   click(\"index=18\"): 1240   ",fontcolor = teal,color = teal];
+activityMainActivity [fontcolor = teal,color = teal];
+state_139 -> activityMainActivity [label = "   click(\"取消 index=1\"): 1260   ",fontcolor = teal,color = teal];
+state_139 -> state_139[label = "click(\"index=1\"): 135
+click(\"index=0\"): 1212
+click(\"index=1\"): 1213
+click(\"index=3\"): 1214
+click(\"確定 index=0\"): 1259
+"];
+activityBlotterFilterActivity [fontcolor = teal,color = teal];
+activityBlotterFilterActivity -> state_1205 [label = "   click(\"index=10\"): 2044   ",fontcolor = teal,color = teal];
+activityReportFilterActivity [fontcolor = teal,color = teal];
+activityReportFilterActivity -> state_1205 [label = "   click(\"index=10\"): 1301   ",fontcolor = teal,color = teal];
+activityReportFilterActivity [fontcolor = teal,color = teal];
+activityReportFilterActivity -> state_1205 [label = "   click(\"index=10\"): 2690   ",fontcolor = teal,color = teal];
+activityAccountActivity [fontcolor = teal,color = teal];
+activityAccountActivity -> state_1250 [label = "   click(\"index=0\"): 1218   ",fontcolor = teal,color = teal];
+activityAccountActivity [fontcolor = teal,color = teal];
+activityAccountActivity -> state_1251 [label = "   click(\"index=0\"): 2162   ",fontcolor = teal,color = teal];
+activityAccountActivity [fontcolor = teal,color = teal];
+activityAccountActivity -> state_1230 [label = "   click(\"取消 index=2\"): 2556   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_1198 -> activityTransactionActivity [label = "   click(\"index=2\"): 1174   ",fontcolor = teal,color = teal];
+activityAccountActivity [fontcolor = teal,color = teal];
+state_1198 -> activityAccountActivity [label = "   click(\"index=4\"): 2158   ",fontcolor = teal,color = teal];
+activityAccountActivity [fontcolor = teal,color = teal];
+state_1198 -> activityAccountActivity [label = "   click(\"index=5\"): 2170   ",fontcolor = teal,color = teal];
+activityRecurActivity [fontcolor = teal,color = teal];
+state_1198 -> activityRecurActivity [label = "   click(\"index=18\"): 2177   ",fontcolor = teal,color = teal];
+activityMainActivity [fontcolor = teal,color = teal];
+state_1198 -> activityMainActivity [label = "   click(\"取消 index=1\"): 2180   ",fontcolor = teal,color = teal];
+state_1198 -> state_1198[label = "click(\"index=1\"): 1173
+click(\"index=4\"): 2113
+click(\"Start typing… index=1\"): 2116
+click(\"index=0\"): 2155
+click(\"index=1\"): 2156
+click(\"index=3\"): 2157
+click(\"確定 index=0\"): 2179
+"];
+activityReportFilterActivity [fontcolor = teal,color = teal];
+state_1205 -> activityReportFilterActivity [label = "   click(\"取消 index=1\"): 1302   ",fontcolor = teal,color = teal];
+activityBlotterFilterActivity [fontcolor = teal,color = teal];
+state_1206 -> activityBlotterFilterActivity [label = "   click(\"確定 index=0\"): 2046   ",fontcolor = teal,color = teal];
+activityReportFilterActivity [fontcolor = teal,color = teal];
+state_1206 -> activityReportFilterActivity [label = "   click(\"確定 index=0\"): 2692   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_1209 -> activityTransactionActivity [label = "   click(\"index=2\"): 1184   ",fontcolor = teal,color = teal];
+activityAccountActivity [fontcolor = teal,color = teal];
+state_1209 -> activityAccountActivity [label = "   click(\"index=4\"): 2230   ",fontcolor = teal,color = teal];
+activityAccountActivity [fontcolor = teal,color = teal];
+state_1209 -> activityAccountActivity [label = "   click(\"index=5\"): 2239   ",fontcolor = teal,color = teal];
+activityRecurActivity [fontcolor = teal,color = teal];
+state_1209 -> activityRecurActivity [label = "   click(\"index=18\"): 2247   ",fontcolor = teal,color = teal];
+activityMainActivity [fontcolor = teal,color = teal];
+state_1209 -> activityMainActivity [label = "   click(\"取消 index=1\"): 2326   ",fontcolor = teal,color = teal];
+state_1209 -> state_1209[label = "click(\"index=1\"): 1183
+click(\"index=6\"): 2195
+click(\"Start typing… index=1\"): 2198
+click(\"index=0\"): 2227
+click(\"index=1\"): 2228
+click(\"index=3\"): 2229
+click(\"確定 index=0\"): 2325
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_1216 -> activityTransactionActivity [label = "   click(\"index=2\"): 1190   ",fontcolor = teal,color = teal];
+activityAccountActivity [fontcolor = teal,color = teal];
+state_1216 -> activityAccountActivity [label = "   click(\"index=4\"): 2374   ",fontcolor = teal,color = teal];
+activityAccountActivity [fontcolor = teal,color = teal];
+state_1216 -> activityAccountActivity [label = "   click(\"index=5\"): 2383   ",fontcolor = teal,color = teal];
+activityRecurActivity [fontcolor = teal,color = teal];
+state_1216 -> activityRecurActivity [label = "   click(\"index=18\"): 2390   ",fontcolor = teal,color = teal];
+activityMainActivity [fontcolor = teal,color = teal];
+state_1216 -> activityMainActivity [label = "   click(\"取消 index=1\"): 2404   ",fontcolor = teal,color = teal];
+state_1216 -> state_1216[label = "click(\"index=1\"): 1189
+click(\"index=10\"): 2356
+click(\"index=12\"): 2361
+click(\"index=14\"): 2366
+click(\"index=0\"): 2371
+click(\"index=1\"): 2372
+click(\"index=3\"): 2373
+click(\"確定 index=0\"): 2403
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_1223 -> activityTransactionActivity [label = "   click(\"index=2\"): 1196   ",fontcolor = teal,color = teal];
+activityAccountActivity [fontcolor = teal,color = teal];
+state_1223 -> activityAccountActivity [label = "   click(\"index=4\"): 2458   ",fontcolor = teal,color = teal];
+activityAccountActivity [fontcolor = teal,color = teal];
+state_1223 -> activityAccountActivity [label = "   click(\"index=5\"): 2467   ",fontcolor = teal,color = teal];
+activityRecurActivity [fontcolor = teal,color = teal];
+state_1223 -> activityRecurActivity [label = "   click(\"index=18\"): 2474   ",fontcolor = teal,color = teal];
+activityMainActivity [fontcolor = teal,color = teal];
+state_1223 -> activityMainActivity [label = "   click(\"取消 index=1\"): 2498   ",fontcolor = teal,color = teal];
+state_1223 -> state_1223[label = "click(\"index=1\"): 1195
+click(\"index=8\"): 2438
+click(\"index=12\"): 2445
+click(\"index=14\"): 2450
+click(\"index=0\"): 2455
+click(\"index=1\"): 2456
+click(\"index=3\"): 2457
+click(\"確定 index=0\"): 2497
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_1230 -> activityTransactionActivity [label = "   click(\"index=2\"): 1202   ",fontcolor = teal,color = teal];
+activityAccountActivity [fontcolor = teal,color = teal];
+state_1230 -> activityAccountActivity [label = "   click(\"index=4\"): 2552   ",fontcolor = teal,color = teal];
+activityAccountActivity [fontcolor = teal,color = teal];
+state_1230 -> activityAccountActivity [label = "   click(\"index=5\"): 2557   ",fontcolor = teal,color = teal];
+activityRecurActivity [fontcolor = teal,color = teal];
+state_1230 -> activityRecurActivity [label = "   click(\"index=18\"): 2564   ",fontcolor = teal,color = teal];
+activityMainActivity [fontcolor = teal,color = teal];
+state_1230 -> activityMainActivity [label = "   click(\"取消 index=1\"): 2569   ",fontcolor = teal,color = teal];
+state_1230 -> state_1230[label = "click(\"index=1\"): 1201
+click(\"index=8\"): 2532
+click(\"index=10\"): 2537
+click(\"index=14\"): 2544
+click(\"index=0\"): 2549
+click(\"index=1\"): 2550
+click(\"index=3\"): 2551
+click(\"確定 index=0\"): 2568
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_1237 -> activityTransactionActivity [label = "   click(\"index=2\"): 1208   ",fontcolor = teal,color = teal];
+activityAccountActivity [fontcolor = teal,color = teal];
+state_1237 -> activityAccountActivity [label = "   click(\"index=4\"): 2623   ",fontcolor = teal,color = teal];
+activityAccountActivity [fontcolor = teal,color = teal];
+state_1237 -> activityAccountActivity [label = "   click(\"index=5\"): 2632   ",fontcolor = teal,color = teal];
+activityRecurActivity [fontcolor = teal,color = teal];
+state_1237 -> activityRecurActivity [label = "   click(\"index=18\"): 2639   ",fontcolor = teal,color = teal];
+activityMainActivity [fontcolor = teal,color = teal];
+state_1237 -> activityMainActivity [label = "   click(\"取消 index=1\"): 2660   ",fontcolor = teal,color = teal];
+state_1237 -> state_1237[label = "click(\"index=1\"): 1207
+click(\"index=8\"): 2603
+click(\"index=10\"): 2608
+click(\"index=12\"): 2613
+click(\"index=0\"): 2620
+click(\"index=1\"): 2621
+click(\"index=3\"): 2622
+click(\"確定 index=0\"): 2659
+"];
+activityAccountActivity [fontcolor = teal,color = teal];
+state_1250 -> activityAccountActivity [label = "   click(\"index=0\"): 1231   ",fontcolor = teal,color = teal];
+state_1250 -> state_1250[label = "click(\"0 index=1\"): 1229
+click(\"index=2\"): 1230
+"];
+activityAccountActivity [fontcolor = teal,color = teal];
+state_1251 -> activityAccountActivity [label = "   click(\"index=0\"): 2165   ",fontcolor = teal,color = teal];
+state_1251 -> state_1251[label = "click(\"1 index=1\"): 2163
+click(\"index=2\"): 2164
+"];
+activityRecurActivity [fontcolor = teal,color = teal];
+activityRecurActivity -> state_139 [label = "   click(\"確定 index=0\"): 1258   ",fontcolor = teal,color = teal];
+activityRecurActivity [fontcolor = teal,color = teal];
+activityRecurActivity -> state_1198 [label = "   click(\"取消 index=1\"): 2178   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2217 -> activityTransactionActivity [label = "   click(\"index=2\"): 2122   ",fontcolor = teal,color = teal];
+state_2217 -> state_2217[label = "click(\"index=1\"): 2121
+click(\"index=4\"): 2193
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2225 -> activityTransactionActivity [label = "   click(\"index=2\"): 2129   ",fontcolor = teal,color = teal];
+state_2225 -> state_2225[label = "click(\"index=1\"): 2128
+click(\"index=4\"): 2333
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2233 -> activityTransactionActivity [label = "   click(\"index=2\"): 2136   ",fontcolor = teal,color = teal];
+state_2233 -> state_2233[label = "click(\"index=1\"): 2135
+click(\"index=4\"): 2417
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2241 -> activityTransactionActivity [label = "   click(\"index=2\"): 2143   ",fontcolor = teal,color = teal];
+state_2241 -> state_2241[label = "click(\"index=1\"): 2142
+click(\"index=4\"): 2511
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2249 -> activityTransactionActivity [label = "   click(\"index=2\"): 2150   ",fontcolor = teal,color = teal];
+state_2249 -> state_2249[label = "click(\"index=1\"): 2149
+click(\"index=4\"): 2582
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2289 -> activityTransactionActivity [label = "   click(\"index=2\"): 2187   ",fontcolor = teal,color = teal];
+state_2289 -> state_2289[label = "click(\"index=1\"): 2186
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2304 -> activityTransactionActivity [label = "   click(\"index=2\"): 2201   ",fontcolor = teal,color = teal];
+state_2304 -> state_2304[label = "click(\"index=1\"): 2200
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2312 -> activityTransactionActivity [label = "   click(\"index=2\"): 2208   ",fontcolor = teal,color = teal];
+state_2312 -> state_2312[label = "click(\"index=1\"): 2207
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2320 -> activityTransactionActivity [label = "   click(\"index=2\"): 2215   ",fontcolor = teal,color = teal];
+state_2320 -> state_2320[label = "click(\"index=1\"): 2214
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2328 -> activityTransactionActivity [label = "   click(\"index=2\"): 2222   ",fontcolor = teal,color = teal];
+state_2328 -> state_2328[label = "click(\"index=1\"): 2221
+"];
+activityRecurActivity [fontcolor = teal,color = teal];
+activityRecurActivity -> state_1223 [label = "   click(\"確定 index=0\"): 2496   ",fontcolor = teal,color = teal];
+activityRecurActivity [fontcolor = teal,color = teal];
+activityRecurActivity -> state_1230 [label = "   click(\"取消 index=1\"): 2567   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2449 -> activityTransactionActivity [label = "   click(\"index=2\"): 2339   ",fontcolor = teal,color = teal];
+state_2449 -> state_2449[label = "click(\"index=1\"): 2338
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2460 -> activityTransactionActivity [label = "   click(\"index=2\"): 2349   ",fontcolor = teal,color = teal];
+state_2460 -> state_2460[label = "click(\"index=1\"): 2348
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2529 -> activityTransactionActivity [label = "   click(\"index=2\"): 2411   ",fontcolor = teal,color = teal];
+state_2529 -> state_2529[label = "click(\"index=1\"): 2410
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2542 -> activityTransactionActivity [label = "   click(\"index=2\"): 2423   ",fontcolor = teal,color = teal];
+state_2542 -> state_2542[label = "click(\"index=1\"): 2422
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2553 -> activityTransactionActivity [label = "   click(\"index=2\"): 2433   ",fontcolor = teal,color = teal];
+state_2553 -> state_2553[label = "click(\"index=1\"): 2432
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2631 -> activityTransactionActivity [label = "   click(\"index=2\"): 2505   ",fontcolor = teal,color = teal];
+state_2631 -> state_2631[label = "click(\"index=1\"): 2504
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2644 -> activityTransactionActivity [label = "   click(\"index=2\"): 2517   ",fontcolor = teal,color = teal];
+state_2644 -> state_2644[label = "click(\"index=1\"): 2516
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2655 -> activityTransactionActivity [label = "   click(\"index=2\"): 2527   ",fontcolor = teal,color = teal];
+state_2655 -> state_2655[label = "click(\"index=1\"): 2526
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2709 -> activityTransactionActivity [label = "   click(\"index=2\"): 2576   ",fontcolor = teal,color = teal];
+state_2709 -> state_2709[label = "click(\"index=1\"): 2575
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2722 -> activityTransactionActivity [label = "   click(\"index=2\"): 2588   ",fontcolor = teal,color = teal];
+state_2722 -> state_2722[label = "click(\"index=1\"): 2587
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_2733 -> activityTransactionActivity [label = "   click(\"index=2\"): 2598   ",fontcolor = teal,color = teal];
+state_2733 -> state_2733[label = "click(\"index=1\"): 2597
+"];
+}

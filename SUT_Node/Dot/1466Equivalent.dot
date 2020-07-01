@@ -1,0 +1,9 @@
+graph temp {
+rankdir=LR;
+imagepath = "output/20200616_161901_financisto_NFS/States";
+pic1[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>Original pic</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="1466.png"/></td></tr></table>>,shape=box,margin=0,URL="1466.png"];
+pic2[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="1467.png"/></td></tr></table>>,shape=box,margin=0,URL="1467.png"];
+pic3[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="3071.png"/></td></tr></table>>,shape=box,margin=0,URL="3071.png"];
+pic4[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="3077.png"/></td></tr></table>>,shape=box,margin=0,URL="3077.png"];
+pic5[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="3083.png"/></td></tr></table>>,shape=box,margin=0,URL="3083.png"];
+}

@@ -1,0 +1,25 @@
+digraph activityLocationActivity{
+imagepath="output/20200616_161901_financisto_NFS";
+state_1697[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1697</td></tr><tr><td>incoming: 4</td></tr><tr><td>outgoing: 4</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1697.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1697.png"];
+state_1699[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1699</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 3</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1699.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1699.png"];
+activityLocationsListActivity [fontcolor = teal,color = teal];
+activityLocationsListActivity -> state_1697 [label = "   click(\"index=0\"): 1641, 3237   ",fontcolor = teal,color = teal];
+activityLocationsListActivity [fontcolor = teal,color = teal];
+state_1697 -> activityLocationsListActivity [label = "   click(\"確定 index=0\"): 1646   ",fontcolor = teal,color = teal];
+activityLocationsListActivity [fontcolor = teal,color = teal];
+state_1697 -> activityLocationsListActivity [label = "   click(\"取消 index=1\"): 3235   ",fontcolor = teal,color = teal];
+activityLocationsListActivity [fontcolor = teal,color = teal];
+state_1697 -> activityLocationsListActivity [label = "   click(\"確定 index=0\"): 3245   ",fontcolor = teal,color = teal];
+state_1697 -> state_1697[label = "click(\"index=1\"): 1642
+"];
+activityLocationsListActivity [fontcolor = teal,color = teal];
+state_1699 -> activityLocationsListActivity [label = "   click(\"確定 index=0\"): 3239   ",fontcolor = teal,color = teal];
+activityLocationsListActivity [fontcolor = teal,color = teal];
+state_1699 -> activityLocationsListActivity [label = "   click(\"取消 index=1\"): 3242   ",fontcolor = teal,color = teal];
+state_1699 -> state_1699[label = "click(\"index=1\"): 1644
+"];
+activityLocationsListActivity [fontcolor = teal,color = teal];
+activityLocationsListActivity -> state_1697 [label = "   click(\"index=0\"): 3240   ",fontcolor = teal,color = teal];
+activityLocationsListActivity [fontcolor = teal,color = teal];
+activityLocationsListActivity -> state_1697 [label = "   click(\"index=0\"): 3234, 3244   ",fontcolor = teal,color = teal];
+}

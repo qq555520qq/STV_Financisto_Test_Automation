@@ -1,0 +1,29 @@
+digraph activitySmsDragListActivity{
+imagepath="output/20200616_161901_financisto_NFS";
+state_1586[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1586</td></tr><tr><td>incoming: 3</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1586.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1586.png"];
+state_1587[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1587</td></tr><tr><td>incoming: 8</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1587.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1587.png"];
+activityMainActivity [fontcolor = teal,color = teal];
+activityMainActivity -> state_1586 [label = "   click(\"index=3\"): 1533   ",fontcolor = teal,color = teal];
+activitySmsTemplateActivity [fontcolor = teal,color = teal];
+activitySmsTemplateActivity -> state_1587 [label = "   click(\"取消 index=1\"): 1553   ",fontcolor = teal,color = teal];
+activitySmsTemplateActivity [fontcolor = teal,color = teal];
+activitySmsTemplateActivity -> state_1587 [label = "   click(\"取消 index=1\"): 1551   ",fontcolor = teal,color = teal];
+activitySmsTemplateActivity [fontcolor = teal,color = teal];
+activitySmsTemplateActivity -> state_1587 [label = "   click(\"取消 index=1\"): 1596   ",fontcolor = teal,color = teal];
+activitySmsTemplateActivity [fontcolor = teal,color = teal];
+activitySmsTemplateActivity -> state_1587 [label = "   click(\"取消 index=1\"): 1575   ",fontcolor = teal,color = teal];
+activitySmsTemplateActivity [fontcolor = teal,color = teal];
+activitySmsTemplateActivity -> state_1586 [label = "   click(\"取消 index=1\"): 1544   ",fontcolor = teal,color = teal];
+activitySmsTemplateActivity [fontcolor = teal,color = teal];
+activitySmsTemplateActivity -> state_1587 [label = "   click(\"取消 index=1\"): 1593   ",fontcolor = teal,color = teal];
+activitySmsTemplateActivity [fontcolor = teal,color = teal];
+activitySmsTemplateActivity -> state_1587 [label = "   click(\"取消 index=1\"): 1568   ",fontcolor = teal,color = teal];
+activitySmsTemplateActivity [fontcolor = teal,color = teal];
+activitySmsTemplateActivity -> state_1587 [label = "   click(\"取消 index=1\"): 1607   ",fontcolor = teal,color = teal];
+activitySmsTemplateActivity [fontcolor = teal,color = teal];
+state_1586 -> activitySmsTemplateActivity [label = "   click(\"index=1\"): 1537   ",fontcolor = teal,color = teal];
+activitySmsTemplateActivity [fontcolor = teal,color = teal];
+state_1587 -> activitySmsTemplateActivity [label = "   click(\"index=1\"): 1546, 1552, 1554, 1569, 1576, 1594, 1597   ",fontcolor = teal,color = teal];
+state_1587 -> state_1587[label = "click(\"搜尋… index=0\"): 1535
+"];
+}

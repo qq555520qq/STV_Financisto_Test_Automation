@@ -1,0 +1,36 @@
+digraph activityBlotterActivity{
+imagepath="output/20200616_161901_financisto_NFS";
+state_1674[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1674</td></tr><tr><td>incoming: 8</td></tr><tr><td>outgoing: 4</td></tr><tr><td>loop: 2</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 2</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/1674.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/1674Equivalent.svg"];
+state_1707[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1707</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 3</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 2</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/1707.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/1707Equivalent.svg"];
+activityAccountListTotalsDetailsActivity [fontcolor = teal,color = teal];
+activityAccountListTotalsDetailsActivity -> state_1674 [label = "   click(\"確定 index=0\"): 3225   ",fontcolor = teal,color = teal];
+activitySelectTemplateActivity [fontcolor = teal,color = teal];
+activitySelectTemplateActivity -> state_1674 [label = "   click(\"取消 index=4\"): 1650   ",fontcolor = teal,color = teal];
+activityPayeeListActivity [fontcolor = teal,color = teal];
+activityPayeeListActivity -> state_1674 [label = "   click(\"index=0\"): 1620   ",fontcolor = teal,color = teal];
+activitySelectTemplateActivity [fontcolor = teal,color = teal];
+state_1674 -> activitySelectTemplateActivity [label = "   click(\"index=2\"): 1649   ",fontcolor = teal,color = teal];
+activityBlotterFilterActivity [fontcolor = teal,color = teal];
+state_1674 -> activityBlotterFilterActivity [label = "   click(\"index=4\"): 3185   ",fontcolor = teal,color = teal];
+activityAccountListTotalsDetailsActivity [fontcolor = teal,color = teal];
+state_1674 -> activityAccountListTotalsDetailsActivity [label = "   click(\"0.00 index=6\"): 3224   ",fontcolor = teal,color = teal];
+state_1674 -> state_1674[label = "click(\"index=0\"): 1621
+click(\"index=1\"): 1635
+"];
+activityProjectListActivity [fontcolor = teal,color = teal];
+activityProjectListActivity -> state_1674 [label = "   click(\"index=0\"): 1634   ",fontcolor = teal,color = teal];
+activityLocationsListActivity [fontcolor = teal,color = teal];
+activityLocationsListActivity -> state_1674 [label = "   click(\"index=0\"): 1648   ",fontcolor = teal,color = teal];
+activitySelectTemplateActivity [fontcolor = teal,color = teal];
+state_1707 -> activitySelectTemplateActivity [label = "   click(\"index=2\"): 3249   ",fontcolor = teal,color = teal];
+state_1707 -> state_1707[label = "click(\"index=0\"): 1652
+click(\"index=0\"): 1653
+click(\"index=1\"): 3227
+"];
+activityPayeeListActivity [fontcolor = teal,color = teal];
+activityPayeeListActivity -> state_1674 [label = "   click(\"index=0\"): 3184   ",fontcolor = teal,color = teal];
+activityProjectListActivity [fontcolor = teal,color = teal];
+activityProjectListActivity -> state_1674 [label = "   click(\"index=0\"): 3223   ",fontcolor = teal,color = teal];
+activityLocationsListActivity [fontcolor = teal,color = teal];
+activityLocationsListActivity -> state_1674 [label = "   click(\"index=0\"): 3247   ",fontcolor = teal,color = teal];
+}

@@ -1,0 +1,37 @@
+digraph activityPayeeListActivity{
+imagepath="output/20200616_161901_financisto_NFS";
+state_1665[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1665</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1665.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1665.png"];
+state_1672[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1672</td></tr><tr><td>incoming: 3</td></tr><tr><td>outgoing: 3</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1672.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1672.png"];
+state_3342[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3342</td></tr><tr><td>incoming: 3</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3342.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3342.png"];
+state_3355[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3355</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3355.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3355.png"];
+activityMainActivity [fontcolor = teal,color = teal];
+activityMainActivity -> state_1665 [label = "   click(\"index=4\"): 1611, 3168   ",fontcolor = teal,color = teal];
+activityPayeeActivity [fontcolor = teal,color = teal];
+state_1665 -> activityPayeeActivity [label = "   click(\"index=0\"): 1613, 3174   ",fontcolor = teal,color = teal];
+state_1665 -> state_1665[label = "click(\"Type name... index=0\"): 1612
+"];
+activityPayeeActivity [fontcolor = teal,color = teal];
+activityPayeeActivity -> state_1672 [label = "   click(\"確定 index=0\"): 1618   ",fontcolor = teal,color = teal];
+activityPayeeActivity [fontcolor = teal,color = teal];
+activityPayeeActivity -> state_3342 [label = "   click(\"取消 index=1\"): 3172   ",fontcolor = teal,color = teal];
+activityPayeeActivity [fontcolor = teal,color = teal];
+activityPayeeActivity -> state_3355 [label = "   click(\"確定 index=0\"): 3182   ",fontcolor = teal,color = teal];
+activityPayeeActivity [fontcolor = teal,color = teal];
+activityPayeeActivity -> state_1672 [label = "   click(\"確定 index=0\"): 3176   ",fontcolor = teal,color = teal];
+activityPayeeActivity [fontcolor = teal,color = teal];
+activityPayeeActivity -> state_1672 [label = "   click(\"取消 index=1\"): 3179   ",fontcolor = teal,color = teal];
+activityBlotterActivity [fontcolor = teal,color = teal];
+state_1672 -> activityBlotterActivity [label = "   click(\"index=0\"): 1620   ",fontcolor = teal,color = teal];
+activityPayeeActivity [fontcolor = teal,color = teal];
+state_1672 -> activityPayeeActivity [label = "   click(\"index=0\"): 3177   ",fontcolor = teal,color = teal];
+state_1672 -> state_1672[label = "click(\"Type name... index=0\"): 1619
+"];
+activityPayeeActivity [fontcolor = teal,color = teal];
+state_3342 -> activityPayeeActivity [label = "   click(\"index=0\"): 3171, 3181   ",fontcolor = teal,color = teal];
+state_3342 -> state_3342[label = "click(\"Type name... index=0\"): 3170
+"];
+activityBlotterActivity [fontcolor = teal,color = teal];
+state_3355 -> activityBlotterActivity [label = "   click(\"index=0\"): 3184   ",fontcolor = teal,color = teal];
+state_3355 -> state_3355[label = "click(\"Type name... index=0\"): 3183
+"];
+}

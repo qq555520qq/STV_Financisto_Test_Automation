@@ -1,0 +1,39 @@
+digraph activityTransferActivity{
+imagepath="output/20200616_161901_financisto_NFS";
+state_91[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_91</td></tr><tr><td>incoming: 4</td></tr><tr><td>outgoing: 4</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/91.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/91.png"];
+state_97[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_97</td></tr><tr><td>incoming: 3</td></tr><tr><td>outgoing: 3</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/97.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/97.png"];
+state_99[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_99</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/99.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/99.png"];
+state_101[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_101</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/101.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/101.png"];
+state_102[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_102</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/102.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/102.png"];
+state_104[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_104</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/104.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/104.png"];
+state_106[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_106</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/106.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/106.png"];
+state_1305[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1305</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 3</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1305.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1305.png"];
+activityMainActivity [fontcolor = teal,color = teal];
+activityMainActivity -> state_91 [label = "   click(\"index=1\"): 88   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+activityTransactionActivity -> state_91 [label = "   click(\"擱置 index=1\"): 90   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+activityTransactionActivity -> state_1305 [label = "   click(\"已出(入)帳 index=3\"): 1273   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+activityTransactionActivity -> state_91 [label = "   click(\"取消 index=0\"): 93   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_91 -> activityTransactionActivity [label = "   click(\"index=0\"): 89   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_91 -> activityTransactionActivity [label = "   click(\"2020年6月16日 index=1\"): 91   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_91 -> activityTransactionActivity [label = "   click(\"index=1\"): 106   ",fontcolor = teal,color = teal];
+state_97 -> state_97[label = "click(\"4 index=0\"): 95
+"];
+state_102 -> state_102[label = "click(\"4 index=0\"): 100
+"];
+activityTemplatesListActivity [fontcolor = teal,color = teal];
+activityTemplatesListActivity -> state_1305 [label = "   click(\"index=1\"): 1271   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_1305 -> activityTransactionActivity [label = "   click(\"index=0\"): 1272   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_1305 -> activityTransactionActivity [label = "   click(\"index=3\"): 1277   ",fontcolor = teal,color = teal];
+state_1305 -> state_1305[label = "click(\"2020年6月16日 index=1\"): 1274
+click(\"下午5:22 index=2\"): 1275
+click(\"index=1\"): 1276
+"];
+}

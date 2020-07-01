@@ -1,0 +1,95 @@
+digraph activityPreferencesActivity{
+imagepath="output/20200616_161901_financisto_NFS";
+state_956[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_956</td></tr><tr><td>incoming: 32</td></tr><tr><td>outgoing: 31</td></tr><tr><td>loop: 3</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/956.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/956.png"];
+state_958[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_958</td></tr><tr><td>incoming: 3</td></tr><tr><td>outgoing: 5</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/958.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/958.png"];
+state_960[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_960</td></tr><tr><td>incoming: 4</td></tr><tr><td>outgoing: 5</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/960.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/960.png"];
+state_962[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_962</td></tr><tr><td>incoming: 4</td></tr><tr><td>outgoing: 5</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/962.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/962.png"];
+state_963[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_963</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 2</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 2</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/963.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/963Equivalent.svg"];
+state_965[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_965</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 0</td></tr><tr><td>loop: 1</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 1</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/965.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/965Equivalent.svg"];
+state_1444[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1444</td></tr><tr><td>incoming: 3</td></tr><tr><td>outgoing: 3</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1444.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1444.png"];
+state_1445[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1445</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 1</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 1</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/1445.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/1445Equivalent.svg"];
+state_1447[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1447</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 0</td></tr><tr><td>loop: 1</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 1</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/1447.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/1447Equivalent.svg"];
+state_1453[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1453</td></tr><tr><td>incoming: 3</td></tr><tr><td>outgoing: 5</td></tr><tr><td>loop: 5</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1453.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1453.png"];
+state_1455[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1455</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 3</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 2</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/1455.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/1455Equivalent.svg"];
+state_1458[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1458</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 0</td></tr><tr><td>loop: 2</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 1</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/1458.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/1458Equivalent.svg"];
+state_1466[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1466</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 3</td></tr><tr><td>loop: 4</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 4</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/1466.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/1466Equivalent.svg"];
+state_1472[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1472</td></tr><tr><td>incoming: 40</td></tr><tr><td>outgoing: 34</td></tr><tr><td>loop: 3</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1472.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1472.png"];
+state_1479[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1479</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1479.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1479.png"];
+state_1481[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1481</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 0</td></tr><tr><td>loop: 1</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 1</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/1481.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/1481Equivalent.svg"];
+state_1490[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1490</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1490.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1490.png"];
+state_1494[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1494</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1494.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1494.png"];
+state_1497[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1497</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 0</td></tr><tr><td>loop: 1</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 1</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/1497.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/1497Equivalent.svg"];
+state_3027[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3027</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 0</td></tr><tr><td>loop: 1</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 1</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/3027.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/3027Equivalent.svg"];
+state_3034[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3034</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 0</td></tr><tr><td>loop: 2</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 1</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/3034.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/3034Equivalent.svg"];
+state_3043[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3043</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 0</td></tr><tr><td>loop: 2</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 1</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/3043.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/3043Equivalent.svg"];
+state_3051[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3051</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 0</td></tr><tr><td>loop: 2</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 1</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/3051.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/3051Equivalent.svg"];
+state_3115[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3115</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3115.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3115.png"];
+state_3119[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3119</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3119.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3119.png"];
+state_3123[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3123</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 3</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3123.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3123.png"];
+state_3129[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3129</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3129.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3129.png"];
+state_3133[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3133</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 3</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3133.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3133.png"];
+state_3137[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3137</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3137.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3137.png"];
+state_3141[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3141</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 3</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3141.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3141.png"];
+state_3145[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3145</td></tr><tr><td>incoming: 10</td></tr><tr><td>outgoing: 11</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3145.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3145.png"];
+state_3149[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3149</td></tr><tr><td>incoming: 10</td></tr><tr><td>outgoing: 11</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3149.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3149.png"];
+state_3153[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3153</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3153.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3153.png"];
+state_3157[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3157</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3157.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3157.png"];
+state_3161[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3161</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3161.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3161.png"];
+state_3165[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3165</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3165.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3165.png"];
+state_3169[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3169</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3169.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3169.png"];
+state_3173[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3173</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3173.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3173.png"];
+state_3177[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3177</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3177.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3177.png"];
+state_3181[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3181</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3181.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/3181.png"];
+activityMainActivity [fontcolor = teal,color = teal];
+activityMainActivity -> state_956 [label = "   click(\"index=0\"): 940, 1397, 1405, 1416, 1422, 1436, 2867, 2873, 2880, 2888, 2895, 2904, 2911, 2916, 2921, 2930, 2937, 3022   ",fontcolor = teal,color = teal];
+state_956 -> state_956[label = "click(\"使用者界面 index=0\"): 941
+click(\"SMS index=6\"): 1417
+click(\"保護 index=9\"): 1437
+"];
+state_963 -> state_963[label = "click(\"index=1\"): 3019
+click(\"index=3\"): 3073
+"];
+state_965 -> state_965[label = "click(\"index=0\"): 950
+"];
+state_1445 -> state_1445[label = "click(\"index=1\"): 2927
+"];
+state_1447 -> state_1447[label = "click(\"index=0\"): 1402
+"];
+state_1453 -> state_1453[label = "click(\"分類選單 index=0\"): 1407
+click(\"記憶選取內容 index=4\"): 2882
+click(\"index=7\"): 2897
+click(\"index=8\"): 2898
+click(\"版面配置 index=9\"): 2899
+"];
+state_1455 -> state_1455[label = "click(\"分類選單 index=0\"): 1409
+click(\"index=2\"): 2901
+click(\"index=3\"): 2934
+"];
+state_1458 -> state_1458[label = "click(\"分類選單 index=0\"): 1412
+click(\"index=1\"): 1413
+"];
+state_1466 -> state_1466[label = "click(\"復原 index=0\"): 1419
+click(\"未出(入)帳 index=2\"): 2908
+click(\"已出(入)帳 index=3\"): 2913
+click(\"已結清/已對帳 index=4\"): 2918
+"];
+state_1472 -> state_1472[label = "click(\"使用者界面 index=0\"): 1424
+click(\"SMS index=6\"): 2939
+click(\"保護 index=9\"): 2944
+"];
+state_1481 -> state_1481[label = "click(\"index=0\"): 1433
+"];
+state_1497 -> state_1497[label = "click(\"index=0\"): 1448
+"];
+state_3027 -> state_3027[label = "click(\"index=0\"): 2870
+"];
+state_3034 -> state_3034[label = "click(\"分類選單 index=0\"): 2876
+click(\"index=1\"): 2877
+"];
+state_3043 -> state_3043[label = "click(\"分類選單 index=0\"): 2884
+click(\"index=1\"): 2885
+"];
+state_3051 -> state_3051[label = "click(\"分類選單 index=0\"): 2891
+click(\"index=1\"): 2892
+"];
+}

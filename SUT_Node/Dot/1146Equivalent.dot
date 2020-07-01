@@ -1,0 +1,26 @@
+graph temp {
+rankdir=LR;
+imagepath = "output/20200616_161901_financisto_NFS/States";
+pic1[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>Original pic</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="1146.png"/></td></tr></table>>,shape=box,margin=0,URL="1146.png"];
+pic2[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="1166.png"/></td></tr></table>>,shape=box,margin=0,URL="1166.png"];
+pic3[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="1269.png"/></td></tr></table>>,shape=box,margin=0,URL="1269.png"];
+pic4[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="1904.png"/></td></tr></table>>,shape=box,margin=0,URL="1904.png"];
+pic5[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="1961.png"/></td></tr></table>>,shape=box,margin=0,URL="1961.png"];
+pic6[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="1966.png"/></td></tr></table>>,shape=box,margin=0,URL="1966.png"];
+pic7[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="1971.png"/></td></tr></table>>,shape=box,margin=0,URL="1971.png"];
+pic8[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="1976.png"/></td></tr></table>>,shape=box,margin=0,URL="1976.png"];
+pic9[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="1987.png"/></td></tr></table>>,shape=box,margin=0,URL="1987.png"];
+pic10[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="1992.png"/></td></tr></table>>,shape=box,margin=0,URL="1992.png"];
+pic11[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="1997.png"/></td></tr></table>>,shape=box,margin=0,URL="1997.png"];
+pic12[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="2008.png"/></td></tr></table>>,shape=box,margin=0,URL="2008.png"];
+pic13[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="2014.png"/></td></tr></table>>,shape=box,margin=0,URL="2014.png"];
+pic14[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="2025.png"/></td></tr></table>>,shape=box,margin=0,URL="2025.png"];
+pic15[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="2079.png"/></td></tr></table>>,shape=box,margin=0,URL="2079.png"];
+pic16[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="2275.png"/></td></tr></table>>,shape=box,margin=0,URL="2275.png"];
+pic17[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="2352.png"/></td></tr></table>>,shape=box,margin=0,URL="2352.png"];
+pic18[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="2503.png"/></td></tr></table>>,shape=box,margin=0,URL="2503.png"];
+pic19[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="2596.png"/></td></tr></table>>,shape=box,margin=0,URL="2596.png"];
+pic20[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="2693.png"/></td></tr></table>>,shape=box,margin=0,URL="2693.png"];
+pic21[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="2776.png"/></td></tr></table>>,shape=box,margin=0,URL="2776.png"];
+pic22[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td width="130px" height="230px" fixedsize="true"><img src="3500.png"/></td></tr></table>>,shape=box,margin=0,URL="3500.png"];
+}

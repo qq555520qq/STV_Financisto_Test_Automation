@@ -1,0 +1,21 @@
+digraph activityTemplatesListActivity{
+imagepath="output/20200616_161901_financisto_NFS";
+state_116[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_116</td></tr><tr><td>incoming: 3</td></tr><tr><td>outgoing: 3</td></tr><tr><td>loop: 2</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 2</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/116.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/116Equivalent.svg"];
+state_1854[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1854</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 0</td></tr><tr><td>loop: 2</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 1</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/1854.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/1854Equivalent.svg"];
+activitySelectTemplateActivity [fontcolor = teal,color = teal];
+activitySelectTemplateActivity -> state_116 [label = "   click(\"編輯 index=0\"): 112, 1794, 3250   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_116 -> activityTransactionActivity [label = "   click(\"index=0\"): 113   ",fontcolor = teal,color = teal];
+activityTransferActivity [fontcolor = teal,color = teal];
+state_116 -> activityTransferActivity [label = "   click(\"index=1\"): 1271   ",fontcolor = teal,color = teal];
+state_116 -> state_116[label = "click(\"index=0\"): 2106
+click(\"index=1\"): 3251
+",fontcolor = DodgerBlue,color = DodgerBlue];
+activitySelectTemplateActivity [fontcolor = teal,color = teal];
+activitySelectTemplateActivity -> state_116 [label = "   click(\"編輯 index=0\"): 1270   ",fontcolor = teal,color = teal];
+state_1854 -> state_1854[label = "click(\"index=0\"): 1796
+click(\"index=0\"): 1797
+"];
+activitySelectTemplateActivity [fontcolor = teal,color = teal];
+activitySelectTemplateActivity -> state_116 [label = "   click(\"編輯 index=0\"): 2105   ",fontcolor = teal,color = teal];
+}

@@ -1,0 +1,36 @@
+digraph activityCategorySelectorActivity{
+imagepath="output/20200616_161901_financisto_NFS";
+state_825[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_825</td></tr><tr><td>incoming: 8</td></tr><tr><td>outgoing: 7</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/825.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/825.png"];
+activityBlotterFilterActivity [fontcolor = teal,color = teal];
+activityBlotterFilterActivity -> state_825 [label = "   click(\"index=6\"): 2018   ",fontcolor = teal,color = teal];
+activityReportFilterActivity [fontcolor = teal,color = teal];
+activityReportFilterActivity -> state_825 [label = "   click(\"index=6\"): 815   ",fontcolor = teal,color = teal];
+activityReportFilterActivity [fontcolor = teal,color = teal];
+state_825 -> activityReportFilterActivity [label = "   click(\"選取 index=1\"): 817   ",fontcolor = teal,color = teal];
+activityCategoryActivity [fontcolor = teal,color = teal];
+state_825 -> activityCategoryActivity [label = "   click(\"選取 index=1\"): 1464   ",fontcolor = teal,color = teal];
+activityCategoryActivity [fontcolor = teal,color = teal];
+state_825 -> activityCategoryActivity [label = "   click(\"選取 index=1\"): 1467   ",fontcolor = teal,color = teal];
+activitySmsTemplateActivity [fontcolor = teal,color = teal];
+state_825 -> activitySmsTemplateActivity [label = "   click(\"選取 index=1\"): 1478   ",fontcolor = teal,color = teal];
+activitySmsTemplateActivity [fontcolor = teal,color = teal];
+state_825 -> activitySmsTemplateActivity [label = "   click(\"選取 index=1\"): 1496   ",fontcolor = teal,color = teal];
+activitySmsTemplateActivity [fontcolor = teal,color = teal];
+state_825 -> activitySmsTemplateActivity [label = "   click(\"選取 index=1\"): 1518   ",fontcolor = teal,color = teal];
+activitySmsTemplateActivity [fontcolor = teal,color = teal];
+state_825 -> activitySmsTemplateActivity [label = "   click(\"選取 index=1\"): 1582   ",fontcolor = teal,color = teal];
+state_825 -> state_825[label = "click(\"返回 index=0\"): 816
+"];
+activityCategoryActivity [fontcolor = teal,color = teal];
+activityCategoryActivity -> state_825 [label = "   click(\"index=0\"): 1463   ",fontcolor = teal,color = teal];
+activityCategoryActivity [fontcolor = teal,color = teal];
+activityCategoryActivity -> state_825 [label = "   click(\"index=0\"): 1466   ",fontcolor = teal,color = teal];
+activitySmsTemplateActivity [fontcolor = teal,color = teal];
+activitySmsTemplateActivity -> state_825 [label = "   click(\"index=0\"): 1477   ",fontcolor = teal,color = teal];
+activitySmsTemplateActivity [fontcolor = teal,color = teal];
+activitySmsTemplateActivity -> state_825 [label = "   click(\"index=0\"): 1517   ",fontcolor = teal,color = teal];
+activitySmsTemplateActivity [fontcolor = teal,color = teal];
+activitySmsTemplateActivity -> state_825 [label = "   click(\"index=0\"): 1495   ",fontcolor = teal,color = teal];
+activitySmsTemplateActivity [fontcolor = teal,color = teal];
+activitySmsTemplateActivity -> state_825 [label = "   click(\"index=0\"): 1581   ",fontcolor = teal,color = teal];
+}

@@ -1,0 +1,22 @@
+digraph activityAccountListTotalsDetailsActivity{
+imagepath="output/20200616_161901_financisto_NFS";
+state_39[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_39</td></tr><tr><td>incoming: 4</td></tr><tr><td>outgoing: 4</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/39.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/39.png"];
+activityMainActivity [fontcolor = teal,color = teal];
+activityMainActivity -> state_39 [label = "   click(\"0.00 index=3\"): 37   ",fontcolor = teal,color = teal];
+activityMainActivity [fontcolor = teal,color = teal];
+activityMainActivity -> state_39 [label = "   click(\"0.00 index=6\"): 1159   ",fontcolor = teal,color = teal];
+activityMainActivity [fontcolor = teal,color = teal];
+state_39 -> activityMainActivity [label = "   click(\"確定 index=0\"): 39   ",fontcolor = teal,color = teal];
+activityMainActivity [fontcolor = teal,color = teal];
+state_39 -> activityMainActivity [label = "   click(\"確定 index=0\"): 1160   ",fontcolor = teal,color = teal];
+activityMainActivity [fontcolor = teal,color = teal];
+state_39 -> activityMainActivity [label = "   click(\"確定 index=0\"): 2013   ",fontcolor = teal,color = teal];
+activityBlotterActivity [fontcolor = teal,color = teal];
+state_39 -> activityBlotterActivity [label = "   click(\"確定 index=0\"): 3225   ",fontcolor = teal,color = teal];
+state_39 -> state_39[label = "click(\"index=1\"): 38
+"];
+activityMainActivity [fontcolor = teal,color = teal];
+activityMainActivity -> state_39 [label = "   click(\"0.00 index=6\"): 2012   ",fontcolor = teal,color = teal];
+activityBlotterActivity [fontcolor = teal,color = teal];
+activityBlotterActivity -> state_39 [label = "   click(\"0.00 index=6\"): 3224   ",fontcolor = teal,color = teal];
+}

@@ -1,0 +1,10 @@
+digraph activityNoteFilterActivity{
+imagepath="output/20200616_161901_financisto_NFS";
+state_2173[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2173</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2173.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2173.png"];
+activityBlotterFilterActivity [fontcolor = teal,color = teal];
+activityBlotterFilterActivity -> state_2173 [label = "   click(\"index=14\"): 2078   ",fontcolor = teal,color = teal];
+activityBlotterFilterActivity [fontcolor = teal,color = teal];
+state_2173 -> activityBlotterFilterActivity [label = "   click(\"不過濾 index=2\"): 2080   ",fontcolor = teal,color = teal];
+state_2173 -> state_2173[label = "click(\"index=1\"): 2079
+"];
+}

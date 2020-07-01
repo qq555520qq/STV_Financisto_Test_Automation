@@ -1,0 +1,40 @@
+digraph activityCurrencyListActivity{
+imagepath="output/20200616_161901_financisto_NFS";
+state_971[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_971</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/971.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/971.png"];
+state_972[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_972</td></tr><tr><td>incoming: 12</td></tr><tr><td>outgoing: 8</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/972.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/972.png"];
+state_974[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_974</td></tr><tr><td>incoming: 7</td></tr><tr><td>outgoing: 7</td></tr><tr><td>loop: 2</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 1</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/974.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/974Equivalent.svg"];
+state_976[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_976</td></tr><tr><td>incoming: 7</td></tr><tr><td>outgoing: 7</td></tr><tr><td>loop: 2</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 1</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/976.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/976Equivalent.svg"];
+state_978[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_978</td></tr><tr><td>incoming: 7</td></tr><tr><td>outgoing: 7</td></tr><tr><td>loop: 2</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 1</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/978.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/978Equivalent.svg"];
+state_980[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_980</td></tr><tr><td>incoming: 7</td></tr><tr><td>outgoing: 7</td></tr><tr><td>loop: 2</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 1</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/980.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/980Equivalent.svg"];
+state_982[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_982</td></tr><tr><td>incoming: 5</td></tr><tr><td>outgoing: 5</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/982.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/982.png"];
+state_984[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_984</td></tr><tr><td>incoming: 5</td></tr><tr><td>outgoing: 5</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/984.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/984.png"];
+state_986[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_986</td></tr><tr><td>incoming: 5</td></tr><tr><td>outgoing: 5</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/986.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/986.png"];
+activityAccountActivity [fontcolor = teal,color = teal];
+activityAccountActivity -> state_972 [label = "   click(\"index=2\"): 1061   ",fontcolor = teal,color = teal];
+activityMainActivity [fontcolor = teal,color = teal];
+activityMainActivity -> state_971 [label = "   click(\"index=0\"): 954, 3077   ",fontcolor = teal,color = teal];
+activityExchangeRatesListActivity [fontcolor = teal,color = teal];
+state_971 -> activityExchangeRatesListActivity [label = "   click(\"index=1\"): 3078   ",fontcolor = teal,color = teal];
+activityCurrencyActivity [fontcolor = teal,color = teal];
+state_972 -> activityCurrencyActivity [label = "   click(\"確定 index=2\"): 971   ",fontcolor = teal,color = teal];
+state_972 -> state_972[label = "click(\"新幣值… index=0\"): 956
+"];
+state_974 -> state_974[label = "click(\"AED (United Arab Emi... index=1\"): 1063
+click(\"確定 index=2\"): 1076
+"];
+state_976 -> state_976[label = "click(\"AFN (Afghan afghani) index=2\"): 1814
+click(\"確定 index=2\"): 1825
+"];
+state_978 -> state_978[label = "click(\"ALL (Albanian lek) index=3\"): 1961
+click(\"確定 index=2\"): 1970
+"];
+state_980 -> state_980[label = "click(\"AMD (Armenian dram) index=4\"): 3281
+click(\"確定 index=2\"): 3288
+"];
+activityAccountActivity [fontcolor = teal,color = teal];
+activityAccountActivity -> state_972 [label = "   click(\"index=2\"): 1812   ",fontcolor = teal,color = teal];
+activityAccountActivity [fontcolor = teal,color = teal];
+activityAccountActivity -> state_972 [label = "   click(\"index=2\"): 1959   ",fontcolor = teal,color = teal];
+activityAccountActivity [fontcolor = teal,color = teal];
+activityAccountActivity -> state_972 [label = "   click(\"index=2\"): 3279   ",fontcolor = teal,color = teal];
+}

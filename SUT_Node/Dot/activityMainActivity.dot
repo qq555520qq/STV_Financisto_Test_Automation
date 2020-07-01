@@ -1,0 +1,829 @@
+digraph activityMainActivity{
+imagepath="output/20200616_161901_financisto_NFS";
+state_1[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1</td></tr><tr><td>incoming: 0</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1.png"];
+state_2[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_2</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 5</td></tr><tr><td>loop: 640</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/2.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/2.png"];
+state_20[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_20</td></tr><tr><td>incoming: 16</td></tr><tr><td>outgoing: 9</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/20.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/20.png"];
+state_22[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_22</td></tr><tr><td>incoming: 14</td></tr><tr><td>outgoing: 10</td></tr><tr><td>loop: 3</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 2</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/22.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/22Equivalent.svg"];
+state_24[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_24</td></tr><tr><td>incoming: 18</td></tr><tr><td>outgoing: 8</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/24.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/24.png"];
+state_26[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_26</td></tr><tr><td>incoming: 5</td></tr><tr><td>outgoing: 15</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/26.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/26.png"];
+state_28[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_28</td></tr><tr><td>incoming: 18</td></tr><tr><td>outgoing: 13</td></tr><tr><td>loop: 4</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/28.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/28.png"];
+state_37[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_37</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/37.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/37.png"];
+state_129[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_129</td></tr><tr><td>incoming: 5</td></tr><tr><td>outgoing: 9</td></tr><tr><td>loop: 4</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 2</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/129.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/129Equivalent.svg"];
+state_970[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_970</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 7</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/970.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/970.png"];
+state_1043[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1043</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1043.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1043.png"];
+state_1044[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1044</td></tr><tr><td>incoming: 6</td></tr><tr><td>outgoing: 6</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1044.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1044.png"];
+state_1046[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1046</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1046.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1046.png"];
+state_1048[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1048</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1048.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1048.png"];
+state_1050[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1050</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1050.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1050.png"];
+state_1052[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1052</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1052.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1052.png"];
+state_1054[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1054</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1054.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1054.png"];
+state_1059[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1059</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1059.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1059.png"];
+state_1061[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1061</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1061.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1061.png"];
+state_1713[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1713</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 9</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1713.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1713.png"];
+state_1714[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1714</td></tr><tr><td>incoming: 8</td></tr><tr><td>outgoing: 8</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1714.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1714.png"];
+state_1716[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1716</td></tr><tr><td>incoming: 8</td></tr><tr><td>outgoing: 8</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1716.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1716.png"];
+state_1718[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1718</td></tr><tr><td>incoming: 8</td></tr><tr><td>outgoing: 8</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1718.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1718.png"];
+state_1720[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1720</td></tr><tr><td>incoming: 8</td></tr><tr><td>outgoing: 8</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1720.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1720.png"];
+state_1722[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1722</td></tr><tr><td>incoming: 8</td></tr><tr><td>outgoing: 8</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1722.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1722.png"];
+state_1724[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1724</td></tr><tr><td>incoming: 8</td></tr><tr><td>outgoing: 8</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1724.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1724.png"];
+state_1726[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1726</td></tr><tr><td>incoming: 8</td></tr><tr><td>outgoing: 8</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1726.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1726.png"];
+state_1728[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1728</td></tr><tr><td>incoming: 8</td></tr><tr><td>outgoing: 8</td></tr><tr><td>loop: 1</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1728.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1728.png"];
+state_3021[label=<<table border="0" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_3021</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 0</td></tr><tr><td>loop: 0</td></tr><tr><td>Crash State</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/3021.png"/></td></tr></table>>,shape=box,margin=0,color = red,URL="../States/3021.png"];
+state_2 -> state_2[label = "click(\"index=0\"): 2
+click(\"index=0\"): 3
+click(\"index=1\"): 4
+click(\"index=2\"): 5
+click(\"index=3\"): 6
+click(\"index=4\"): 7
+click(\"index=5\"): 8
+click(\"index=2\"): 9
+click(\"index=0\"): 10
+click(\"index=1\"): 11
+click(\"index=4\"): 12
+click(\"index=0\"): 13
+click(\"index=1\"): 14
+click(\"index=2\"): 15
+click(\"index=3\"): 16
+click(\"index=4\"): 17
+click(\"index=5\"): 18
+click(\"index=7\"): 77
+click(\"index=8\"): 78
+click(\"index=9\"): 79
+click(\"index=10\"): 80
+click(\"index=11\"): 81
+click(\"index=12\"): 82
+click(\"index=13\"): 83
+click(\"index=14\"): 84
+click(\"index=15\"): 85
+click(\"index=1\"): 121
+click(\"index=0\"): 138
+click(\"index=1\"): 139
+click(\"index=2\"): 140
+click(\"index=3\"): 141
+click(\"index=4\"): 142
+click(\"index=5\"): 143
+click(\"index=10\"): 144
+click(\"index=0\"): 145
+click(\"index=1\"): 146
+click(\"index=2\"): 147
+click(\"index=3\"): 148
+click(\"index=4\"): 149
+click(\"index=5\"): 150
+click(\"index=6\"): 151
+click(\"index=7\"): 152
+click(\"index=12\"): 153
+click(\"index=0\"): 154
+click(\"index=1\"): 155
+click(\"index=2\"): 156
+click(\"index=3\"): 157
+click(\"index=14\"): 158
+click(\"index=0\"): 159
+click(\"index=1\"): 160
+click(\"index=2\"): 161
+click(\"index=3\"): 162
+click(\"index=4\"): 163
+click(\"index=5\"): 164
+click(\"index=6\"): 165
+click(\"index=7\"): 166
+click(\"index=0\"): 167
+click(\"index=1\"): 168
+click(\"index=2\"): 169
+click(\"index=17\"): 170
+click(\"index=0\"): 171
+click(\"index=1\"): 172
+click(\"index=19\"): 173
+click(\"index=0\"): 174
+click(\"index=1\"): 175
+click(\"index=21\"): 176
+click(\"index=0\"): 177
+click(\"index=1\"): 178
+click(\"index=2\"): 179
+click(\"index=3\"): 180
+click(\"index=23\"): 181
+click(\"index=0\"): 182
+click(\"index=1\"): 183
+click(\"index=2\"): 184
+click(\"index=3\"): 185
+click(\"index=4\"): 186
+click(\"index=5\"): 187
+click(\"index=6\"): 188
+click(\"index=7\"): 189
+click(\"index=25\"): 190
+click(\"index=0\"): 191
+click(\"index=1\"): 192
+click(\"index=2\"): 193
+click(\"index=3\"): 194
+click(\"index=4\"): 195
+click(\"index=5\"): 196
+click(\"index=6\"): 197
+click(\"index=7\"): 198
+click(\"index=27\"): 199
+click(\"index=0\"): 200
+click(\"index=1\"): 201
+click(\"index=2\"): 202
+click(\"index=3\"): 203
+click(\"index=4\"): 204
+click(\"index=5\"): 205
+click(\"index=29\"): 206
+click(\"index=0\"): 207
+click(\"index=1\"): 208
+click(\"index=2\"): 209
+click(\"index=3\"): 210
+click(\"index=4\"): 211
+click(\"index=5\"): 212
+click(\"index=31\"): 213
+click(\"index=0\"): 214
+click(\"index=1\"): 215
+click(\"index=2\"): 216
+click(\"index=3\"): 217
+click(\"index=4\"): 218
+click(\"index=5\"): 219
+click(\"index=6\"): 220
+click(\"index=7\"): 221
+click(\"index=8\"): 222
+click(\"index=9\"): 223
+click(\"index=33\"): 224
+click(\"index=0\"): 225
+click(\"index=1\"): 226
+click(\"index=2\"): 227
+click(\"index=3\"): 228
+click(\"index=35\"): 229
+click(\"index=0\"): 230
+click(\"index=1\"): 231
+click(\"index=2\"): 232
+click(\"index=3\"): 233
+click(\"index=4\"): 234
+click(\"index=5\"): 235
+click(\"index=6\"): 236
+click(\"index=7\"): 237
+click(\"index=8\"): 238
+click(\"index=9\"): 239
+click(\"index=10\"): 240
+click(\"index=11\"): 241
+click(\"index=12\"): 242
+click(\"index=13\"): 243
+click(\"index=14\"): 244
+click(\"index=15\"): 245
+click(\"index=37\"): 246
+click(\"index=0\"): 247
+click(\"index=1\"): 248
+click(\"index=39\"): 249
+click(\"index=0\"): 250
+click(\"index=1\"): 251
+click(\"index=2\"): 252
+click(\"index=3\"): 253
+click(\"index=4\"): 254
+click(\"index=5\"): 255
+click(\"index=41\"): 256
+click(\"index=0\"): 257
+click(\"index=1\"): 258
+click(\"index=43\"): 259
+click(\"index=0\"): 260
+click(\"index=1\"): 261
+click(\"index=2\"): 262
+click(\"index=3\"): 263
+click(\"index=4\"): 264
+click(\"index=5\"): 265
+click(\"index=6\"): 266
+click(\"index=7\"): 267
+click(\"index=8\"): 268
+click(\"index=9\"): 269
+click(\"index=45\"): 270
+click(\"index=0\"): 271
+click(\"index=1\"): 272
+click(\"index=2\"): 273
+click(\"index=3\"): 274
+click(\"index=47\"): 275
+click(\"index=0\"): 276
+click(\"index=1\"): 277
+click(\"index=2\"): 278
+click(\"index=3\"): 279
+click(\"index=4\"): 280
+click(\"index=5\"): 281
+click(\"index=6\"): 282
+click(\"index=7\"): 283
+click(\"index=49\"): 284
+click(\"index=0\"): 285
+click(\"index=1\"): 286
+click(\"index=51\"): 287
+click(\"index=0\"): 288
+click(\"index=1\"): 289
+click(\"index=2\"): 290
+click(\"index=3\"): 291
+click(\"index=53\"): 292
+click(\"index=0\"): 293
+click(\"index=1\"): 294
+click(\"index=2\"): 295
+click(\"index=3\"): 296
+click(\"index=4\"): 297
+click(\"index=5\"): 298
+click(\"index=55\"): 299
+click(\"index=0\"): 300
+click(\"index=1\"): 301
+click(\"index=57\"): 302
+click(\"index=0\"): 303
+click(\"index=1\"): 304
+click(\"index=2\"): 305
+click(\"index=3\"): 306
+click(\"index=59\"): 307
+click(\"index=0\"): 308
+click(\"index=1\"): 309
+click(\"index=2\"): 310
+click(\"index=3\"): 311
+click(\"index=4\"): 312
+click(\"index=5\"): 313
+click(\"index=61\"): 314
+click(\"index=0\"): 315
+click(\"index=1\"): 316
+click(\"index=63\"): 317
+click(\"index=0\"): 318
+click(\"index=1\"): 319
+click(\"index=2\"): 320
+click(\"index=3\"): 321
+click(\"index=65\"): 322
+click(\"index=0\"): 323
+click(\"index=1\"): 324
+click(\"index=2\"): 325
+click(\"index=3\"): 326
+click(\"index=4\"): 327
+click(\"index=5\"): 328
+click(\"index=6\"): 329
+click(\"index=7\"): 330
+click(\"index=8\"): 331
+click(\"index=9\"): 332
+click(\"index=10\"): 333
+click(\"index=11\"): 334
+click(\"index=12\"): 335
+click(\"index=13\"): 336
+click(\"index=14\"): 337
+click(\"index=15\"): 338
+click(\"index=67\"): 339
+click(\"index=0\"): 340
+click(\"index=1\"): 341
+click(\"index=2\"): 342
+click(\"index=3\"): 343
+click(\"index=4\"): 344
+click(\"index=5\"): 345
+click(\"index=6\"): 346
+click(\"index=7\"): 347
+click(\"index=8\"): 348
+click(\"index=9\"): 349
+click(\"index=10\"): 350
+click(\"index=11\"): 351
+click(\"index=69\"): 352
+click(\"index=0\"): 353
+click(\"index=1\"): 354
+click(\"index=2\"): 355
+click(\"index=3\"): 356
+click(\"index=4\"): 357
+click(\"index=5\"): 358
+click(\"index=71\"): 359
+click(\"index=0\"): 360
+click(\"index=1\"): 361
+click(\"index=73\"): 362
+click(\"index=0\"): 363
+click(\"index=1\"): 364
+click(\"index=2\"): 365
+click(\"index=3\"): 366
+click(\"index=75\"): 367
+click(\"index=0\"): 368
+click(\"index=1\"): 369
+click(\"index=2\"): 370
+click(\"index=3\"): 371
+click(\"index=77\"): 372
+click(\"index=0\"): 373
+click(\"index=1\"): 374
+click(\"index=2\"): 375
+click(\"index=3\"): 376
+click(\"index=79\"): 377
+click(\"index=0\"): 378
+click(\"index=1\"): 379
+click(\"index=2\"): 380
+click(\"index=3\"): 381
+click(\"index=4\"): 382
+click(\"index=5\"): 383
+click(\"index=6\"): 384
+click(\"index=7\"): 385
+click(\"index=81\"): 386
+click(\"index=0\"): 387
+click(\"index=1\"): 388
+click(\"index=2\"): 389
+click(\"index=3\"): 390
+click(\"index=83\"): 391
+click(\"index=0\"): 392
+click(\"index=1\"): 393
+click(\"index=2\"): 394
+click(\"index=3\"): 395
+click(\"index=4\"): 396
+click(\"index=5\"): 397
+click(\"index=6\"): 398
+click(\"index=7\"): 399
+click(\"index=85\"): 400
+click(\"index=0\"): 401
+click(\"index=1\"): 402
+click(\"index=2\"): 403
+click(\"index=3\"): 404
+click(\"index=4\"): 405
+click(\"index=5\"): 406
+click(\"index=6\"): 407
+click(\"index=7\"): 408
+click(\"index=87\"): 409
+click(\"index=0\"): 410
+click(\"index=1\"): 411
+click(\"index=2\"): 412
+click(\"index=3\"): 413
+click(\"index=89\"): 414
+click(\"index=0\"): 415
+click(\"index=1\"): 416
+click(\"index=2\"): 417
+click(\"index=3\"): 418
+click(\"index=4\"): 419
+click(\"index=5\"): 420
+click(\"index=6\"): 421
+click(\"index=7\"): 422
+click(\"index=8\"): 423
+click(\"index=9\"): 424
+click(\"index=10\"): 425
+click(\"index=11\"): 426
+click(\"index=12\"): 427
+click(\"index=13\"): 428
+click(\"index=14\"): 429
+click(\"index=15\"): 430
+click(\"index=91\"): 431
+click(\"index=0\"): 432
+click(\"index=1\"): 433
+click(\"index=2\"): 434
+click(\"index=3\"): 435
+click(\"index=4\"): 436
+click(\"index=5\"): 437
+click(\"index=6\"): 438
+click(\"index=7\"): 439
+click(\"index=8\"): 440
+click(\"index=9\"): 441
+click(\"index=10\"): 442
+click(\"index=11\"): 443
+click(\"index=12\"): 444
+click(\"index=13\"): 445
+click(\"index=93\"): 446
+click(\"index=0\"): 447
+click(\"index=1\"): 448
+click(\"index=2\"): 449
+click(\"index=3\"): 450
+click(\"index=4\"): 451
+click(\"index=5\"): 452
+click(\"index=6\"): 453
+click(\"index=7\"): 454
+click(\"index=95\"): 455
+click(\"index=0\"): 456
+click(\"index=1\"): 457
+click(\"index=2\"): 458
+click(\"index=3\"): 459
+click(\"index=4\"): 460
+click(\"index=5\"): 461
+click(\"index=6\"): 462
+click(\"index=7\"): 463
+click(\"index=97\"): 464
+click(\"index=0\"): 465
+click(\"index=1\"): 466
+click(\"index=2\"): 467
+click(\"index=3\"): 468
+click(\"index=4\"): 469
+click(\"index=5\"): 470
+click(\"index=6\"): 471
+click(\"index=7\"): 472
+click(\"index=8\"): 473
+click(\"index=9\"): 474
+click(\"index=10\"): 475
+click(\"index=11\"): 476
+click(\"index=12\"): 477
+click(\"index=13\"): 478
+click(\"index=14\"): 479
+click(\"index=15\"): 480
+click(\"index=16\"): 481
+click(\"index=17\"): 482
+click(\"index=99\"): 483
+click(\"index=0\"): 484
+click(\"index=1\"): 485
+click(\"index=2\"): 486
+click(\"index=3\"): 487
+click(\"index=4\"): 488
+click(\"index=5\"): 489
+click(\"index=101\"): 490
+click(\"index=0\"): 491
+click(\"index=1\"): 492
+click(\"index=2\"): 493
+click(\"index=3\"): 494
+click(\"index=4\"): 495
+click(\"index=5\"): 496
+click(\"index=6\"): 497
+click(\"index=7\"): 498
+click(\"index=8\"): 499
+click(\"index=9\"): 500
+click(\"index=10\"): 501
+click(\"index=11\"): 502
+click(\"index=12\"): 503
+click(\"index=13\"): 504
+click(\"index=103\"): 505
+click(\"index=0\"): 506
+click(\"index=1\"): 507
+click(\"index=2\"): 508
+click(\"index=3\"): 509
+click(\"index=4\"): 510
+click(\"index=5\"): 511
+click(\"index=6\"): 512
+click(\"index=7\"): 513
+click(\"index=8\"): 514
+click(\"index=9\"): 515
+click(\"index=10\"): 516
+click(\"index=11\"): 517
+click(\"index=12\"): 518
+click(\"index=13\"): 519
+click(\"index=14\"): 520
+click(\"index=15\"): 521
+click(\"index=16\"): 522
+click(\"index=17\"): 523
+click(\"index=18\"): 524
+click(\"index=19\"): 525
+click(\"index=20\"): 526
+click(\"index=21\"): 527
+click(\"index=22\"): 528
+click(\"index=23\"): 529
+click(\"index=24\"): 530
+click(\"index=25\"): 531
+click(\"index=105\"): 532
+click(\"index=0\"): 533
+click(\"index=1\"): 534
+click(\"index=2\"): 535
+click(\"index=3\"): 536
+click(\"index=4\"): 537
+click(\"index=5\"): 538
+click(\"index=6\"): 539
+click(\"index=7\"): 540
+click(\"index=107\"): 541
+click(\"index=0\"): 542
+click(\"index=1\"): 543
+click(\"index=2\"): 544
+click(\"index=3\"): 545
+click(\"index=4\"): 546
+click(\"index=5\"): 547
+click(\"index=6\"): 548
+click(\"index=7\"): 549
+click(\"index=109\"): 550
+click(\"index=0\"): 551
+click(\"index=1\"): 552
+click(\"index=2\"): 553
+click(\"index=3\"): 554
+click(\"index=4\"): 555
+click(\"index=5\"): 556
+click(\"index=6\"): 557
+click(\"index=7\"): 558
+click(\"index=8\"): 559
+click(\"index=9\"): 560
+click(\"index=10\"): 561
+click(\"index=11\"): 562
+click(\"index=111\"): 563
+click(\"index=0\"): 564
+click(\"index=1\"): 565
+click(\"index=113\"): 566
+click(\"index=0\"): 567
+click(\"index=1\"): 568
+click(\"index=2\"): 569
+click(\"index=3\"): 570
+click(\"index=4\"): 571
+click(\"index=5\"): 572
+click(\"index=6\"): 573
+click(\"index=7\"): 574
+click(\"index=8\"): 575
+click(\"index=9\"): 576
+click(\"index=10\"): 577
+click(\"index=11\"): 578
+click(\"index=12\"): 579
+click(\"index=13\"): 580
+click(\"index=14\"): 581
+click(\"index=15\"): 582
+click(\"index=16\"): 583
+click(\"index=17\"): 584
+click(\"index=18\"): 585
+click(\"index=19\"): 586
+click(\"index=20\"): 587
+click(\"index=21\"): 588
+click(\"index=115\"): 589
+click(\"index=0\"): 590
+click(\"index=1\"): 591
+click(\"index=2\"): 592
+click(\"index=3\"): 593
+click(\"index=4\"): 594
+click(\"index=5\"): 595
+click(\"index=117\"): 596
+click(\"index=0\"): 597
+click(\"index=1\"): 598
+click(\"index=2\"): 599
+click(\"index=3\"): 600
+click(\"index=4\"): 601
+click(\"index=5\"): 602
+click(\"index=6\"): 603
+click(\"index=7\"): 604
+click(\"index=119\"): 605
+click(\"index=0\"): 606
+click(\"index=1\"): 607
+click(\"index=2\"): 608
+click(\"index=3\"): 609
+click(\"index=4\"): 610
+click(\"index=5\"): 611
+click(\"index=6\"): 612
+click(\"index=7\"): 613
+click(\"index=8\"): 614
+click(\"index=9\"): 615
+click(\"index=10\"): 616
+click(\"index=11\"): 617
+click(\"index=121\"): 618
+click(\"index=0\"): 619
+click(\"index=1\"): 620
+click(\"index=2\"): 621
+click(\"index=3\"): 622
+click(\"index=4\"): 623
+click(\"index=5\"): 624
+click(\"index=6\"): 625
+click(\"index=7\"): 626
+click(\"index=123\"): 627
+click(\"index=0\"): 628
+click(\"index=1\"): 629
+click(\"index=2\"): 630
+click(\"index=3\"): 631
+click(\"index=4\"): 632
+click(\"index=5\"): 633
+click(\"index=6\"): 634
+click(\"index=7\"): 635
+click(\"index=8\"): 636
+click(\"index=9\"): 637
+click(\"index=10\"): 638
+click(\"index=11\"): 639
+click(\"index=12\"): 640
+click(\"index=13\"): 641
+click(\"index=14\"): 642
+click(\"index=15\"): 643
+click(\"index=125\"): 644
+click(\"index=0\"): 645
+click(\"index=1\"): 646
+click(\"index=2\"): 647
+click(\"index=3\"): 648
+click(\"index=4\"): 649
+click(\"index=5\"): 650
+click(\"index=6\"): 651
+click(\"index=7\"): 652
+click(\"index=127\"): 653
+click(\"index=0\"): 654
+click(\"index=1\"): 655
+click(\"index=2\"): 656
+click(\"index=3\"): 657
+click(\"index=4\"): 658
+click(\"index=5\"): 659
+click(\"index=6\"): 660
+click(\"index=7\"): 661
+click(\"index=8\"): 662
+click(\"index=9\"): 663
+click(\"index=10\"): 664
+click(\"index=11\"): 665
+click(\"index=129\"): 666
+click(\"index=0\"): 667
+click(\"index=1\"): 668
+click(\"index=2\"): 669
+click(\"index=3\"): 670
+click(\"index=4\"): 671
+click(\"index=5\"): 672
+click(\"index=131\"): 673
+click(\"index=0\"): 674
+click(\"index=1\"): 675
+click(\"index=2\"): 676
+click(\"index=3\"): 677
+click(\"index=4\"): 678
+click(\"index=5\"): 679
+click(\"index=133\"): 680
+click(\"index=0\"): 681
+click(\"index=1\"): 682
+click(\"index=2\"): 683
+click(\"index=3\"): 684
+click(\"index=4\"): 685
+click(\"index=5\"): 686
+click(\"index=6\"): 687
+click(\"index=7\"): 688
+click(\"index=8\"): 689
+click(\"index=9\"): 690
+click(\"index=10\"): 691
+click(\"index=11\"): 692
+click(\"index=12\"): 693
+click(\"index=13\"): 694
+click(\"index=14\"): 695
+click(\"index=15\"): 696
+click(\"index=16\"): 697
+click(\"index=17\"): 698
+click(\"index=18\"): 699
+click(\"index=19\"): 700
+click(\"index=20\"): 701
+click(\"index=21\"): 702
+click(\"index=22\"): 703
+click(\"index=23\"): 704
+click(\"index=135\"): 705
+click(\"index=0\"): 706
+click(\"index=1\"): 707
+click(\"index=137\"): 708
+click(\"index=0\"): 709
+click(\"index=1\"): 710
+click(\"index=2\"): 711
+click(\"index=3\"): 712
+click(\"index=4\"): 713
+click(\"index=5\"): 714
+click(\"index=6\"): 715
+click(\"index=7\"): 716
+click(\"index=139\"): 717
+click(\"index=0\"): 718
+click(\"index=1\"): 719
+click(\"index=2\"): 720
+click(\"index=3\"): 721
+click(\"index=141\"): 722
+click(\"index=0\"): 723
+click(\"index=1\"): 724
+click(\"index=143\"): 725
+click(\"index=0\"): 726
+click(\"index=1\"): 727
+click(\"index=2\"): 728
+click(\"index=3\"): 729
+click(\"index=4\"): 730
+click(\"index=5\"): 731
+click(\"index=6\"): 732
+click(\"index=7\"): 733
+click(\"index=8\"): 734
+click(\"index=9\"): 735
+click(\"index=145\"): 736
+click(\"index=0\"): 737
+click(\"index=1\"): 738
+click(\"index=2\"): 739
+click(\"index=3\"): 740
+click(\"index=4\"): 741
+click(\"index=5\"): 742
+click(\"index=6\"): 743
+click(\"index=7\"): 744
+click(\"index=8\"): 745
+click(\"index=9\"): 746
+click(\"index=10\"): 747
+click(\"index=11\"): 748
+click(\"index=147\"): 749
+click(\"index=148\"): 750
+"];
+activityAccountActivity [fontcolor = teal,color = teal];
+state_20 -> activityAccountActivity [label = "   click(\"index=0\"): 29, 1047, 1060, 1078, 1123, 1146, 1153, 1799, 1803, 1808, 1827, 1837, 1842, 1848, 1852, 1858, 1864, 1890, 1894, 1898, 1902, 1906, 1910, 1915, 1919, 1923, 1927, 1932, 1937, 1941, 1946, 1953, 1957, 1972, 1989, 1995, 3253, 3268, 3276, 3290, 3315, 3322, 3334, 3344   ",fontcolor = teal,color = teal];
+activityAccountListTotalsDetailsActivity [fontcolor = teal,color = teal];
+state_20 -> activityAccountListTotalsDetailsActivity [label = "   click(\"0.00 index=3\"): 37   ",fontcolor = teal,color = teal];
+state_20 -> state_20[label = "click(\"index=0\"): 20
+"];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_22 -> activityTransactionActivity [label = "   click(\"index=0\"): 48   ",fontcolor = teal,color = teal];
+activityTransferActivity [fontcolor = teal,color = teal];
+state_22 -> activityTransferActivity [label = "   click(\"index=1\"): 88   ",fontcolor = teal,color = teal];
+activitySelectTemplateActivity [fontcolor = teal,color = teal];
+state_22 -> activitySelectTemplateActivity [label = "   click(\"index=2\"): 110, 1266, 2099, 2670, 2673   ",fontcolor = teal,color = teal];
+activityBlotterFilterActivity [fontcolor = teal,color = teal];
+state_22 -> activityBlotterFilterActivity [label = "   click(\"index=4\"): 765, 2017, 2021, 2031, 2043, 2055, 2065, 2077, 2091, 2095, 2097, 2675   ",fontcolor = teal,color = teal];
+activityAccountListTotalsDetailsActivity [fontcolor = teal,color = teal];
+state_22 -> activityAccountListTotalsDetailsActivity [label = "   click(\"0.00 index=6\"): 1159   ",fontcolor = teal,color = teal];
+state_22 -> state_22[label = "click(\"index=1\"): 41
+"];
+state_22 -> state_22[label = "click(\"index=0\"): 1161
+click(\"index=1\"): 1164
+",fontcolor = DodgerBlue,color = DodgerBlue];
+activityBudgetActivity [fontcolor = teal,color = teal];
+state_24 -> activityBudgetActivity [label = "   click(\"index=0\"): 134, 1167, 1177, 1187, 1193, 1199, 1205, 1211, 1234, 1239, 2109, 2125, 2132, 2139, 2146, 2153, 2168, 2175, 2181, 2190, 2204, 2211, 2218, 2225, 2237, 2245, 2323, 2327, 2342, 2352, 2359, 2364, 2369, 2381, 2388, 2401, 2405, 2414, 2426, 2436, 2441, 2448, 2453, 2465, 2472, 2499, 2508, 2520, 2530, 2535, 2540, 2547, 2562, 2570, 2579, 2591, 2601, 2606, 2611, 2616, 2630, 2637, 2657   ",fontcolor = teal,color = teal];
+activityDateFilterActivity [fontcolor = teal,color = teal];
+state_24 -> activityDateFilterActivity [label = "   click(\"index=1\"): 753, 1261, 1263, 2661   ",fontcolor = teal,color = teal];
+activityBudgetListTotalsDetailsActivity [fontcolor = teal,color = teal];
+state_24 -> activityBudgetListTotalsDetailsActivity [label = "   click(\"0.00 | 0.00 index=3\"): 761   ",fontcolor = teal,color = teal];
+activityDateFilterActivity [fontcolor = teal,color = teal];
+state_24 -> activityDateFilterActivity [label = "   click(\"index=1\"): 2667   ",fontcolor = teal,color = teal];
+state_24 -> state_24[label = "click(\"index=2\"): 129
+"];
+activityReportActivity [fontcolor = teal,color = teal];
+state_26 -> activityReportActivity [label = "   click(\"index=0\"): 777, 2680   ",fontcolor = teal,color = teal];
+activityReportActivity [fontcolor = teal,color = teal];
+state_26 -> activityReportActivity [label = "   click(\"index=1\"): 789, 1280, 1294, 1298, 2685, 2703, 2708   ",fontcolor = teal,color = teal];
+activityReportActivity [fontcolor = teal,color = teal];
+state_26 -> activityReportActivity [label = "   click(\"index=2\"): 808, 1312, 1328, 1332, 2725, 2744, 2749   ",fontcolor = teal,color = teal];
+activityReportActivity [fontcolor = teal,color = teal];
+state_26 -> activityReportActivity [label = "   click(\"index=3\"): 813, 1345, 1359, 2767   ",fontcolor = teal,color = teal];
+activityReportActivity [fontcolor = teal,color = teal];
+state_26 -> activityReportActivity [label = "   click(\"index=4\"): 846, 1365, 1372, 1376, 2774, 2779   ",fontcolor = teal,color = teal];
+activityReport2DChartActivity [fontcolor = teal,color = teal];
+state_26 -> activityReport2DChartActivity [label = "   click(\"index=5\"): 857, 2799   ",fontcolor = teal,color = teal];
+activityReport2DChartActivity [fontcolor = teal,color = teal];
+state_26 -> activityReport2DChartActivity [label = "   click(\"index=6\"): 889, 2824   ",fontcolor = teal,color = teal];
+activityReport2DChartActivity [fontcolor = teal,color = teal];
+state_26 -> activityReport2DChartActivity [label = "   click(\"index=7\"): 906, 2849   ",fontcolor = teal,color = teal];
+activityReport2DChartActivity [fontcolor = teal,color = teal];
+state_26 -> activityReport2DChartActivity [label = "   click(\"index=8\"): 922   ",fontcolor = teal,color = teal];
+state_26 -> state_26[label = "click(\"index=3\"): 774
+"];
+activityPreferencesActivity [fontcolor = teal,color = teal];
+state_28 -> activityPreferencesActivity [label = "   click(\"index=0\"): 940, 1397, 1405, 1416, 1422, 1436, 2867, 2873, 2880, 2888, 2895, 2904, 2911, 2916, 2921, 2930, 2937, 3022   ",fontcolor = teal,color = teal];
+comandroidinternalappChooserActivity [fontcolor = teal,color = teal];
+state_28 -> comandroidinternalappChooserActivity [label = "   click(\"index=8\"): 1045   ",fontcolor = teal,color = teal];
+state_28 -> state_28[label = "click(\"index=4\"): 939
+click(\"index=2\"): 1024
+click(\"index=4\"): 1039
+click(\"index=5\"): 1040
+"];
+activityAccountActivity [fontcolor = teal,color = teal];
+activityAccountActivity -> state_20 [label = "   click(\"取消 index=1\"): 1155   ",fontcolor = teal,color = teal];
+activityAccountListTotalsDetailsActivity [fontcolor = teal,color = teal];
+activityAccountListTotalsDetailsActivity -> state_20 [label = "   click(\"確定 index=0\"): 39   ",fontcolor = teal,color = teal];
+activityAccountListTotalsDetailsActivity [fontcolor = teal,color = teal];
+activityAccountListTotalsDetailsActivity -> state_22 [label = "   click(\"確定 index=0\"): 1160   ",fontcolor = teal,color = teal];
+activityAccountListTotalsDetailsActivity [fontcolor = teal,color = teal];
+activityAccountListTotalsDetailsActivity -> state_129 [label = "   click(\"確定 index=0\"): 2013   ",fontcolor = teal,color = teal];
+activitySelectTemplateActivity [fontcolor = teal,color = teal];
+activitySelectTemplateActivity -> state_22 [label = "   click(\"取消 index=4\"): 2674   ",fontcolor = teal,color = teal];
+activityTransactionActivity [fontcolor = teal,color = teal];
+state_129 -> activityTransactionActivity [label = "   click(\"index=0\"): 1753   ",fontcolor = teal,color = teal];
+activitySelectTemplateActivity [fontcolor = teal,color = teal];
+state_129 -> activitySelectTemplateActivity [label = "   click(\"index=2\"): 1793   ",fontcolor = teal,color = teal];
+activityBlotterFilterActivity [fontcolor = teal,color = teal];
+state_129 -> activityBlotterFilterActivity [label = "   click(\"index=4\"): 2007   ",fontcolor = teal,color = teal];
+activityAccountListTotalsDetailsActivity [fontcolor = teal,color = teal];
+state_129 -> activityAccountListTotalsDetailsActivity [label = "   click(\"0.00 index=6\"): 2012   ",fontcolor = teal,color = teal];
+state_129 -> state_129[label = "click(\"index=1\"): 127
+click(\"index=0\"): 1752
+click(\"index=1\"): 1788
+"];
+state_129 -> state_129[label = "click(\"index=0\"): 2014
+",fontcolor = DodgerBlue,color = DodgerBlue];
+activityBudgetActivity [fontcolor = teal,color = teal];
+activityBudgetActivity -> state_24 [label = "   click(\"取消 index=1\"): 1260   ",fontcolor = teal,color = teal];
+activityDateFilterActivity [fontcolor = teal,color = teal];
+activityDateFilterActivity -> state_24 [label = "   click(\"確定 index=0\"): 1262   ",fontcolor = teal,color = teal];
+activityDateFilterActivity [fontcolor = teal,color = teal];
+activityDateFilterActivity -> state_24 [label = "   click(\"取消 index=1\"): 1264   ",fontcolor = teal,color = teal];
+activityDateFilterActivity [fontcolor = teal,color = teal];
+activityDateFilterActivity -> state_24 [label = "   click(\"不過濾 index=5\"): 760   ",fontcolor = teal,color = teal];
+activityDateFilterActivity [fontcolor = teal,color = teal];
+activityDateFilterActivity -> state_24 [label = "   click(\"確定 index=0\"): 2668   ",fontcolor = teal,color = teal];
+activityBudgetListTotalsDetailsActivity [fontcolor = teal,color = teal];
+activityBudgetListTotalsDetailsActivity -> state_24 [label = "   click(\"確定 index=0\"): 763   ",fontcolor = teal,color = teal];
+activityBlotterFilterActivity [fontcolor = teal,color = teal];
+activityBlotterFilterActivity -> state_22 [label = "   click(\"確定 index=0\"): 2094   ",fontcolor = teal,color = teal];
+activityBlotterFilterActivity [fontcolor = teal,color = teal];
+activityBlotterFilterActivity -> state_22 [label = "   click(\"index=1\"): 2096   ",fontcolor = teal,color = teal];
+activityBlotterFilterActivity [fontcolor = teal,color = teal];
+activityBlotterFilterActivity -> state_22 [label = "   click(\"取消 index=2\"): 2098   ",fontcolor = teal,color = teal];
+activityDateFilterActivity [fontcolor = teal,color = teal];
+activityDateFilterActivity -> state_24 [label = "   click(\"不過濾 index=5\"): 2666   ",fontcolor = teal,color = teal];
+activityCurrencyListActivity [fontcolor = teal,color = teal];
+state_970 -> activityCurrencyListActivity [label = "   click(\"index=0\"): 954, 3077   ",fontcolor = teal,color = teal];
+activityExchangeRatesListActivity [fontcolor = teal,color = teal];
+state_970 -> activityExchangeRatesListActivity [label = "   click(\"index=1\"): 1452   ",fontcolor = teal,color = teal];
+activityCategoryListActivity2 [fontcolor = teal,color = teal];
+state_970 -> activityCategoryListActivity2 [label = "   click(\"index=2\"): 1461, 3082, 3158   ",fontcolor = teal,color = teal];
+activitySmsDragListActivity [fontcolor = teal,color = teal];
+state_970 -> activitySmsDragListActivity [label = "   click(\"index=3\"): 1533   ",fontcolor = teal,color = teal];
+activityPayeeListActivity [fontcolor = teal,color = teal];
+state_970 -> activityPayeeListActivity [label = "   click(\"index=4\"): 1611, 3168   ",fontcolor = teal,color = teal];
+activityProjectListActivity [fontcolor = teal,color = teal];
+state_970 -> activityProjectListActivity [label = "   click(\"index=5\"): 1625, 3207   ",fontcolor = teal,color = teal];
+activityLocationsListActivity [fontcolor = teal,color = teal];
+state_970 -> activityLocationsListActivity [label = "   click(\"index=6\"): 1639, 3231   ",fontcolor = teal,color = teal];
+state_1044 -> state_1044[label = "click(\"20200616_170815_047.... index=0\"): 1027
+"];
+activityAccountActivity [fontcolor = teal,color = teal];
+activityAccountActivity -> state_20 [label = "   click(\"取消 index=1\"): 1851   ",fontcolor = teal,color = teal];
+activityAccountActivity [fontcolor = teal,color = teal];
+activityAccountActivity -> state_20 [label = "   click(\"取消 index=1\"): 2002   ",fontcolor = teal,color = teal];
+activityBudgetActivity [fontcolor = teal,color = teal];
+activityBudgetActivity -> state_24 [label = "   click(\"取消 index=1\"): 2180   ",fontcolor = teal,color = teal];
+activityBudgetActivity [fontcolor = teal,color = teal];
+activityBudgetActivity -> state_24 [label = "   click(\"取消 index=1\"): 2326   ",fontcolor = teal,color = teal];
+activityBudgetActivity [fontcolor = teal,color = teal];
+activityBudgetActivity -> state_24 [label = "   click(\"取消 index=1\"): 2404   ",fontcolor = teal,color = teal];
+activityBudgetActivity [fontcolor = teal,color = teal];
+activityBudgetActivity -> state_24 [label = "   click(\"取消 index=1\"): 2498   ",fontcolor = teal,color = teal];
+activityBudgetActivity [fontcolor = teal,color = teal];
+activityBudgetActivity -> state_24 [label = "   click(\"取消 index=1\"): 2569   ",fontcolor = teal,color = teal];
+activityBudgetActivity [fontcolor = teal,color = teal];
+activityBudgetActivity -> state_24 [label = "   click(\"取消 index=1\"): 2660   ",fontcolor = teal,color = teal];
+activitySelectTemplateActivity [fontcolor = teal,color = teal];
+activitySelectTemplateActivity -> state_22 [label = "   click(\"取消 index=4\"): 2672   ",fontcolor = teal,color = teal];
+state_1714 -> state_1714[label = "click(\"20200616_170911_331.... index=0\"): 1658
+"];
+state_1716 -> state_1716[label = "click(\"20200616_170900_654.... index=1\"): 1676
+"];
+state_1718 -> state_1718[label = "click(\"20200616_170815_047.... index=2\"): 1692
+"];
+state_1720 -> state_1720[label = "click(\"20200616_162101_200.... index=3\"): 1706
+"];
+state_1722 -> state_1722[label = "click(\"20200616_154526_254.... index=4\"): 1718
+"];
+state_1724 -> state_1724[label = "click(\"20200616_154515_248.... index=5\"): 1728
+"];
+state_1726 -> state_1726[label = "click(\"20200616_154451_223.... index=6\"): 1736
+"];
+state_1728 -> state_1728[label = "click(\"20200616_152521_932.... index=7\"): 1742
+"];
+activityReport2DChartActivity [fontcolor = teal,color = teal];
+activityReport2DChartActivity -> state_3021 [label = "   click(\"確定 index=2\"): 2864   ",fontcolor = teal,color = teal];
+}

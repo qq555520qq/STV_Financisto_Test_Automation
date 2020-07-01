@@ -1,0 +1,15 @@
+digraph activityCategoryListActivity2{
+imagepath="output/20200616_161901_financisto_NFS";
+state_1513[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1513</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 4</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1513.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1513.png"];
+activityMainActivity [fontcolor = teal,color = teal];
+activityMainActivity -> state_1513 [label = "   click(\"index=2\"): 1461, 3082, 3158   ",fontcolor = teal,color = teal];
+activityCategoryActivity [fontcolor = teal,color = teal];
+state_1513 -> activityCategoryActivity [label = "   click(\"index=0\"): 1462, 3163   ",fontcolor = teal,color = teal];
+activityAttributeListActivity [fontcolor = teal,color = teal];
+state_1513 -> activityAttributeListActivity [label = "   click(\"index=1\"): 3083   ",fontcolor = teal,color = teal];
+state_1513 -> state_1513[label = "click(\"index=2\"): 3159
+click(\"index=3\"): 3160
+click(\"index=4\"): 3161
+click(\"index=5\"): 3162
+"];
+}

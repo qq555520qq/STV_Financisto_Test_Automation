@@ -1,0 +1,14 @@
+digraph activityExchangeRatesListActivity{
+imagepath="output/20200616_161901_financisto_NFS";
+state_1503[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1503</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 0</td></tr><tr><td>loop: 5</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1503.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1503.png"];
+activityMainActivity [fontcolor = teal,color = teal];
+activityMainActivity -> state_1503 [label = "   click(\"index=1\"): 1452   ",fontcolor = teal,color = teal];
+activityCurrencyListActivity [fontcolor = teal,color = teal];
+activityCurrencyListActivity -> state_1503 [label = "   click(\"index=1\"): 3078   ",fontcolor = teal,color = teal];
+state_1503 -> state_1503[label = "click(\"index=0\"): 1453
+click(\"index=1\"): 1454
+click(\"index=2\"): 1455
+click(\"index=3\"): 1456
+click(\"index=4\"): 1457
+"];
+}

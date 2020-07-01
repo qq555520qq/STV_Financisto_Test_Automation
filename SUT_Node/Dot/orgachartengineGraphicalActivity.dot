@@ -1,0 +1,26 @@
+digraph orgachartengineGraphicalActivity{
+imagepath="output/20200616_161901_financisto_NFS";
+state_793[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_793</td></tr><tr><td>incoming: 11</td></tr><tr><td>outgoing: 0</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/793.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/793.png"];
+activityReportActivity [fontcolor = teal,color = teal];
+activityReportActivity -> state_793 [label = "   click(\"index=2\"): 786   ",fontcolor = teal,color = teal];
+activityReportActivity [fontcolor = teal,color = teal];
+activityReportActivity -> state_793 [label = "   click(\"index=2\"): 2682   ",fontcolor = teal,color = teal];
+activityReportActivity [fontcolor = teal,color = teal];
+activityReportActivity -> state_793 [label = "   click(\"index=2\"): 1295   ",fontcolor = teal,color = teal];
+activityReportActivity [fontcolor = teal,color = teal];
+activityReportActivity -> state_793 [label = "   click(\"index=2\"): 1329   ",fontcolor = teal,color = teal];
+activityReportActivity [fontcolor = teal,color = teal];
+activityReportActivity -> state_793 [label = "   click(\"index=2\"): 1356   ",fontcolor = teal,color = teal];
+activityReportActivity [fontcolor = teal,color = teal];
+activityReportActivity -> state_793 [label = "   click(\"index=2\"): 1373   ",fontcolor = teal,color = teal];
+activityReportActivity [fontcolor = teal,color = teal];
+activityReportActivity -> state_793 [label = "   click(\"index=2\"): 2705   ",fontcolor = teal,color = teal];
+activityReportActivity [fontcolor = teal,color = teal];
+activityReportActivity -> state_793 [label = "   click(\"index=2\"): 2746   ",fontcolor = teal,color = teal];
+activityReportActivity [fontcolor = teal,color = teal];
+activityReportActivity -> state_793 [label = "   click(\"index=2\"): 1362   ",fontcolor = teal,color = teal];
+activityReportActivity [fontcolor = teal,color = teal];
+activityReportActivity -> state_793 [label = "   click(\"index=2\"): 2771   ",fontcolor = teal,color = teal];
+activityReportActivity [fontcolor = teal,color = teal];
+activityReportActivity -> state_793 [label = "   click(\"index=2\"): 2776   ",fontcolor = teal,color = teal];
+}

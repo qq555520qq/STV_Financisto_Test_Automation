@@ -1,0 +1,43 @@
+digraph activityReportPreferencesActivity{
+imagepath="output/20200616_161901_financisto_NFS";
+state_873[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_873</td></tr><tr><td>incoming: 13</td></tr><tr><td>outgoing: 9</td></tr><tr><td>loop: 2</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/873.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/873.png"];
+state_875[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_875</td></tr><tr><td>incoming: 5</td></tr><tr><td>outgoing: 5</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/875.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/875.png"];
+state_877[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_877</td></tr><tr><td>incoming: 3</td></tr><tr><td>outgoing: 4</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/877.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/877.png"];
+state_879[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_879</td></tr><tr><td>incoming: 3</td></tr><tr><td>outgoing: 4</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/879.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/879.png"];
+state_881[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_881</td></tr><tr><td>incoming: 4</td></tr><tr><td>outgoing: 4</td></tr><tr><td>loop: 5</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 3</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/881.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/881Equivalent.svg"];
+state_885[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_885</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/885.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/885.png"];
+state_887[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_887</td></tr><tr><td>incoming: 2</td></tr><tr><td>outgoing: 2</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/887.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/887.png"];
+state_890[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_890</td></tr><tr><td>incoming: 4</td></tr><tr><td>outgoing: 3</td></tr><tr><td>loop: 2</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 1</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/890.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/890Equivalent.svg"];
+state_908[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_908</td></tr><tr><td>incoming: 4</td></tr><tr><td>outgoing: 3</td></tr><tr><td>loop: 2</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 1</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/908.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/908Equivalent.svg"];
+state_925[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_925</td></tr><tr><td>incoming: 4</td></tr><tr><td>outgoing: 3</td></tr><tr><td>loop: 2</td></tr><tr><td>Equivalent State</td></tr><tr><td>EquivalentStateCount: 1</td></tr><tr><td width="150px" height="230px" fixedsize="true"><img src="States/925.png"/></td></tr></table>>,shape=box,margin=0,color = peru,URL="../States/925Equivalent.svg"];
+state_944[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_944</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/944.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/944.png"];
+state_948[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_948</td></tr><tr><td>incoming: 1</td></tr><tr><td>outgoing: 1</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/948.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/948.png"];
+activityReport2DChartActivity [fontcolor = teal,color = teal];
+activityReport2DChartActivity -> state_873 [label = "   click(\"index=3\"): 861, 2818   ",fontcolor = teal,color = teal];
+state_873 -> state_873[label = "click(\"一般報告選項 index=0\"): 862
+click(\"根據分類與期間統計的選項 index=6\"): 894
+"];
+state_881 -> state_881[label = "click(\"一般報告選項 index=0\"): 870
+click(\"index=5\"): 936
+click(\"根據分類與期間統計的選項 index=6\"): 2820
+click(\"index=7\"): 2821
+click(\"index=8\"): 2846
+"];
+state_890 -> state_890[label = "click(\"一般報告選項 index=0\"): 879
+click(\"index=4\"): 886
+"];
+activityReport2DChartActivity [fontcolor = teal,color = teal];
+activityReport2DChartActivity -> state_873 [label = "   click(\"index=3\"): 893   ",fontcolor = teal,color = teal];
+state_908 -> state_908[label = "click(\"一般報告選項 index=0\"): 896
+click(\"index=4\"): 903
+"];
+activityReport2DChartActivity [fontcolor = teal,color = teal];
+activityReport2DChartActivity -> state_873 [label = "   click(\"index=3\"): 910   ",fontcolor = teal,color = teal];
+state_925 -> state_925[label = "click(\"一般報告選項 index=0\"): 912
+click(\"index=4\"): 919
+"];
+activityReport2DChartActivity [fontcolor = teal,color = teal];
+activityReport2DChartActivity -> state_873 [label = "   click(\"index=3\"): 926   ",fontcolor = teal,color = teal];
+activityReport2DChartActivity [fontcolor = teal,color = teal];
+activityReport2DChartActivity -> state_873 [label = "   click(\"index=3\"): 2844   ",fontcolor = teal,color = teal];
+}

@@ -1,0 +1,104 @@
+digraph activitySmsTemplateActivity{
+imagepath="output/20200616_161901_financisto_NFS";
+state_1522[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1522</td></tr><tr><td>incoming: 10</td></tr><tr><td>outgoing: 7</td></tr><tr><td>loop: 4</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1522.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1522.png"];
+state_1524[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1524</td></tr><tr><td>incoming: 5</td></tr><tr><td>outgoing: 7</td></tr><tr><td>loop: 4</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1524.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1524.png"];
+state_1531[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1531</td></tr><tr><td>incoming: 5</td></tr><tr><td>outgoing: 6</td></tr><tr><td>loop: 6</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1531.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1531.png"];
+state_1533[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1533</td></tr><tr><td>incoming: 4</td></tr><tr><td>outgoing: 6</td></tr><tr><td>loop: 6</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1533.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1533.png"];
+state_1540[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1540</td></tr><tr><td>incoming: 6</td></tr><tr><td>outgoing: 6</td></tr><tr><td>loop: 4</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1540.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1540.png"];
+state_1542[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1542</td></tr><tr><td>incoming: 5</td></tr><tr><td>outgoing: 7</td></tr><tr><td>loop: 4</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1542.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1542.png"];
+state_1549[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1549</td></tr><tr><td>incoming: 5</td></tr><tr><td>outgoing: 5</td></tr><tr><td>loop: 6</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1549.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1549.png"];
+state_1551[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1551</td></tr><tr><td>incoming: 4</td></tr><tr><td>outgoing: 6</td></tr><tr><td>loop: 6</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1551.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1551.png"];
+state_1559[label=<<table border="1" cellborder="0" cellspacing="0" cellpadding="0"><tr><td>state_1559</td></tr><tr><td>incoming: 8</td></tr><tr><td>outgoing: 8</td></tr><tr><td>loop: 0</td></tr><tr><td width="130px" height="230px" fixedsize="true"><img src="States/1559.png"/></td></tr></table>>,shape=box,margin=0,URL="../States/1559.png"];
+activityCategorySelectorActivity [fontcolor = teal,color = teal];
+activityCategorySelectorActivity -> state_1522 [label = "   click(\"選取 index=1\"): 1478   ",fontcolor = teal,color = teal];
+activityCategorySelectorActivity [fontcolor = teal,color = teal];
+activityCategorySelectorActivity -> state_1540 [label = "   click(\"選取 index=1\"): 1496   ",fontcolor = teal,color = teal];
+activityCategorySelectorActivity [fontcolor = teal,color = teal];
+activityCategorySelectorActivity -> state_1524 [label = "   click(\"選取 index=1\"): 1518   ",fontcolor = teal,color = teal];
+activityCategorySelectorActivity [fontcolor = teal,color = teal];
+activityCategorySelectorActivity -> state_1542 [label = "   click(\"選取 index=1\"): 1582   ",fontcolor = teal,color = teal];
+activityCategoryActivity [fontcolor = teal,color = teal];
+activityCategoryActivity -> state_1522 [label = "   click(\"index=0\"): 1470   ",fontcolor = teal,color = teal];
+activityCategoryActivity [fontcolor = teal,color = teal];
+activityCategoryActivity -> state_1522 [label = "   click(\"index=2\"): 1511   ",fontcolor = teal,color = teal];
+activityCategorySelectorActivity [fontcolor = teal,color = teal];
+state_1522 -> activityCategorySelectorActivity [label = "   click(\"index=0\"): 1477   ",fontcolor = teal,color = teal];
+activityCategoryActivity [fontcolor = teal,color = teal];
+state_1522 -> activityCategoryActivity [label = "   click(\"取消 index=1\"): 1510   ",fontcolor = teal,color = teal];
+activitySmsDragListActivity [fontcolor = teal,color = teal];
+state_1522 -> activitySmsDragListActivity [label = "   click(\"取消 index=1\"): 1553   ",fontcolor = teal,color = teal];
+state_1522 -> state_1522[label = "click(\"SMS sender number or... index=1\"): 1471
+click(\"Specify template wit... index=3\"): 1475
+click(\"Try with sms example... index=4\"): 1476
+click(\"確定 index=0\"): 1509
+"];
+activityCategorySelectorActivity [fontcolor = teal,color = teal];
+state_1524 -> activityCategorySelectorActivity [label = "   click(\"index=0\"): 1517   ",fontcolor = teal,color = teal];
+activitySmsDragListActivity [fontcolor = teal,color = teal];
+state_1524 -> activitySmsDragListActivity [label = "   click(\"取消 index=1\"): 1551   ",fontcolor = teal,color = teal];
+state_1524 -> state_1524[label = "click(\"SMS sender number or... index=1\"): 1473
+click(\"Specify template wit... index=4\"): 1515
+click(\"Try with sms example... index=5\"): 1516
+click(\"確定 index=0\"): 1550
+"];
+activityCategoryActivity [fontcolor = teal,color = teal];
+state_1531 -> activityCategoryActivity [label = "   click(\"取消 index=1\"): 1528   ",fontcolor = teal,color = teal];
+activitySmsDragListActivity [fontcolor = teal,color = teal];
+state_1531 -> activitySmsDragListActivity [label = "   click(\"取消 index=1\"): 1596   ",fontcolor = teal,color = teal];
+state_1531 -> state_1531[label = "click(\"SMS sender number or... index=1\"): 1480
+click(\"Specify template wit... index=3\"): 1484
+click(\"Try with sms example... index=4\"): 1485
+click(\"index=0\"): 1486
+click(\"Start typing… index=1\"): 1521
+click(\"確定 index=0\"): 1527
+"];
+activitySmsDragListActivity [fontcolor = teal,color = teal];
+state_1533 -> activitySmsDragListActivity [label = "   click(\"取消 index=1\"): 1575   ",fontcolor = teal,color = teal];
+state_1533 -> state_1533[label = "click(\"SMS sender number or... index=1\"): 1482
+click(\"Specify template wit... index=4\"): 1557
+click(\"Try with sms example... index=5\"): 1558
+click(\"index=0\"): 1559
+click(\"Start typing… index=1\"): 1562
+click(\"確定 index=0\"): 1574
+"];
+activityCategorySelectorActivity [fontcolor = teal,color = teal];
+state_1540 -> activityCategorySelectorActivity [label = "   click(\"index=0\"): 1495   ",fontcolor = teal,color = teal];
+activitySmsDragListActivity [fontcolor = teal,color = teal];
+state_1540 -> activitySmsDragListActivity [label = "   click(\"取消 index=1\"): 1544   ",fontcolor = teal,color = teal];
+state_1540 -> state_1540[label = "click(\"SMS sender number or... index=1\"): 1489
+click(\"Specify template wit... index=3\"): 1493
+click(\"Try with sms example... index=4\"): 1494
+click(\"確定 index=0\"): 1543
+"];
+activityCategorySelectorActivity [fontcolor = teal,color = teal];
+state_1542 -> activityCategorySelectorActivity [label = "   click(\"index=0\"): 1581   ",fontcolor = teal,color = teal];
+activitySmsDragListActivity [fontcolor = teal,color = teal];
+state_1542 -> activitySmsDragListActivity [label = "   click(\"取消 index=1\"): 1593   ",fontcolor = teal,color = teal];
+state_1542 -> state_1542[label = "click(\"SMS sender number or... index=1\"): 1491
+click(\"Specify template wit... index=4\"): 1579
+click(\"Try with sms example... index=5\"): 1580
+click(\"確定 index=0\"): 1592
+"];
+activitySmsDragListActivity [fontcolor = teal,color = teal];
+state_1549 -> activitySmsDragListActivity [label = "   click(\"取消 index=1\"): 1568   ",fontcolor = teal,color = teal];
+state_1549 -> state_1549[label = "click(\"SMS sender number or... index=1\"): 1498
+click(\"Specify template wit... index=3\"): 1502
+click(\"Try with sms example... index=4\"): 1503
+click(\"index=0\"): 1504
+click(\"Start typing… index=1\"): 1523
+click(\"確定 index=0\"): 1567
+"];
+activitySmsDragListActivity [fontcolor = teal,color = teal];
+state_1551 -> activitySmsDragListActivity [label = "   click(\"取消 index=1\"): 1607   ",fontcolor = teal,color = teal];
+state_1551 -> state_1551[label = "click(\"SMS sender number or... index=1\"): 1500
+click(\"Specify template wit... index=4\"): 1584
+click(\"Try with sms example... index=5\"): 1585
+click(\"index=0\"): 1586
+click(\"Start typing… index=1\"): 1601
+click(\"確定 index=0\"): 1606
+"];
+activitySmsDragListActivity [fontcolor = teal,color = teal];
+activitySmsDragListActivity -> state_1522 [label = "   click(\"index=1\"): 1537   ",fontcolor = teal,color = teal];
+activitySmsDragListActivity [fontcolor = teal,color = teal];
+activitySmsDragListActivity -> state_1522 [label = "   click(\"index=1\"): 1546, 1552, 1554, 1569, 1576, 1594, 1597   ",fontcolor = teal,color = teal];
+}
